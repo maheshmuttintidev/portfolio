@@ -1,3 +1,13 @@
+div {
+   text-align: center;
+   display: grid;
+   place-items: center;
+}
+
+img {
+   height: 150px;
+}
+
 h1, p {
   font-family: Lato;
 }
