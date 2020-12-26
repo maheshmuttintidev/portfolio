@@ -1,13 +1,26 @@
-div {
-   text-align: center;
-   display: grid;
-   place-items: center;
-}
-
-img {
-   height: 150px;
-}
-
-h1, p {
+div.app-page {
+  background-color: limegreen;
+  margin: 0;
+  padding: 0;
   font-family: Lato;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+h1.main-heading {
+  text-align: center;
+  background-color: tomato;
+}
+
+.profile-card {
+  display: flex;
+  justify-content: space-between;
+  color: aliceblue;
+}
+
+img.avatar {
+  height: 150px;
 }
