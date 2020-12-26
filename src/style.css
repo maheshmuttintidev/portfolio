@@ -2,12 +2,18 @@ div.app-page {
   background-color: limegreen;
   margin: 0;
   padding: 0;
-  font-family: Lato;
+  font-family: sans-serif;
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
+}
+
+article {
+  display: flex;
+  justify-content: center;
+  background-color: aquamarine;
 }
 
 h1.main-heading {
@@ -17,8 +23,18 @@ h1.main-heading {
 
 .profile-card {
   display: flex;
-  justify-content: space-between;
-  color: aliceblue;
+  box-shadow: 3px 6px 34px -23px rgba(34, 34, 34, 0.4);
+}
+
+.introduction {
+  margin-left: 35px;
+  padding: 12px;
+  display: grid;
+  place-items: center;
+}
+
+.introduction table tr {
+  line-height: 1.5;
 }
 
 img.avatar {
