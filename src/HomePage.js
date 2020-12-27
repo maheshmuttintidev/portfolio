@@ -1,0 +1,48 @@
+import React from "react";
+
+export default function HomePage() {
+  return (
+    <div className="app-page">
+      <header>
+        <h1 className="main-heading">Portfolio</h1>
+      </header>
+      <article>
+        <div className="profile-card">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNSrKYplxMr-PC7toluw3E0PA3icvqPId9AQ&usqp=CAU"
+            className="avatar"
+          />
+          <div className="introduction">
+            <p>
+              <em style={{ fontSize: "1.5em" }}>Hi, there!</em> <br />{" "}
+              &nbsp;&nbsp;&nbsp;My name is <strong>Mahesh Muttinti</strong>. I
+              am a web designer and also developer. I am learning full stack
+              development in which my stack to develop the web apps is{" "}
+              <strong>MERN.</strong>
+              <br />
+              <ul>
+                <li>MongoDB refers to M</li>
+                <li>Express JS refers to E</li>
+                <li>React JS refers to R</li>
+                <li>Node JS refers to N</li>
+              </ul>
+              <br />
+              My Hobbies include playing football, listening to music and post
+              codes in different platforms like sololearn, codepen etc.,{" "}
+            </p>
+          </div>
+        </div>
+      </article>
+      <footer>
+        <h2 className="sub-heading follow">Follow me on: </h2>
+        <div className="holder btn-holder">
+          <button className="btn btn-green">facebook</button>
+          <button className="btn btn-green">instagram</button>
+          <button className="btn btn-green">github</button>
+          <button className="btn btn-green">codepen</button>
+          <button className="btn btn-green">sololearn</button>
+        </div>
+      </footer>
+    </div>
+  );
+}

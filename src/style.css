@@ -1,42 +1,73 @@
 div.app-page {
-  background-color: limegreen;
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+  background-image: linear-gradient(101deg,grey, black);
+  color: white;
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
-}
-
-article {
-  display: flex;
-  justify-content: center;
-  background-color: aquamarine;
-}
-
-h1.main-heading {
-  text-align: center;
-  background-color: tomato;
-}
-
-.profile-card {
-  display: flex;
-  box-shadow: 3px 6px 34px -23px rgba(34, 34, 34, 0.4);
-}
-
-.introduction {
-  margin-left: 35px;
-  padding: 12px;
-  display: grid;
-  place-items: center;
-}
-
-.introduction table tr {
   line-height: 1.5;
+  letter-spacing: 1.1px;
+}
+header {
+  background-image: url("https://images.unsplash.com/photo-1487700160041-babef9c3cb55?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1935&q=80");
+  background-size: cover;
+  background-position: fixed;
+  height: 100vh;
+  width: 100vw;
+  margin-bottom: 20px;
+}
+header h1 {
+  color: azure;
+  text-shadow: 1px 2px 2px rgba(12, 12, 12, 0.4), 0 0 3px rgba(10, 10, 10, 0.4);
+  text-align: center;
+}
+@media all and (min-width: 700px) {
+  .profile-card {
+    display: flex;
+  }
+  .profile-card img {
+    width: 350px;
+  }
+  .profile-card > .introduction {
+    width: 350px;
+    text-align: justify;
+    padding: 12px;
+  }
 }
 
-img.avatar {
-  height: 150px;
+@media all and (max-width: 700px) {
+  .profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .profile-card img {
+    width: 350px;
+  }
+  .profile-card > .introduction {
+    width: 350px;
+    text-align: justify;
+    padding: 12px;
+  }
+}
+
+.holder {
+  display: flex;
+}
+
+.holder.btn-holder {
+  justify-content: center;
+}
+
+.holder.btn-holder > button {
+  margin-right: 2em;
+  border: 0;
+  background-color: rgba( 23,230,210,.6);
+  padding: 7px 12px;
+  border-radius: 5px;
+  color: whitesmoke;
 }
