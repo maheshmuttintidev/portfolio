@@ -125,6 +125,7 @@ footer {
   cursor: pointer;
   outline: 0;
   border: 1px solid transparent;
+  margin: 0 0 12px 0;
 }
 
 .holder.btn-holder > button:hover {
