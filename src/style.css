@@ -48,7 +48,7 @@ header > .main-heading {
 article {
   padding: 80px 12px;
 }
-.profile-card {
+.profile-card, .progressBar {
   width: 300px;
   height: max-content;
   padding: 12px;
@@ -72,7 +72,7 @@ article {
 }
 
 @media all and (min-width: 700px) {
-  .profile-card {
+  .profile-card, .progressBar {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,7 +81,7 @@ article {
 }
 
 @media all and (max-width: 700px) {
-  .profile-card {
+  .profile-card, .progressBar {
     display: flex;
     flex-direction: column;
     align-items: center;
