@@ -43,13 +43,13 @@ export default function HomePage() {
         <div className="skills-container">
           <h1 className="skill-heading">Skills:</h1>
           <div className="progressBar">
-            <ProgressBar now={html} label={`HTML`} />
-            <ProgressBar now={css} label={`CSS`} />
-            <ProgressBar now={js} label={`JS`} />
-            <ProgressBar now={java} label={`JAVA`} />
-            <ProgressBar now={java} label={`PYTHON`} />
-            <ProgressBar now={java} label={`REACT`} />
-            <ProgressBar now={java} label={`NODE`} />
+            <ProgressBar now={html} label={`HTML`} /><br />
+            <ProgressBar now={css} label={`CSS`} /><br />
+            <ProgressBar now={js} label={`JS`} /><br />
+            <ProgressBar now={java} label={`JAVA`} /><br />
+            <ProgressBar now={java} label={`PYTHON`} /><br />
+            <ProgressBar now={java} label={`REACT`} /><br />
+            <ProgressBar now={java} label={`NODE`} /><br />
           </div>
         </div>
       </article>

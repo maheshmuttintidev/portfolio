@@ -57,6 +57,9 @@ article {
   border-radius: 12px;
   margin: 12px auto;
   text-align: center;
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap;
 }
 
 .skills-container {
@@ -89,18 +92,14 @@ article {
 
 @media all and (min-width: 700px) {
   .profile-card, .progressBar {
-    display: flex;
     justify-content: center;
-    align-items: center;
     width: 50%;
   }
 }
 
 @media all and (max-width: 700px) {
   .profile-card, .progressBar {
-    display: flex;
     flex-direction: column;
-    align-items: center;
     width: 80%;
   }
 }
