@@ -114,6 +114,7 @@ footer {
 
 .holder.btn-holder {
   justify-content: space-evenly;
+  flex-flow: wrap;
 }
 
 .holder.btn-holder > button {
