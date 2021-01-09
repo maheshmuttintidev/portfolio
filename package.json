@@ -4,12 +4,12 @@
   "private": true,
   "dependencies": {
     "@babel/runtime": "^7.12.5",
-    "bootstrap": "4.5.3",
+    "bootstrap": "^4.5.3",
     "font-awesome.min.css": "3.2.1",
     "jquery": "3.5.1",
     "popper.js": "1.16.1",
     "react": "17.0.1",
-    "react-bootstrap": "1.4.3",
+    "react-bootstrap": "^1.4.3",
     "react-dom": "17.0.1",
     "react-router-dom": "5.2.0",
     "sweetalert": "2.1.2"
