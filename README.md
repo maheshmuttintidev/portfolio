@@ -1,3 +1,5 @@
-# react-first-app
+# This is a simple portfolio design
 
-This is a first app using react
+It is designed and developed using React.
+
+**Note:** This is under development...
