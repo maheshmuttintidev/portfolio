@@ -1,6 +1,8 @@
 import React from "react";
+import { ProgressBar } from "react-bootstrap";
 
 export default function HomePage() {
+  const percentage = 73;
   return (
     <div className="app-page">
       <header>
@@ -36,6 +38,11 @@ export default function HomePage() {
             <br />
             My Hobbies include playing football, listening to music and post
             codes in different platforms like sololearn, codepen etc.,
+          </div>
+        </div>
+        <div className="skills-container">
+          <div className="progressBar">
+            <ProgressBar now={percentage} label={`${percentage}% completed`} />
           </div>
         </div>
       </article>
