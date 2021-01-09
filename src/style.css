@@ -48,39 +48,42 @@ header > .main-heading {
 article {
   padding: 80px 12px;
 }
-.profile-card, .progressBar {
+.profile-card,
+.progressBar {
   width: 300px;
   height: max-content;
-  padding: 12px;
+  padding: 34px 12px 12px;
   position: relative;
-  border: 2px solid tan;
-  border-radius: 12px;
-  margin: 12px auto;
+  border: 2px solid #e0e0e0;
+  border-radius: 7px;
+  margin: 95px auto;
   text-align: center;
   display: flex;
   align-items: center;
   flex-flow: column wrap;
+  box-shadow: 3px 6px 34px -24px #202020, -3px -4px 12px white;
 }
 
 .skills-container {
   padding: 12px;
 }
 
-.skills-container > .skill-header {
+.skills-container > .skill-heading,
+.profile-card-container > .author-intro-heading {
   font-family: "Potta One", cursive;
   background-color: orange;
   color: white;
-  font-weight: bold;
   padding: 7px;
   border-radius: 5px;
+  border: 1px solid #153432;
+  text-shadow: 1px 3px 3px #080808;
+  box-shadow: 5px 7px 1px -3px darkorange;
 }
-
-
 .profile-card img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 2px solid #78a26e;
+  border: 2px solid #e0e0e0;
   position: absolute;
   top: -75px;
 }
@@ -91,14 +94,16 @@ article {
 }
 
 @media all and (min-width: 700px) {
-  .profile-card, .progressBar {
+  .profile-card,
+  .progressBar {
     justify-content: center;
     width: 50%;
   }
 }
 
 @media all and (max-width: 700px) {
-  .profile-card, .progressBar {
+  .profile-card,
+  .progressBar {
     flex-direction: column;
     width: 80%;
   }
