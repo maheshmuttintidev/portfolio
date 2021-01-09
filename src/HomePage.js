@@ -2,7 +2,7 @@ import React from "react";
 import { ProgressBar } from "react-bootstrap";
 
 export default function HomePage() {
-  const percentage = 73;
+  const [html, css, js, java, python, react, node] = [75, 65, 35, 25, 10, 5];
   return (
     <div className="app-page">
       <header>
@@ -41,8 +41,15 @@ export default function HomePage() {
           </div>
         </div>
         <div className="skills-container">
+          <h1 className="skill-heading">Skills:</h1>
           <div className="progressBar">
-            <ProgressBar now={percentage} label={`${percentage}% completed`} />
+            <ProgressBar now={html} label={`HTML`} />
+            <ProgressBar now={css} label={`CSS`} />
+            <ProgressBar now={js} label={`JS`} />
+            <ProgressBar now={java} label={`JAVA`} />
+            <ProgressBar now={java} label={`PYTHON`} />
+            <ProgressBar now={java} label={`REACT`} />
+            <ProgressBar now={java} label={`NODE`} />
           </div>
         </div>
       </article>

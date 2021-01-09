@@ -56,7 +56,23 @@ article {
   border: 2px solid tan;
   border-radius: 12px;
   margin: 12px auto;
+  text-align: center;
 }
+
+.skills-container {
+  padding: 12px;
+}
+
+.skills-container > .skill-header {
+  font-family: "Potta One", cursive;
+  background-color: orange;
+  color: white;
+  font-weight: bold;
+  padding: 7px;
+  border-radius: 5px;
+}
+
+
 .profile-card img {
   width: 150px;
   height: 150px;
