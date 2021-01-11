@@ -44,23 +44,23 @@ export default function Article() {
       <div className="skills-container">
         <h1 className="skill-heading">Skills:</h1>
         <div className="progressBar">
-          <ProgressBar now={html} label={`HTML`} style={{ width: "300px" }} />
+          <ProgressBar now={html} label={`HTML`} style={{ width: "80%" }} />
           <br />
-          <ProgressBar now={css} label={`CSS`} style={{ width: "300px" }} />
+          <ProgressBar now={css} label={`CSS`} style={{ width: "80%" }} />
           <br />
-          <ProgressBar now={js} label={`JS`} style={{ width: "300px" }} />
+          <ProgressBar now={js} label={`JS`} style={{ width: "80%" }} />
           <br />
-          <ProgressBar now={java} label={`JAVA`} style={{ width: "300px" }} />
+          <ProgressBar now={java} label={`JAVA`} style={{ width: "80%" }} />
           <br />
           <ProgressBar
             now={python}
             label={`PYTHON`}
-            style={{ width: "300px" }}
+            style={{ width: "80%" }}
           />
           <br />
-          <ProgressBar now={react} label={`REACT`} style={{ width: "300px" }} />
+          <ProgressBar now={react} label={`REACT`} style={{ width: "80%" }} />
           <br />
-          <ProgressBar now={node} label={`NODE`} style={{ width: "300px" }} />
+          <ProgressBar now={node} label={`NODE`} style={{ width: "80%" }} />
           <br />
         </div>
       </div>

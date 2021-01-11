@@ -10,6 +10,20 @@ div.app-page {
   -webkit-font-smoothing: antialiased;
   overflow: hidden;
 }
+@media (min-width: 360px) and (orientation: landscape) {
+  div.app-page {
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    background-color: cyan;
+  }
+}
+@media (min-width: 360px) and (orientation: portrait) {
+  div.app-page {
+    color: black;
+    background-color: yellowgreen;
+  }
+}
 
 * {
   box-sizing: border-box;
