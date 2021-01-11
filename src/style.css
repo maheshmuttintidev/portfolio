@@ -5,16 +5,6 @@ div.app-page {
   -webkit-font-smoothing: antialiased;
   overflow: hidden;
 }
-@media (min-width: 360px) and (orientation: landscape) {
-  div.app-page {
-    background-color: cyan;
-  }
-}
-@media (min-width: 360px) and (orientation: portrait) {
-  div.app-page {
-    background-color: yellowgreen;
-  }
-}
 
 * {
   box-sizing: border-box;
