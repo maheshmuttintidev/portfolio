@@ -4,6 +4,8 @@ div.app-page {
   padding: 0;
   -webkit-font-smoothing: antialiased;
   overflow: hidden;
+  background: tan;
+  color: #080808;
 }
 
 * {
@@ -21,6 +23,7 @@ header {
   grid-template-columns: min-content 1fr;
   color: white;
 }
+
 header > .website-name-container {
   width: 100%;
   text-align: center;
@@ -54,7 +57,34 @@ article {
   display: flex;
   align-items: center;
   flex-flow: column wrap;
-  box-shadow: 3px 6px 34px -24px #202020, -3px -4px 12px white;
+  box-shadow: 3px 6px 34px -24px #202020, -3px -4px 12px -5px white;
+  transition: all ease-in 100ms;
+}
+
+.profile-card:hover,
+.progressBar:hover {
+  background-color: coral;
+  border-color: tomato;
+  box-shadow: 3px 6px 34px -24px #202020, -3px -4px 12px -5px rgb(34, 32, 32);
+  animation: zoom-in ease-out alternate 500ms;
+}
+
+@keyframes zoom-in {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.01);
+  }
+}
+
+@-webkit-keyframes zoom-in {
+  0% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1.1);
+  }
 }
 
 .skills-container {
@@ -70,6 +100,7 @@ article {
   border: 1px solid #153432;
   text-shadow: 1px 3px 3px #080808;
   box-shadow: 5px 7px 1px -3px darkorange;
+  display: table;
 }
 .profile-card img {
   width: 150px;
@@ -130,19 +161,20 @@ footer {
 }
 
 .holder.btn-holder > button {
-  background-color: rgba(66, 219, 204, 0.6);
+  background-color: rgba(15, 131, 119, 0.6);
   padding: 7px 12px;
   border-radius: 5px;
   cursor: pointer;
   outline: 0;
   border: 1px solid transparent;
   margin: 0 0 12px 0;
+  color: whitesmoke;
 }
 
 .holder.btn-holder > button:hover {
-  background-color: rgba(23, 210, 200, 0.9);
+  background-color: rgba(44, 34, 182, 0.9);
   font-weight: bold;
-  border: 1px solid #333333;
+  border: 1px solid white;
   outline: 0;
 }
 
@@ -152,6 +184,6 @@ footer {
   padding: 12px 0 0 0;
 }
 .copyright-container > p a {
-  color: dodgerblue;
+  color: rgb(11, 219, 157);
   text-decoration: none;
 }
