@@ -4,6 +4,7 @@
   padding: 0;
   -webkit-font-smoothing: antialiased;
   line-height: 1.5;
+  -webkit-tap-highlight-color: transparent;
 }
 header {
   background-color: #ffff00;
@@ -58,7 +59,7 @@ article {
   background-color: coral;
   border-color: tomato;
   box-shadow: 3px 6px 34px -24px #202020, -3px -4px 12px -5px rgb(34, 32, 32);
-  animation: zoom-in ease-out alternate 500ms;
+  animation: zoom-in 200ms;
 }
 
 @keyframes zoom-in {
@@ -75,7 +76,7 @@ article {
     transform: scale(0.9);
   }
   100% {
-    transform: scale(1.1);
+    transform: scale(1.01);
   }
 }
 
@@ -148,8 +149,7 @@ footer {
 }
 
 .holder.btn-holder {
-  justify-content: space-evenly;
-  flex-flow: wrap;
+  margin: 12px auto;
 }
 
 .holder.btn-holder > button {
@@ -159,14 +159,13 @@ footer {
   height: 100%;
   cursor: pointer;
   outline: 0;
-  border: 2px solid #acacac;
-  margin: 0 0 12px 0;
+  border: 2px solid transparent;
+  margin: 0 0 24px 0;
   color: whitesmoke;
 }
 
 .holder.btn-holder > button:hover {
   background-color: rgba(44, 34, 182, 0.5);
-  font-weight: bold;
   border: 2px solid skyblue;
   box-shadow: 0 0 1px 1px skyblue;
   outline: 0;
