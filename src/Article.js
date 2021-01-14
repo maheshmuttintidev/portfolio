@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 import { ProgressBar } from "react-bootstrap";
 
-export default function Article() {
+function Article() {
   const [html, css, js, java, python, react, node] = [
     87,
     55,
@@ -67,3 +67,4 @@ export default function Article() {
     </article>
   );
 }
+export default Article;

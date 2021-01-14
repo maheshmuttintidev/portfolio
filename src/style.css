@@ -1,16 +1,8 @@
-div.app-page {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  -webkit-font-smoothing: antialiased;
-  overflow: hidden;
-  background: tan;
-  color: #080808;
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
   line-height: 1.5;
 }
 header {
@@ -22,8 +14,8 @@ header {
   display: grid;
   grid-template-columns: min-content 1fr;
   color: white;
+  min-height: 56rem;
 }
-
 header > .website-name-container {
   width: 100%;
   text-align: center;
@@ -164,17 +156,19 @@ footer {
   background-color: rgba(15, 131, 119, 0.6);
   padding: 7px 12px;
   border-radius: 5px;
+  height: 100%;
   cursor: pointer;
   outline: 0;
-  border: 1px solid transparent;
+  border: 2px solid #acacac;
   margin: 0 0 12px 0;
   color: whitesmoke;
 }
 
 .holder.btn-holder > button:hover {
-  background-color: rgba(44, 34, 182, 0.9);
+  background-color: rgba(44, 34, 182, 0.5);
   font-weight: bold;
-  border: 1px solid white;
+  border: 2px solid skyblue;
+  box-shadow: 0 0 1px 1px skyblue;
   outline: 0;
 }
 
