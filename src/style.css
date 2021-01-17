@@ -15,20 +15,22 @@
   justify-content: center;
   align-items: center;
 }
-@media (min-width: 50px) and (max-width: 700px) {
-  .hero::before {
-    max-width: 90%;
-    min-width: 80%;
-  }
+@media (max-width: 700px) or (min-width: 200px) {
   .hero {
     max-width: 90%;
     flex-direction: column-reverse;
     min-width: 80%;
-    height: min-content;
+    height: 400px;
   }
+  .hero::before {
+    max-width: 90%;
+    min-width: 80%;
+    height: 120%;
+  }
+  
   .hero-img {
     width: 70%;
-    margin: 0;
+    margin-right: 0;
   }
   .hero-content {
     width: 90%;
@@ -36,7 +38,7 @@
     
   }
   .hero-title {
-    font-size: normal;
+    font-size: 40px;
   }
   .hero-para {
     font-size: small;
