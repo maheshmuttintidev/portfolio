@@ -21,4 +21,4 @@ function Hero() {
     </header>
   );
 }
-export default Header;
+export default Hero;
