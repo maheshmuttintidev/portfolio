@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import avatar from "../assets/avatar.jpg";
+import avatar from "./avatar.jpg";
 
 function Hero() {
   return (
