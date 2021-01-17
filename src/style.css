@@ -6,8 +6,11 @@
   -webkit-tap-highlight-color: transparent;
 }
 @media (min-width: 200px) and (max-width: 450px) {
+  .hero::before {
+    width: calc(100% - 8rem);
+  }
   .hero {
-    width: calc(100% - 50px);
+    flex-direction: column;
   }
 }
 .hero {
