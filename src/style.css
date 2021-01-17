@@ -15,15 +15,16 @@
   justify-content: center;
   align-items: center;
 }
-@media (min-width: 100px) and (max-width: 700px) {
+@media (min-width: 50px) and (max-width: 700px) {
   .hero::before {
-    max-width: calc(100% - 10rem);
-    min-width: calc(100% - 8rem);
+    max-width: 90%;
+    min-width: 80%;
   }
   .hero {
-    max-width: calc(100% - 16rem);
-    flex-direction: column;
-    min-width: calc(100% - 8rem);
+    max-width: 90%;
+    flex-direction: column-reverse;
+    min-width: 80%;
+    height: max-content;
   }
   .hero-img {
     width: 70%;
@@ -31,8 +32,11 @@
   .hero-content {
     width: 80%;
   }
+  .hero-title {
+    font-size: normal;
+  }
   .hero-para {
-    font-size: 140%;
+    font-size: small;
   }
 }
 .hero::before {
