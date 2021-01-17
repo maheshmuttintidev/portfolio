@@ -20,7 +20,6 @@
     max-width: 90%;
     flex-direction: column-reverse;
     min-width: 80%;
-    height: 400px;
   }
   .hero::before {
     max-width: 90%;
@@ -35,20 +34,21 @@
   .hero-content {
     width: 90%;
     padding: 0;
+    font-size: 30px !important;
     
   }
   .hero-title {
-    font-size: 40px;
+    font-size: 30px !important;
   }
   .hero-para {
-    font-size: small;
+    font-size: 12px !important;
   }
 }
 .hero::before {
   content: "";
   position: absolute;
   width: 100%;
-  height: 120%;
+  height: 110%;
   background: linear-gradient(
               90deg,
              rgba(61, 6, 95, 1) 0%,
