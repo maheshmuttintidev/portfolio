@@ -5,14 +5,6 @@
   -webkit-font-smoothing: antialiased;
   -webkit-tap-highlight-color: transparent;
 }
-@media (min-width: 200px) and (max-width: 450px) {
-  .hero::before {
-    width: calc(100% - 8rem);
-  }
-  .hero {
-    flex-direction: column;
-  }
-}
 .hero {
   width: 100%;
   color: whitesmoke;
@@ -22,6 +14,26 @@
   position: relative;
   justify-content: center;
   align-items: center;
+}
+@media (min-width: 100px) and (max-width: 700px) {
+  .hero::before {
+    max-width: calc(100% - 10rem);
+    min-width: calc(100% - 8rem);
+  }
+  .hero {
+    max-width: calc(100% - 16rem);
+    flex-direction: column;
+    min-width: calc(100% - 8rem);
+  }
+  .hero-img {
+    width: 70%;
+  }
+  .hero-content {
+    width: 80%;
+  }
+  .hero-para {
+    font-size: 140%;
+  }
 }
 .hero::before {
   content: "";
@@ -53,6 +65,7 @@
 .hero-para {
   line-height: 1.7;
   text-align: justify;
+  font-size: 150%;
   padding: 0 24px 12px 0;
 }
 
