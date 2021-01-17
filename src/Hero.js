@@ -17,7 +17,7 @@ function Hero() {
           Visit My Github Hosted Site
         </a>
       </div>
-      <img className="hero-img" src="../assets/profile-pic.jpg" />
+      <img className="hero-img" src="../../assets/profile-pic.jpg" />
     </header>
   );
 }
