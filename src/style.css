@@ -46,8 +46,8 @@
 }
 
 .hero-img {
-  align-self: flex-start;
-  width: 45%;
+  align-self: center;
+  width: 40%;
   height: auto;
   margin: 0 5% 0 0;
   border-radius: 100%;
