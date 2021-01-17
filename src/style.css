@@ -5,6 +5,11 @@
   -webkit-font-smoothing: antialiased;
   -webkit-tap-highlight-color: transparent;
 }
+@media (min-width: 200px) and (max-width: 450px) {
+  .hero {
+    width: calc(100% - 50px);
+  }
+}
 .hero {
   width: 100%;
   color: whitesmoke;
