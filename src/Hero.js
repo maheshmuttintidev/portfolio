@@ -9,7 +9,7 @@ function Hero() {
         <h1 className="hero-title"> 
           About Me
         </h1>
-        <p>
+        <p className="hero-para">
           Hi there, Me help at Programming and Web Development/Design for very Beginners.
           <strong>My Name is Mahesh Muttinti. I am passionate about Programming, Design and Development for WEB.</strong>
           <i>I am still learning the Full Stack Web Development.</i>
