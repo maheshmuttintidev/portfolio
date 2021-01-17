@@ -6,6 +6,7 @@
     "@babel/runtime": "^7.12.5",
     "babel-plugin-add-react-displayname": "0.0.5",
     "bootstrap": "^4.5.3",
+    "font-awesome": "^4.7.0",
     "font-awesome.min.css": "3.2.1",
     "jquery": "3.5.1",
     "logrocket": "^1.0.14",
