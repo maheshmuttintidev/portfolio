@@ -24,13 +24,16 @@
     max-width: 90%;
     flex-direction: column-reverse;
     min-width: 80%;
-    height: max-content;
+    height: min-content;
   }
   .hero-img {
     width: 70%;
+    margin: 0;
   }
   .hero-content {
-    width: 80%;
+    width: 90%;
+    padding: 0;
+    
   }
   .hero-title {
     font-size: normal;
