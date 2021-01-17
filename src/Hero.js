@@ -14,7 +14,7 @@ function Hero() {
           <strong>My Name is Mahesh Muttinti. I am passionate about Programming, Design and Development for WEB.</strong>
           <i>I am still learning the Full Stack Web Development.</i>
         </p>
-        <a className="hero-button" href="#">
+        <a className="hero-button" href="https://mahesh-muttinti.github.io">
           Visit My Github Hosted Site
         </a>
       </div>
