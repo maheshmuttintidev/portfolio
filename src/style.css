@@ -15,7 +15,7 @@
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 700px) or (min-width: 200px) {
+@media (max-width: 700px) and (min-width: 100px) {
   .hero {
     max-width: 90%;
     flex-direction: column-reverse;
