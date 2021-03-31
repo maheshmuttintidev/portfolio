@@ -1,14 +1,16 @@
-import React from 'react';
-import './style.css';
+import {useState, useRef} from 'react'
+import {NavLink} from 'react-router-dom'
 
 function Nav() {
+	const checkBoxRef = useRef()
+	function closeMenu() {
+		if(checkBoxRef.current.checked) checkBoxRef.current.checked = false
+	}
 	return (
 		<nav className="nav-container">
-			<input type="checkbox" id="nav-collapser" />
+			<input type="checkbox" id="nav-collapser" ref={checkBoxRef} />
 			<ul className="nav-options-container">
-				<li className="nav-option home">
-					<a href="#">Home</a>
-				</li>
+				<span className="close-icon" onClick={closeMenu}>&times;</span>
 				<li className="nav-option signin">
 					<a href="#signin">Signin</a>
 				</li>
