@@ -4,9 +4,11 @@ import Header from './Header'
 
 export default function Layout({children}) {
   return (
-    <div>
+    <div className="auto-adjust">
         <Header />
-          {children}
+          <article className="my-3 auto-adjust-margins reset-font-size">
+            {children}
+          </article>
         <Footer /> 
     </div>
   );

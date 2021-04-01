@@ -12,7 +12,7 @@ export default function Main() {
               About Me
             </h1>
             <div className="hero-description-container">
-              My Name is Mahesh Muttinti.I am an Indian.I like to develop the websites as well as designing.I Choose these for <span className="under-mark">freelancing</span>
+              <span className="normal-size">My Name is Mahesh Muttinti.I am an Indian.I like to develop the websites as well as designing.I Choose these for <span className="under-mark">freelancing</span></span>
               <ol className="main-list">
                 <li>
                   <span>Web Designing</span>

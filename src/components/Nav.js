@@ -11,14 +11,14 @@ function Nav() {
 			<input type="checkbox" id="nav-collapser" ref={checkBoxRef} />
 			<ul className="nav-options-container">
 				<span className="close-icon" onClick={closeMenu}>&times;</span>
-				<li className="nav-option signin">
-					<a href="#signin">Signin</a>
+				<li className="nav-option hobbies">
+					<NavLink className="nav-link" to="/hobbies">Hobbies</NavLink>
 				</li>
-				<li className="nav-option signup">
-					<a href="#signup">Signup</a>
+				<li className="nav-option skills">
+					<NavLink className="nav-link" to="/skills">Skills</NavLink>
 				</li>
 				<li className="nav-option interests">
-					<a href="#interests">Interests</a>
+					<NavLink  className="nav-link" to="/interests">Interests</NavLink>
 				</li>
 			</ul>
 		</nav>
