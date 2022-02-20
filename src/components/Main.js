@@ -1,4 +1,4 @@
-import avatar from "../assets/avatar.jpg"
+import MaheshMuttinti from "../assets/maheshmuttinti.jpg"
 import Layout from './Layout'
 
 export default function Main() {
@@ -6,7 +6,7 @@ export default function Main() {
     <Layout>
       <main>
         <div className="hero-container">
-          <img src={avatar} alt="my-image" className="hero-image" />
+          <img src={MaheshMuttinti} alt="my-image" className="hero-image" />
           <div className="hero-content">
             <h1 className="under-mark">
               About Me
@@ -21,27 +21,27 @@ export default function Main() {
                     <li>CSS / CSS3</li>
                     <li>JavaScript</li>
                   </ul>
-                </li>  
+                </li>
                 <li>
                   <span>Web Development</span>
                   <ul className="sub-list">
                     <li>React.js</li>
                   </ul>
-                </li>  
+                </li>
                 <li>
                   <span>API's</span>
                   <ul className="sub-list">
                     <li>Node.js</li>
                     <li>Express JS</li>
                   </ul>
-                </li>  
+                </li>
                 <li>
                   <span>Database</span>
                   <ul className="sub-list">
                     <li>MongoDB</li>
                     <li>MySQL</li>
                   </ul>
-                </li>  
+                </li>
               </ol>
             </div>
           </div>

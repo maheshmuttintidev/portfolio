@@ -4,7 +4,7 @@ import 'font-awesome/css/font-awesome.css';
 
 function Footer() {
   return (
-    <footer>
+    <footer className="sticky-footer">
       <h2 className="follow-heading">Follow Me On:</h2>
       <div className="social-media-icon-container">
         <a href="https://m.facebook.com/maheshmuttinti" target="_blank">
