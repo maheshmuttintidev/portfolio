@@ -1,5 +1,1 @@
-# This is a simple portfolio design
-
-It is designed and developed using React.
-
-**Note:** This is under development...
+# Turbo Repo based Portfolio. Later Used for Mobile App and So on..
