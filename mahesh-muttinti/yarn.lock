@@ -2218,6 +2218,11 @@ prettier@latest:
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.7.1.tgz#e235806850d057f97bb08368a4f7d899f7760c64"
   integrity sha512-ujppO+MkdPqoVINuDFDRLClm7D78qbDt0/NR+wp5FqEZOoTNAjPHWj17QRhu7geIHJfcNhRk1XVQmF8Bp3ye+g==
 
+prismjs@^1.21.0:
+  version "1.28.0"
+  resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.28.0.tgz#0d8f561fa0f7cf6ebca901747828b149147044b6"
+  integrity sha512-8aaXdYvl1F7iC7Xm1spqSaY/OJBpYW3v+KJ+F17iYxvdc8sfjW194COK5wVhMZX45tGteiBQgdvD/nhxcRwylw==
+
 progress@^2.0.0:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
@@ -2268,6 +2273,13 @@ react-is@^16.13.1:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
+
+react-notion@^0.10.0:
+  version "0.10.0"
+  resolved "https://registry.yarnpkg.com/react-notion/-/react-notion-0.10.0.tgz#d30876b681b09d91dc671b04c7f604adb4e2499e"
+  integrity sha512-i5lVAxzSs7GnTpIbKtivPQWxGZiKCO5xmCmMJyn6F91y8X1IIJqnypkK+31F2acb1l1Qd8Yv0ktuvXwz9g49NQ==
+  dependencies:
+    prismjs "^1.21.0"
 
 react-refresh@0.8.3:
   version "0.8.3"

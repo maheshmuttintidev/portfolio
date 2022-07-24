@@ -34,19 +34,7 @@ export default function Web(): React.ReactElement {
           >
             Mahesh Muttinti Dev
           </h1>
-          <div
-            style={{
-              zIndex: 100,
-              marginBottom: 24,
-              marginTop: 24,
-              display: 'flex',
-              flexDirection: 'column',
-              gap: 10,
-            }}
-          >
-            <button onClick={() => getPortfolio.current()}>Get Posts</button>
-            <pre>{JSON.stringify(portfolio)}</pre>
-          </div>
+
           <h2 style={{ marginBottom: 24, fontSize: 32 }}>About Me:</h2>
           <p style={{ lineHeight: 2, marginBottom: 24 }}>
             My Name is Mahesh Muttinti. I am a full stack developer. I have 1
