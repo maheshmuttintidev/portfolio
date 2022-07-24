@@ -35,7 +35,9 @@ export default function Web(): React.ReactElement {
             Mahesh Muttinti Dev
           </h1>
 
-          <h2 style={{ marginBottom: 24, fontSize: 32 }}>About Me:</h2>
+          <h2 style={{ marginTop: 24, marginBottom: 24, fontSize: 32 }}>
+            About Me:
+          </h2>
           <p style={{ lineHeight: 2, marginBottom: 24 }}>
             My Name is Mahesh Muttinti. I am a full stack developer. I have 1
             year of experience in React JS, React Native, Node JS. I am working
