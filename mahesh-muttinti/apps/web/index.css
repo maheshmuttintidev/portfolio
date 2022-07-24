@@ -13,7 +13,7 @@ body {
 *::before,
 *::after {
   box-sizing: border-box;
-  font-family: serif;
+  font-family: monospace;
   margin: 0;
   padding: 0;
 }
@@ -44,6 +44,10 @@ body {
   background-color: azure;
 }
 
+.circular-border {
+  border-radius: 100vh;
+}
+
 .min-h-80 {
   min-height: 80vh;
 }
@@ -61,7 +65,7 @@ body {
 }
 
 .container {
-  width: min(100% - 2rem, 666px);
+  width: min(100% - 2rem, 1024px);
   margin-inline: auto;
 }
 
@@ -102,7 +106,10 @@ body {
 }
 
 .rotate-type-1 {
-  animation: speed-rotate-1 100ms linear alternate infinite;
+  animation: speed-rotate-1 2s alternate linear infinite;
+  perspective: 200px;
+  perspective-origin: right;
+  transform-origin: left;
 }
 
 .scale-type-1 {
@@ -121,6 +128,12 @@ body {
 @keyframes speed-rotate-1 {
   from {
     transform: rotate(0);
+  }
+  50% {
+    transform: rotate(0.5rad);
+  }
+  75% {
+    transform: rotate(1rad);
   }
   to {
     transform: rotate(360deg);

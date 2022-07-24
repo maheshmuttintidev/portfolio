@@ -1,32 +1,54 @@
 import * as React from 'react'
 import BlurryColorFulAnimation from './BlurryColorFulAnimation'
 
+const items = [
+  {
+    title: 'HTML5',
+    imgUrl:
+      'https://logos-download.com/wp-content/uploads/2017/07/HTML5_badge.png',
+    text: 'Hyper Text Markup Language',
+  },
+  {
+    title: 'CSS3',
+    imgUrl: 'https://logonoid.com/images/css3-logo.png',
+    text: 'Cascaded Style Sheet',
+  },
+  {
+    title: 'JS',
+    imgUrl:
+      'https://www.pinpng.com/pngs/m/304-3046108_css3-logo-logos-css3-hd-png-download.png',
+    text: 'JavasScript',
+  },
+  {
+    title: 'REACT-JS',
+    imgUrl:
+      'https://www.pinpng.com/pngs/m/304-3046108_css3-logo-logos-css3-hd-png-download.png',
+    text: 'React JS',
+  },
+  {
+    title: 'REACT-NATIVE',
+    imgUrl:
+      'https://www.pinpng.com/pngs/m/304-3046108_css3-logo-logos-css3-hd-png-download.png',
+    text: 'React Native',
+  },
+  {
+    title: 'NODE-JS',
+    imgUrl:
+      'https://www.pinpng.com/pngs/m/304-3046108_css3-logo-logos-css3-hd-png-download.png',
+    text: 'Node JS',
+  },
+]
+
 export default function SkillsItemsList(): React.ReactElement {
-  const itemStyle = {
-    gap: 10,
-  }
   return (
-    <div
-      style={{
-        borderRadius: 12,
-        boxShadow:
-          '0 10px 15px green inset, 0 0 70px 30px lime, 0 300px 200px 30px gold inset',
-        overflow: 'scroll',
-        paddingBottom: 36,
-      }}
-    >
-      <div className="flex space-between flex-wrap" style={{ ...itemStyle }}>
-        <BlurryColorFulAnimation title={'HTML5'} />
-        <BlurryColorFulAnimation title={'CSS3'} />
-      </div>
-      <div className="flex space-between flex-wrap" style={{ ...itemStyle }}>
-        <BlurryColorFulAnimation title={'JS'} />
-        <BlurryColorFulAnimation title={'REACT JS'} />
-      </div>
-      <div className="flex space-between flex-wrap" style={{ ...itemStyle }}>
-        <BlurryColorFulAnimation title={'REACT NATIVE'} />
-        <BlurryColorFulAnimation title={'NODE JS'} />
-      </div>
+    <div style={{}}>
+      {items.map((item, index) => (
+        <BlurryColorFulAnimation
+          key={index}
+          title={item.title ? item.title : ''}
+          text={item.text ? item.text : ''}
+        />
+      ))}
     </div>
   )
 }
