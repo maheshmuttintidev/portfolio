@@ -9,7 +9,7 @@ interface BlurryColorFulAnimationProps {
 export default function BlurryColorFulAnimation(
   props: BlurryColorFulAnimationProps
 ): React.ReactElement {
-  const { title, imgUrl, text } = props
+  const { title, text } = props
   return (
     <div
       style={{
@@ -32,20 +32,10 @@ export default function BlurryColorFulAnimation(
           backgroundImage: `url(/images/fire.gif)`,
         }}
       />
-      <div
-        style={
-          {
-            // position: 'absolute',
-            // top: '125%',
-            // marginInline: 'auto',
-            // left: '50%',
-            // transform: 'translateX(-50%)',
-          }
-        }
-      >
+      <div style={{}}>
         <h2
           style={{
-            // fontSize: 40,
+            fontSize: 40,
             textShadow: '0 5px 3px rgba(255, 255, 255, 0.6)',
           }}
         >

@@ -1,28 +1,50 @@
 import SkillsItemsList from '../components/SkillsItemsList'
 import * as React from 'react'
-import { useState, useEffect, useRef } from 'react'
-import { getPortfolio as getPortfolioData } from 'services'
+import { getMyPortfolioContent } from 'services'
+import type { GetServerSideProps } from 'next'
 
-export default function Web(): React.ReactElement {
-  const [portfolio, setPortfolio] = useState<null | undefined | object>(null)
-  const getPortfolio = useRef(() => {})
+export const getServerSideProps: GetServerSideProps = async ({ res }) => {
+  // This value is considered fresh for ten seconds (s-maxage=10).
+  // If a request is repeated within the next 10 seconds, the previously
+  // cached value will still be fresh. If the request is repeated before 59 seconds,
+  // the cached value will be stale but still render (stale-while-revalidate=59).
+  //
+  // In the background, a revalidation request will be made to populate the cache
+  // with a fresh value. If you refresh the page, you will see the new value.
+  res.setHeader(
+    'Cache-Control',
+    'public, s-maxage=10, stale-while-revalidate=59'
+  )
+  const response: any = await getMyPortfolioContent()
 
-  getPortfolio.current = async () => {
-    try {
-      const response: any = await getPortfolioData()
-      if (response) {
-        console.log('final response of portfolio', response)
-        setPortfolio(response)
-      }
-      setPortfolio({ cool: 'red' })
-    } catch (error) {
-      console.error(error)
-    }
+  return {
+    props: { response },
   }
+}
 
-  useEffect(() => {
-    console.log('portfolio', portfolio)
-  }, [portfolio])
+const deepGet = (obj: Object, keys: Array<any>) =>
+  keys.reduce(
+    (xs: Object, x) =>
+      xs &&
+      xs[x as keyof Object] !== null &&
+      xs[x as keyof Object] !== undefined
+        ? xs[x as keyof Object]
+        : null,
+    obj
+  )
+interface ResponseType {
+  response: any
+}
+
+export default function Web({ response }: ResponseType): React.ReactElement {
+  console.log('response', response)
+
+  const AboutMeDescription = deepGet(response?.results[0], [
+    'heading_2',
+    'rich_text',
+    0,
+    'plain_text',
+  ])
 
   return (
     <>
@@ -39,14 +61,10 @@ export default function Web(): React.ReactElement {
             About Me:
           </h2>
           <p style={{ lineHeight: 2, marginBottom: 24 }}>
-            My Name is Mahesh Muttinti. I am a full stack developer. I have 1
-            year of experience in React JS, React Native, Node JS. I am working
-            on Mainly Website development, Mobile App development for now. If
-            you require any help from my side either website development and
-            mobile app development. Please contact me.
+            {AboutMeDescription}
           </p>
           <div style={{ marginBottom: 24 }}>
-            <h3>Mobile: +919603757305</h3>
+            <h3>Mobile: +919603757304</h3>
             <h3>Twitter: MMuttinti</h3>
             <h3>Instagram: maheshmuttinti</h3>
           </div>
