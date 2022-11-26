@@ -3,6 +3,12 @@ import * as React from 'react'
 import { useState, useEffect, useRef } from 'react'
 import { getPortfolio as getPortfolioData } from 'services'
 
+export async function getServerSideProps(context) {
+  return {
+    props: {}, // will be passed to the page component as props
+  }
+}
+
 export default function Web(): React.ReactElement {
   const [portfolio, setPortfolio] = useState<null | undefined | object>(null)
   const getPortfolio = useRef(() => {})
