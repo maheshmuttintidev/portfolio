@@ -31,9 +31,12 @@ const deepGet = (obj: Object, keys: Array<any>) =>
         ? xs[x as keyof Object]
         : null,
     obj
-  )!
+  )
+interface ResponseType {
+  response: any
+}
 
-export default function Web({ response }): React.ReactElement {
+export default function Web({ response }: ResponseType): React.ReactElement {
   console.log('response', response)
 
   const AboutMeDescription = deepGet(response?.results[0], [
