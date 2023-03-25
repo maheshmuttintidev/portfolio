@@ -5,6 +5,9 @@ module.exports = withTM({
   env: {
     NOTION_SECRET_KEY: process.env.NOTION_SECRET_KEY,
   },
+  experimental: {
+    runtime: 'edge',
+  },
   rewrites: async () => {
     return [
       {
