@@ -6,7 +6,7 @@ module.exports = withTM({
     NOTION_SECRET_KEY: process.env.NOTION_SECRET_KEY,
   },
   experimental: {
-    runtime: 'edge',
+    runtime: 'experimental-edge',
   },
   rewrites: async () => {
     return [
