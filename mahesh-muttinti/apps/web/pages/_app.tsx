@@ -9,6 +9,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       <Head>
         <title>Mahesh Muttinti Portfolio | Mahesh Muttinti</title>
       </Head>
+      {/* @ts-ignore */}
       <Component {...pageProps} />
     </>
   )
