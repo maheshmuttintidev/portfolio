@@ -22,6 +22,7 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
+          <link rel="icon" href="/favicon.ico" />
           <meta name="robots" content="follow, index" />
           <meta name="description" content={meta.description} />
           <meta property="og:site_name" content={meta.title} />
