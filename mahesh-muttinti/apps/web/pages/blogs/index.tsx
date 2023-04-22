@@ -1,7 +1,7 @@
 import fetch from 'isomorphic-fetch'
 import Link from 'next/link'
 import { format } from 'date-fns'
-import { BlogPost, BlogPostData } from './types'
+import { BlogPost, BlogPostData } from '../../lib/types'
 
 export async function getStaticProps() {
   //   const headers = {

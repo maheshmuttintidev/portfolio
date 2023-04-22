@@ -1,7 +1,7 @@
 import { GetStaticPaths } from 'next'
 import { useRouter } from 'next/router'
 import ReactMarkdown from 'react-markdown'
-import { BlogPost, SingleSlugBlogPost, Slug, SlugParams } from './types'
+import { BlogPost, SingleSlugBlogPost, Slug, SlugParams } from '../../lib/types'
 import React from 'react'
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 import { vscDarkPlus as style } from 'react-syntax-highlighter/dist/cjs/styles/prism'
