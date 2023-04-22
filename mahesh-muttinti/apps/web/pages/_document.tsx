@@ -31,6 +31,13 @@ class MyDocument extends Document {
           <meta name="twitter:site" content="@MMuttinti" />
           <meta name="twitter:title" content={meta.title} />
           <meta name="twitter:description" content={meta.description} />
+          {/* <!-- Cloudflare Web Analytics --> */}
+          <script
+            defer
+            src="https://static.cloudflareinsights.com/beacon.min.js"
+            data-cf-beacon='{"token": "7c52d381f0704058995284623570bd60"}'
+          ></script>
+          {/* <!-- End Cloudflare Web Analytics --> */}
         </Head>
         <body>
           <Main />
