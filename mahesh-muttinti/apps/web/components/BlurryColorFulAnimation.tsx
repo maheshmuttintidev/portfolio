@@ -29,7 +29,7 @@ export default function BlurryColorFulAnimation(
           objectFit: 'contain',
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
-          backgroundImage: `url(/images/fire.gif)`,
+          backgroundImage: `url(/fire.gif)`,
         }}
       />
       <div style={{}}>
