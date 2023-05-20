@@ -2,19 +2,40 @@
   "name": "mahesh-muttinti",
   "version": "0.0.0",
   "private": true,
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ],
+  "workspaces": {
+    "nohoist": [
+      "**/react",
+      "**/react-dom",
+      "**/react-native",
+      "**/react-native/**",
+      "**/react-native-*",
+      "**/react-native-*/**",
+      "**/*react-navigation/native*",
+      "**/*react-navigation/native*/**",
+      "**/metro-*",
+      "**/metro-*/**",
+      "react-native-linear-gradient/**",
+      "**/react-native-linear-gradient/**"
+    ],
+    "packages": [
+      "apps/*",
+      "packages/*"
+    ]
+  },
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "clean": "rm -rf node_modules && rm -rf apps/web/node_modules && rm -rf apps/docs/node_modules && rm -rf packages/ui/node_modules"
+    "clean": "rm -rf node_modules && rm -rf apps/web/node_modules && rm -rf apps/docs/node_modules && rm -rf packages/ui/node_modules && rm -rf packages/services/node_modules",
+    "web:dev": "turbo run web#dev",
+    "web:build": "turbo run web#build",
+    "mobile:android": "cd apps/maheshMuttintiRnMobileApp && yarn android && yarn start",
+    "mobile:android:clean": "cd apps/maheshMuttintiRnMobileApp/android && ./gradlew clean && cd ../../..",
+    "mobile:build:production:aab": "yarn mobile:android:clean && cd apps/maheshMuttintiRnMobileApp && cd android && ./gradlew bundleRelease && cd ../../.. && ./copy.sh"
   },
   "devDependencies": {
-    "eslint-config-custom": "*",
+    "services": "*",
     "prettier": "latest",
     "turbo": "latest"
   },
@@ -22,8 +43,6 @@
     "npm": ">=7.0.0",
     "node": ">=14.0.0"
   },
-  "dependencies": {
-    "strapi": "^3.6.11"
-  },
-  "packageManager": "yarn@1.22.19"
+  "packageManager": "yarn@1.22.19",
+  "dependencies": {}
 }

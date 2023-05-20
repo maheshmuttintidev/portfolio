@@ -13,6 +13,7 @@
     "tsconfig": "*"
   },
   "dependencies": {
+    "@notionhq/client": "^2.2.5",
     "axios": "^0.27.2"
   }
 }
