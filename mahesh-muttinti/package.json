@@ -28,6 +28,8 @@
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "clean": "rm -rf node_modules && rm -rf apps/web/node_modules && rm -rf apps/docs/node_modules && rm -rf packages/ui/node_modules",
+    "web:dev": "turbo run web#dev",
+    "web:build": "turbo run web#build",
     "mobile:android": "cd apps/maheshMuttintiRnMobileApp && yarn android && yarn start",
     "mobile:android:clean": "cd apps/maheshMuttintiRnMobileApp/android && ./gradlew clean && cd ../../..",
     "mobile:build:production:aab": "yarn mobile:android:clean && cd apps/maheshMuttintiRnMobileApp && cd android && ./gradlew bundleRelease && cd ../../.. && ./copy.sh"
@@ -41,5 +43,6 @@
     "npm": ">=7.0.0",
     "node": ">=14.0.0"
   },
-  "packageManager": "yarn@1.22.19"
+  "packageManager": "yarn@1.22.19",
+  "dependencies": {}
 }
