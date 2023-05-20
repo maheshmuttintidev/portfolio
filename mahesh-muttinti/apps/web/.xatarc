@@ -1,0 +1,6 @@
+{
+  "databaseURL": "https://Mahesh-Muttinti-s-workspace-noqbg6.us-east-1.xata.sh/db/blogs",
+  "codegen": {
+    "output": "src/xata.ts"
+  }
+}
