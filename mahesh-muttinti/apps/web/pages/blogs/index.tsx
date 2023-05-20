@@ -1,6 +1,6 @@
 import fetch from 'isomorphic-fetch'
 import Link from 'next/link'
-import { format } from 'date-fns'
+// import { format } from 'date-fns'
 import { BlogPost, BlogPostData } from '../../lib/types'
 
 export async function getStaticProps() {
@@ -44,10 +44,7 @@ function BlogPage({ blogPosts }: BlogPostData) {
                 {post.attributes.title}
               </h2>
               <p className="text-gray-600 text-sm mb-4">
-                {`${format(
-                  new Date(post.attributes.updatedAt),
-                  'MMMM dd, yyyy'
-                )}`}
+                {`${formatDate(post.attributes.updatedAt)}`}
               </p>
               {/* <ReactMarkdown className="text-gray-700 text-base mb-4">
                 {post.attributes.content.substring(0, 200)}...
@@ -64,5 +61,29 @@ function BlogPage({ blogPosts }: BlogPostData) {
     </div>
   )
 }
+
+function formatDate(dateString: string) {
+  const date = new Date(dateString)
+  const day = date.getDate()
+  const month = date.toLocaleString('default', { month: 'long' })
+  const year = date.getFullYear()
+
+  let daySuffix
+  if (day === 1 || day === 21 || day === 31) {
+    daySuffix = 'st'
+  } else if (day === 2 || day === 22) {
+    daySuffix = 'nd'
+  } else if (day === 3 || day === 23) {
+    daySuffix = 'rd'
+  } else {
+    daySuffix = 'th'
+  }
+
+  return `${day}${daySuffix} ${month} ${year}`
+}
+
+// Example usage:
+const formattedDate = formatDate('2023-07-05')
+console.log(formattedDate)
 
 export default BlogPage
