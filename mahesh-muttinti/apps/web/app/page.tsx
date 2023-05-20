@@ -1,26 +1,7 @@
 import SkillsItemsList from '../components/SkillsItemsList'
 import * as React from 'react'
 import { getMyPortfolioContent } from 'services'
-import type { GetServerSideProps } from 'next'
-
-export const getServerSideProps: GetServerSideProps = async ({ res }) => {
-  // This value is considered fresh for ten seconds (s-maxage=10).
-  // If a request is repeated within the next 10 seconds, the previously
-  // cached value will still be fresh. If the request is repeated before 59 seconds,
-  // the cached value will be stale but still render (stale-while-revalidate=59).
-  //
-  // In the background, a revalidation request will be made to populate the cache
-  // with a fresh value. If you refresh the page, you will see the new value.
-  res.setHeader(
-    'Cache-Control',
-    'public, s-maxage=10, stale-while-revalidate=59'
-  )
-  const response: any = await getMyPortfolioContent()
-
-  return {
-    props: { response },
-  }
-}
+import Head from 'next/head'
 
 const deepGet = (obj: Object, keys: Array<any>) =>
   keys.reduce(
@@ -36,7 +17,8 @@ interface ResponseType {
   response: any
 }
 
-export default function Web({ response }: ResponseType): React.ReactElement {
+export default async function Web() {
+  const response = await getMyPortfolioContent()
   console.log('response', response)
 
   const AboutMeDescription = deepGet(response?.results[0], [
@@ -48,6 +30,9 @@ export default function Web({ response }: ResponseType): React.ReactElement {
 
   return (
     <>
+      <Head>
+        <title>Mahesh Muttinti | Portfolio</title>
+      </Head>
       <main className="content">
         <div className="container">
           <h1

@@ -8,11 +8,6 @@ module.exports = withTM({
     XATA_BRANCH: process.env.XATA_BRANCH,
     XATA_API_KEY: process.env.XATA_API_KEY,
   },
-  experimental: {
-    runtime: 'edge',
-    enableBrowser: true,
-    runtime: 'experimental-edge',
-  },
   rewrites: async () => {
     return [
       {
