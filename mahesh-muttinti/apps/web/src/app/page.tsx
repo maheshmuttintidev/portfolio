@@ -29,15 +29,7 @@ export default async function Web() {
           >
             Mahesh Muttinti
           </h1>
-
-          <nav>
-            <ul>
-              <li>
-                {/* @ts-ignore */}
-                <BlogsList />
-              </li>
-            </ul>
-          </nav>
+          <p className="text-red-600">Note: This website is under development phase. I will be updating the website very soon with new experience.</p>
 
           <h2 style={{ marginTop: 24, marginBottom: 24, fontSize: 32 }}>
             About Me:
