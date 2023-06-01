@@ -6,11 +6,16 @@
  * @format
  */
 
-import React from 'react';
+import React, {useEffect} from 'react';
 import {View} from 'react-native';
 import {WebView} from 'react-native-webview';
+import SplashScreen from 'react-native-splash-screen'; //import SplashScreen
 
 function App(): JSX.Element {
+  useEffect(() => {
+    SplashScreen.hide(); //hides the splash screen on app load.
+  }, []);
+
   return (
     <View style={{flex: 1}}>
       <WebView
