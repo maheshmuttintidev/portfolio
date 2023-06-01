@@ -6,6 +6,14 @@
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
 	<string>MaheshMuttinti</string>
+	<key>CFBundleIcons</key>
+	<dict>
+	<key>CFBundlePrimaryIcon</key>
+	<dict>
+		<key>CFBundleIconName</key>
+		<string>AppIcon</string>
+	</dict>
+	</dict>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
