@@ -114,7 +114,7 @@ android {
         debug {
             storeFile file(MYAPP_UPLOAD_STORE_FILE)
             storePassword MYAPP_UPLOAD_STORE_PASSWORD
-            keyAlias 'mahesh-release-keystore'
+            keyAlias 'release-keystore'
             keyPassword 'Bellaramsey@143'
         }
     }
