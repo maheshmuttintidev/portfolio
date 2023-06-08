@@ -4,16 +4,8 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "logos-download.com",
-      },
-      {
-        protocol: "https",
-        hostname: "logonoid.com",
-      },
-      {
-        protocol: "https",
-        hostname: "www.pinpng.com",
-      },
+        hostname: "i.ibb.co",
+      }
     ],
   },
 };
