@@ -43,13 +43,22 @@ export default async function Web() {
         <p className="mt-4">{AboutMeDescription}</p>
         <div className="mt-5">
           <h3>
-            Mobile: <b className="hover:underline active:underline cursor-pointer">+919603757304</b>
+            Mobile:{" "}
+            <b className="hover:underline active:underline cursor-pointer">
+              +919603757304
+            </b>
           </h3>
           <h3>
-            Twitter: <b className="hover:underline active:underline cursor-pointer">@mmuttinti</b>
+            Twitter:{" "}
+            <b className="hover:underline active:underline cursor-pointer">
+              @mmuttinti
+            </b>
           </h3>
           <h3>
-            Instagram: <b className="hover:underline active:underline cursor-pointer">@maheshmuttinti</b>
+            Instagram:{" "}
+            <b className="hover:underline active:underline cursor-pointer">
+              @maheshmuttinti
+            </b>
           </h3>
         </div>
         <div className="mt-8">
