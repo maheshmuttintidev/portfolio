@@ -5,7 +5,7 @@ const PrivacyPolicy = () => {
   return (
     <div className="max-w-2xl mx-auto px-4 py-8">
       <div className="flex justify-end">
-        <Link href="/" className="text-blue-500">
+        <Link href="/" className="text-blue-500 hover:underline active:underline">
           Go Back
         </Link>
       </div>

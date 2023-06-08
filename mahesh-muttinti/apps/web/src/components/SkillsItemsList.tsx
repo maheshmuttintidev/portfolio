@@ -47,6 +47,7 @@ export default function SkillsItemsList(): React.ReactElement {
           key={index}
           title={item.title ? item.title : ''}
           text={item.text ? item.text : ''}
+          imgUrl={item.imgUrl ? item.imgUrl : ''}
         />
       ))}
     </div>
