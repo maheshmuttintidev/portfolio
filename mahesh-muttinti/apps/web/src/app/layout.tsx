@@ -32,7 +32,7 @@ export default function RootLayout({
           name="robots"
           content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"
         />
-        <meta property="og:image" content="/android-chrome-512x512.png" />
+        <meta property="og:image" content="../../public/android-chrome-512x512.png" />
       </head>
       <body className={inter.className}>{children}</body>
     </html>
