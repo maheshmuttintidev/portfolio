@@ -18,7 +18,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta property="og:type" content="Home" />
-        <meta property="og:url" content="https://www.maheshmuttintidev.in" />
+        <meta property="og:url" content="https://maheshmuttintidev.in" />
         <meta
           property="og:title"
           content='Mahesh Muttinti'
