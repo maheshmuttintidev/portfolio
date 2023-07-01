@@ -6,6 +6,7 @@ import "./globals.css";
 import { deepGet } from "./lib/utils/deepGet";
 import Footer from "@/components/footer";
 import Image from "next/image";
+import Link from "next/link";
 // import ErrorBoundary from "@/components/error-boundary";
 
 export default async function Web() {
@@ -23,6 +24,20 @@ export default async function Web() {
       <Head>
         <title>Mahesh Muttinti | Portfolio</title>
       </Head>
+      <nav className="mt-10 container m-auto flex gap-4">
+        <Link
+          className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 w-40"
+          href="/blogs"
+        >
+          Blogs
+        </Link>
+        <Link
+          className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 w-40"
+          href="/projects"
+        >
+          Projects
+        </Link>
+      </nav>
       <main className="max-w-2xl mx-auto px-4 py-8">
         <div className="flex justify-center items-center bg-gradient-to-r from-sky-500 to-indigo-500">
           <Image
