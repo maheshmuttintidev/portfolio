@@ -6,6 +6,7 @@ import "./globals.css";
 import { deepGet } from "./lib/utils/deepGet";
 import Footer from "@/components/footer";
 import Image from "next/image";
+// import ErrorBoundary from "@/components/error-boundary";
 
 export default async function Web() {
   const response = await getMyPortfolioContent();
@@ -25,9 +26,10 @@ export default async function Web() {
       <main className="max-w-2xl mx-auto px-4 py-8">
         <div className="flex justify-center items-center bg-gradient-to-r from-sky-500 to-indigo-500">
           <Image
-            src={"/android-chrome-192x192.png"}
-            height={50}
-            width={300}
+            src={"/main.jpg"}
+            height={0}
+            width={500}
+            style={{ height: 500, width: "100%" }} // fill={true}
             alt="Mahesh Muttinti Banner Logo"
             title="Mahesh Muttinti Banner Logo"
           />
