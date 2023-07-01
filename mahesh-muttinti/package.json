@@ -31,15 +31,15 @@
     "web:dev": "turbo run web#dev",
     "web:build": "turbo run web#build",
     "mobile:android": "cd apps/maheshMuttintiRnMobileApp && yarn android && yarn start",
-    "mobile:native:clean":"cd apps/maheshMuttintiRnMobileApp && npx react-native clean",
+    "mobile:native:clean": "cd apps/maheshMuttintiRnMobileApp && npx react-native clean",
     "mobile:android:clean": "cd apps/maheshMuttintiRnMobileApp/android && ./gradlew clean && cd ../../..",
     "mobile:patch": "cd apps/maheshMuttintiRnMobileApp && npm version patch --no-git-tag-version && cd ../.. && bundle exec fastlane bump",
     "mobile:build:production:aab": "yarn mobile:android:clean &&  cd apps/maheshMuttintiRnMobileApp && cd android && ./gradlew bundleRelease && cd ../../.. && ./copy.sh"
   },
   "devDependencies": {
-    "services": "*",
     "prettier": "latest",
-    "turbo": "latest"
+    "services": "*",
+    "turbo": "^1.9.8"
   },
   "engines": {
     "npm": ">=7.0.0",
