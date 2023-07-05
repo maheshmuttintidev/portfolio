@@ -1,3 +1,4 @@
+import Link from "next/link";
 import "./globals.css";
 import { Inter } from "next/font/google";
 
@@ -34,7 +35,47 @@ export default function RootLayout({
           content="https://i.ibb.co/bR6Y79D/android-chrome-512x512.png"
         />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div className="container flex justify-center flex-wrap m-auto h-[20rem] md:h-[30rem] rounded-xl backdrop-blur self-center w-full px-4">
+          <div className="self-center">
+            <div>
+              <h1
+                title="Mahesh Muttinti Main Text"
+                className="border-white text-black text-[3rem] md:text-[6rem] font-extrabold text-center"
+              >
+                Mahesh Muttinti
+              </h1>
+            </div>
+            <nav className="flex gap-4 self-center flex-wrap justify-between mt-5">
+              <Link
+                className="text-black py-2 px-4 rounded hover:bg-black hover:text-white"
+                href="/"
+              >
+                Home
+              </Link>
+              <Link
+                className="text-black py-2 px-4 rounded hover:bg-black hover:text-white"
+                href="/blogs"
+              >
+                Blogs
+              </Link>
+              <Link
+                className="text-black py-2 px-4 rounded hover:bg-black hover:text-white"
+                href="/projects"
+              >
+                Projects
+              </Link>
+              <Link
+                className="text-black py-2 px-4 rounded hover:bg-black hover:text-white"
+                href="/contact"
+              >
+                Contact
+              </Link>
+            </nav>
+          </div>
+        </div>
+        {children}
+      </body>
     </html>
   );
 }
