@@ -8,7 +8,6 @@ import Footer from "@/components/footer";
 import Image from "next/image";
 import Link from "next/link";
 // import ErrorBoundary from "@/components/error-boundary";
-
 export default async function Web() {
   const response = await getMyPortfolioContent();
 

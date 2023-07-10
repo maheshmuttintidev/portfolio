@@ -1,6 +1,7 @@
 import Link from "next/link";
 import "./globals.css";
 import { Inter } from "next/font/google";
+import ResponsiveAppBar from "@/components/nav-bar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -41,37 +42,38 @@ export default function RootLayout({
             <div>
               <h1
                 title="Mahesh Muttinti Main Text"
-                className="border-white text-black text-[3rem] md:text-[6rem] font-extrabold text-center"
+                className="border-white text-white text-[3rem] md:text-[6rem] font-extrabold text-center"
               >
                 Mahesh Muttinti
               </h1>
             </div>
-            <nav className="flex gap-4 self-center flex-wrap justify-between mt-5">
+            <nav className="container flex gap-4 self-center flex-wrap justify-between mt-5">
               <Link
-                className="text-black py-2 px-4 rounded hover:bg-black hover:text-white"
+                className="text-white py-2 px-4 rounded hover:bg-white hover:text-black"
                 href="/"
               >
                 Home
               </Link>
               <Link
-                className="text-black py-2 px-4 rounded hover:bg-black hover:text-white"
+                className="text-white py-2 px-4 rounded hover:bg-white hover:text-black"
                 href="/blogs"
               >
                 Blogs
               </Link>
               <Link
-                className="text-black py-2 px-4 rounded hover:bg-black hover:text-white"
+                className="text-white py-2 px-4 rounded hover:bg-white hover:text-black"
                 href="/projects"
               >
                 Projects
               </Link>
               <Link
-                className="text-black py-2 px-4 rounded hover:bg-black hover:text-white"
+                className="text-white py-2 px-4 rounded hover:bg-white hover:text-black"
                 href="/contact"
               >
                 Contact
               </Link>
             </nav>
+            {/* <ResponsiveAppBar /> */}
           </div>
         </div>
         {children}

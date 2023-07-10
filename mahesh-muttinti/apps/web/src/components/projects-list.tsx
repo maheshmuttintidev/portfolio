@@ -1,5 +1,6 @@
-import Link from "next/link";
 import { getMyPortfolioContent } from "services";
+import ProjectCard from "./project-card";
+import { Grid } from "@mui/material";
 
 export async function generateStaticParams() {
   const posts = await getMyPortfolioContent();
@@ -8,11 +9,53 @@ export async function generateStaticParams() {
     slug: post.id,
   }));
 }
-export default function ProjectsList({ slug }: any) {
+
+const projects = [
+  {
+    imageUrl: "/projects/machinecode.png",
+    projectName: "Machine Code Technologies",
+    projectLiveUrl: "https://machinecode.in",
+  },
+  {
+    imageUrl: "/projects/telnewz.png",
+    projectName: "TelNewz",
+    projectLiveUrl: "https://telnewz.in",
+  },
+  {
+    imageUrl: "/projects/notion_to_md_converter.png",
+    projectName: "Notion To MD Converter",
+    projectLiveUrl: "https://notion-to-md-converter.vercel.app",
+  },
+  {
+    imageUrl: "/projects/lokesh_doppasani.png",
+    projectName: "Lokesh Doppasani",
+    projectLiveUrl: "https://lokesh-doppasani.vercel.app",
+  },
+  {
+    imageUrl: "/projects/gangababu.png",
+    projectName: "Ganga Babu",
+    projectLiveUrl: "https://gangababu.vercel.app/",
+  },
+  {
+    imageUrl: "/projects/raja_reddy.png",
+    projectName: "Raja Reddy",
+    projectLiveUrl: "https://rajareddy.vercel.app/",
+  },
+];
+export default function ProjectsList() {
   return (
-    <div>
-      <div>My Project - {slug}</div>
-      <Link href="/">Home</Link>
+    <div className="container mb-10">
+      <Grid container spacing={5}>
+        {projects?.map((project, key) => (
+          <Grid item xs={4} key={`project-${key}`}>
+            <ProjectCard
+              imageUrl={project?.imageUrl}
+              projectName={project?.projectName}
+              projectLiveUrl={project?.projectLiveUrl}
+            />
+          </Grid>
+        ))}
+      </Grid>
     </div>
   );
 }
