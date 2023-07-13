@@ -1,6 +1,6 @@
 import { getMyPortfolioContent } from "services";
 import ProjectCard from "./project-card";
-import { Grid, Paper } from "@mui/material";
+import { Grid } from "@mui/material";
 
 export async function generateStaticParams() {
   const posts = await getMyPortfolioContent();
@@ -44,10 +44,10 @@ const projects = [
 ];
 export default function ProjectsList() {
   return (
-    <div className="container mb-10 justify-center self-center">
+    <div className="container justify-center self-center items-center">
       <Grid container spacing={5} justifyContent="center">
         {projects?.map((project, key) => (
-          <Grid item xs={12} sm={6} md={4} lg={3} key={`project-${key}`}>
+          <Grid item xs={12} sm={6} key={`project-${key}`}>
               <ProjectCard
                 imageUrl={project?.imageUrl}
                 projectName={project?.projectName}

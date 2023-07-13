@@ -8,16 +8,18 @@ const Footer = () => {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-center">
             <p className="text-green-500 text-sm">
-              &copy; {new Date().getFullYear()} maheshmuttintidev.in. All rights
+              &copy; {new Date().getFullYear()} <span className="font-bold font-mono underline" title="Mahesh Muttinti Official Website">maheshmuttintidev.in</span>. All rights
               reserved.
-              <Link href="/legal/privacy-policy" className="text-blue-500 ml-2 hover:underline active:underline">
+              <Link
+                href="/legal/privacy-policy"
+                className="text-blue-500 ml-2 hover:underline active:underline"
+              >
                 Privacy Policy
               </Link>
             </p>
           </div>
         </div>
       </footer>
-      <p className="mt-2 text-red-500">Developed by Mahesh Muttinti</p>
     </>
   );
 };

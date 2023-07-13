@@ -1,9 +1,6 @@
 import Link from "next/link";
 import "./globals.css";
-import { Inter } from "next/font/google";
-import ResponsiveAppBar from "@/components/nav-bar";
-
-const inter = Inter({ subsets: ["latin"] });
+import Footer from "@/components/footer";
 
 export const metadata = {
   title: "Mahesh Muttinti | Professional Website",
@@ -36,47 +33,49 @@ export default function RootLayout({
           content="https://i.ibb.co/bR6Y79D/android-chrome-512x512.png"
         />
       </head>
-      <body className={inter.className}>
-        <div className="container flex justify-center flex-wrap m-auto h-[20rem] md:h-[30rem] rounded-xl backdrop-blur self-center w-full px-4">
+      <body>
+        <div className="container flex justify-center flex-wrap m-auto mb-10 h-[20rem] md:h-[30rem] rounded-xl backdrop-blur self-center w-full px-4">
           <div className="self-center">
             <div>
               <h1
                 title="Mahesh Muttinti Main Text"
-                className="border-white text-white text-[3rem] md:text-[6rem] font-extrabold text-center"
+                className="border-white text-teal-300 text-[3rem] md:text-[6rem] font-extrabold text-center leading-[6rem]"
               >
                 Mahesh Muttinti
               </h1>
             </div>
-            <nav className="container flex gap-4 self-center flex-wrap justify-between mt-5">
+            <nav className="container flex gap-4 self-center flex-col justify-between mt-10">
               <Link
-                className="text-white py-2 px-4 rounded hover:bg-white hover:text-black"
+                className="text-white md:text-3xl text-4xl py-2 px-4 rounded hover:bg-white hover:text-black border border-white shadow-xl md:w-3/4 w-full"
                 href="/"
               >
                 Home
               </Link>
               <Link
-                className="text-white py-2 px-4 rounded hover:bg-white hover:text-black"
+                className="text-white md:text-3xl text-4xl py-2 px-4 rounded hover:bg-white hover:text-black border border-white shadow-xl md:w-2/3 w-full"
                 href="/blogs"
               >
                 Blogs
               </Link>
               <Link
-                className="text-white py-2 px-4 rounded hover:bg-white hover:text-black"
+                className="text-white md:text-3xl text-4xl py-2 px-4 rounded hover:bg-white hover:text-black border border-white shadow-xl md:w-1/2 w-full"
                 href="/projects"
               >
                 Projects
               </Link>
               <Link
-                className="text-white py-2 px-4 rounded hover:bg-white hover:text-black"
+                className="text-white md:text-3xl text-4xl py-2 px-4 rounded hover:bg-white hover:text-black border border-white shadow-xl md:w-1/2 w-full"
                 href="/contact"
               >
                 Contact
               </Link>
             </nav>
-            {/* <ResponsiveAppBar /> */}
           </div>
         </div>
-        {children}
+        <div className="pt-[10rem] sm:pt-7 px-5">{children}</div>
+        <div className="container mx-auto flex flex-col justify-center">
+          <Footer />
+        </div>
       </body>
     </html>
   );

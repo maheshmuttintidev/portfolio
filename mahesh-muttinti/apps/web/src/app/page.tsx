@@ -1,17 +1,15 @@
-import SkillsItemsList from "../components/SkillsItemsList";
+import SkillsItemsList from "../components/skills-list";
 import * as React from "react";
 import { getMyPortfolioContent } from "services";
 import Head from "next/head";
 import "./globals.css";
 import { deepGet } from "./lib/utils/deepGet";
-import Footer from "@/components/footer";
 import Image from "next/image";
-import Link from "next/link";
-// import ErrorBoundary from "@/components/error-boundary";
+
 export default async function Web() {
   const response = await getMyPortfolioContent();
 
-  const AboutMeDescription = deepGet(response?.results[0], [
+  const AboutMeDescription = deepGet(response?.results?.[0], [
     "heading_2",
     "rich_text",
     0,
@@ -24,27 +22,46 @@ export default async function Web() {
         <title>Mahesh Muttinti | Portfolio</title>
       </Head>
 
-      <main className="container mx-auto px-4 py-8">
-        <div className="flex justify-center items-center rounded-full">
-          <Image
-            src={"/main.jpg"}
-            height={200}
-            width={500}
-            className="rounded-full"
-            alt="Mahesh Muttinti Banner Logo"
-            title="Mahesh Muttinti Banner Logo"
-          />
+      <main className="container mx-auto px-4 pb-8 text-center">
+        <div className="flex gap-3 flex-wrap items-center justify-center bg-black">
+          <div className="flex justify-center items-center rounded-full self-center text-center">
+            <Image
+              src={"/main.jpg"}
+              height={200}
+              width={500}
+              className="rounded"
+              alt="Mahesh Muttinti Banner Logo"
+              title="Mahesh Muttinti Banner Logo"
+            />
+          </div>
+
+          <div className="self-center items-center">
+            <h2 className="md:text-5xl text-2xl font-bold text-blue-500 leading-[4rem] text-center p-3">
+              Full Stack{" "}
+              <span className="font-sans text-red-500 underline">
+                <span className="md:text-6xl text-3xl">M</span>obile
+              </span>{" "}
+              <br />
+              And{" "}
+              <span className="font-sans text-yellow-500 underline">
+                <span className="md:text-6xl text-3xl">W</span>eb
+              </span>{" "}
+              Developer!
+            </h2>
+          </div>
         </div>
-      
 
-        <h2 className="mt-8 text-5xl font-bold">Full Stack Mobile <br />And Web Developer!</h2>
-        <p className="mt-4">{AboutMeDescription}</p>
+        <p className="mt-10 font-sans font-bold md:text-4xl text-2xl text-center leading-[3rem]">
+          {AboutMeDescription}
+        </p>
+        <div className="border border-w-5 bg-red-500 h-4 mt-7"></div>
 
-        <div className="mt-8">
-          <h2 className="text-3xl underline mb-5 font-bold">Skills:</h2>
+        <div className="mt-8 flex flex-wrap">
+          <h2 className="text-5xl underline mb-5 font-bold text-yellow-400">
+            <span className="font-sans text-6xl">S</span>kills:
+          </h2>
           <SkillsItemsList />
         </div>
-        <Footer />
       </main>
     </>
   );

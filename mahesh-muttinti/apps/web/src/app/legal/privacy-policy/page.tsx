@@ -3,12 +3,7 @@ import React from "react";
 
 const PrivacyPolicy = () => {
   return (
-    <div className="max-w-2xl mx-auto px-4 py-8">
-      <div className="flex justify-end">
-        <Link href="/" className="text-blue-500 hover:underline active:underline">
-          Go Back
-        </Link>
-      </div>
+    <div className="container mx-auto">
       <h1 className="text-3xl font-bold mb-4">Privacy Policy</h1>
       <p className="mb-4">
         This privacy policy describes how we handle personal information

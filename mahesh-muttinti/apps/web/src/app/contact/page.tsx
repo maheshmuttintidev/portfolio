@@ -15,7 +15,7 @@ export default async function Contact() {
         <title>Mahesh Muttinti | Portfolio</title>
       </Head>
 
-      <main className="container mx-auto px-4">
+      <main className="container mx-auto px-4 mb-5">
         <Stack direction={"column"} sx={{ gap: 3, alignItems: "center" }}>
           <a href="tel:+919603757304">
             <Button
@@ -59,7 +59,6 @@ export default async function Contact() {
           </a>
         </Stack>
 
-        <Footer />
       </main>
     </>
   );
