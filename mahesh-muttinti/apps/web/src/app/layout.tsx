@@ -53,9 +53,9 @@ export default function RootLayout({
               </Link>
               <Link
                 className="link"
-                href="/blogs"
+                href="/posts"
               >
-                Blogs
+                Posts
               </Link>
               <Link
                 className="link"

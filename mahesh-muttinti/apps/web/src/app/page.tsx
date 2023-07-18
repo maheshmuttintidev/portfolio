@@ -5,8 +5,9 @@ import Head from "next/head";
 import "./globals.css";
 import { deepGet } from "./lib/utils/deepGet";
 import Image from "next/image";
-import Typed from "react-typed";
+// import Typed from "react-typed";
 
+export const revalidate = 30;
 export default async function Web() {
   const response = await getMyPortfolioContent();
 
@@ -57,7 +58,10 @@ export default async function Web() {
         </p>
 
         <div className="mt-8 flex flex-wrap">
-          <h2 className="text-5xl underline mb-5 font-bold text-yellow-400" title='skills'>
+          <h2
+            className="text-5xl underline mb-5 font-bold text-yellow-400"
+            title="skills"
+          >
             <span className="font-sans text-6xl">S</span>kills
           </h2>
           <SkillsItemsList />

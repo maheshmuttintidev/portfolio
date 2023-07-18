@@ -17,8 +17,8 @@ import Link from "next/link";
 
 const pages = [
   { name: "Home", redirectTo: "/" },
-  { name: "Blogs", redirectTo: "/blogs" },
   { name: "Projects", redirectTo: "/projects" },
+  { name: "Posts", redirectTo: "/posts" },
   { name: "Contact", redirectTo: "/contact" },
 ];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];

@@ -20,7 +20,7 @@ export default function ProjectCard({
   projectLiveUrl,
 }: ProjectCardProps) {
   return (
-    <Card>
+    <Card sx={{backgroundColor: 'transparent'}}>
       <CardMedia
         component="img"
         alt="project"
@@ -29,7 +29,7 @@ export default function ProjectCard({
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          {projectName}
+          <span className="dark:text-white">{projectName}</span>
         </Typography>
       </CardContent>
       <CardActions sx={{ justifyContent: "center", gap: 2 }}>
