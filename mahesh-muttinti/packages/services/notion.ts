@@ -20,7 +20,6 @@ async function getPosts() {
 }
 // @ts-ignore
 async function getSinglePost(title) {
-  console.log("title===>: ", title);
   const databaseId = "44922cf437074db6962e8eb48f82f631";
   const myPost = await client.databases.query({
     database_id: databaseId,
@@ -36,7 +35,6 @@ async function getSinglePost(title) {
     },
     sorts: [],
   });
-  console.log("myPost: ", myPost);
   return myPost;
 }
 export { getMyPortfolioContent, getPosts, getSinglePost };
