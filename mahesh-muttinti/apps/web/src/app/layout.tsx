@@ -30,7 +30,7 @@ export default function RootLayout({
         />
         <meta
           property="og:image"
-          content="https://i.ibb.co/bR6Y79D/android-chrome-512x512.png"
+          content="https://i.ibb.co/kSd8fPg/main.jpg"
         />
       </head>
       <body>
