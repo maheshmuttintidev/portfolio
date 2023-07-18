@@ -16,35 +16,35 @@ export default async function Contact() {
       </Head>
 
       <main className="container mx-auto px-4 mb-5">
-        <Stack direction={"column"} sx={{ gap: 3, alignItems: "center" }}>
+        <Stack direction={"row"} sx={{ gap: 3, alignItems: "center", flexWrap: 'wrap' }}>
           <a
             href="tel:+919603757304"
             className="dark:bg-transparent bg-yellow-500 rounded"
           >
             <Button
-              variant="outlined"
+              variant="text"
               sx={{ color: "yellow", borderColor: "yellow" }}
             >
               <CallIcon sx={{ marginRight: 2 }} />
-              <span>Contact via Phone Number</span>
+              <span className="text-[0.75rem] md:text-2xl">Contact via Phone Number</span>
             </Button>
           </a>
           <a href="https://twitter.com/MaheshMuttinti" target="_blank">
             <Button
-              variant="outlined"
+              variant="text"
               sx={{ color: "royalblue", borderColor: "royalblue" }}
             >
               <TwitterIcon sx={{ marginRight: 2 }} />
-              <span>MaheshMuttinti</span>
+              <span className="text-[0.75rem] md:text-2xl">MaheshMuttinti</span>
             </Button>
           </a>
           <a href="https://www.instagram.com/mahesh_muttinti/" target="_blank">
             <Button
-              variant="outlined"
+              variant="text"
               sx={{ color: "orange", borderColor: "orange" }}
             >
               <InstagramIcon sx={{ marginRight: 2 }} />
-              <span> @mahesh_muttinti</span>
+              <span className="text-[0.75rem] md:text-2xl"> @mahesh_muttinti</span>
             </Button>
           </a>
 
@@ -53,11 +53,11 @@ export default async function Contact() {
             target="_blank"
           >
             <Button
-              variant="outlined"
+              variant="text"
               sx={{ color: "lime", borderColor: "lime" }}
             >
               <WhatsAppIcon sx={{ marginRight: 2 }} />
-              <span> Contact via WhatsApp</span>
+              <span className="text-[0.75rem] md:text-2xl"> Contact via WhatsApp</span>
             </Button>
           </a>
         </Stack>

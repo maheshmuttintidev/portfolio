@@ -60,7 +60,7 @@ export default function RootLayout({
             </nav>
           </div>
         </div>
-        <div className="pt-[10rem] sm:pt-7 px-5">{children}</div>
+        <div className="md:pt-4 px-5">{children}</div>
         <div className="container mx-auto flex flex-col justify-center">
           <Footer />
         </div>
