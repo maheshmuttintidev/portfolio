@@ -5,7 +5,6 @@ import Head from "next/head";
 import "./globals.css";
 import { deepGet } from "./lib/utils/deepGet";
 import Image from "next/image";
-// import Typed from "react-typed";
 
 export const revalidate = 30;
 export default async function Web() {

@@ -1,13 +1,12 @@
 import { deepGet } from "@/app/lib/utils/deepGet";
 import { splitWith } from "@/app/lib/utils/splitWith";
-import { Card } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
 import { getPosts } from "services";
 
 export default async function BlogsList() {
   const posts = await getPosts();
-
+  console.log("posts", JSON.stringify(posts));
   return (
     <div className="mt-5 container">
       {posts?.results?.map((post, index) => {
@@ -16,8 +15,8 @@ export default async function BlogsList() {
             key={`post-${index}`}
             className="flex flex-wrap items-center justify-center mb-10"
           >
-              <Link
-                className="font-mono dark:text-white rounded md:text-4xl text-3xl w-full"
+            <Link
+              className="font-mono dark:text-white rounded md:text-4xl text-3xl w-full"
                 href={`posts/${splitWith(
                   deepGet(post, [
                     "properties",

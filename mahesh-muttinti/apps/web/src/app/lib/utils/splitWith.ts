@@ -1,1 +1,1 @@
-export const splitWith = (text: string) => text?.split(" ")?.join("-");
+export const splitWith = (text: string) => text?.split(" ")?.join("_");

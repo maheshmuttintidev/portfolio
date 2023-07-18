@@ -39,34 +39,22 @@ export default function RootLayout({
             <div>
               <h1
                 title="Mahesh Muttinti Main Text"
-                className="border-white text-teal-300 text-[3rem] md:text-[6rem] font-extrabold text-center leading-[6rem]"
+                className="border-white text-teal-300 text-[2rem] md:text-[6rem] font-extrabold text-center md:leading-[6rem]"
               >
                 Mahesh Muttinti
               </h1>
             </div>
-            <nav className="container flex gap-4 self-center flex-col justify-between mt-10">
-              <Link
-                className="link"
-                href="/"
-              >
+            <nav className="container flex gap-4 self-center flex-col md:flex-row justify-between mt-10">
+              <Link className="link" href="/">
                 Home
               </Link>
-              <Link
-                className="link"
-                href="/posts"
-              >
+              <Link className="link" href="/posts">
                 Posts
               </Link>
-              <Link
-                className="link"
-                href="/projects"
-              >
+              <Link className="link" href="/projects">
                 Projects
               </Link>
-              <Link
-                className="link"
-                href="/contact"
-              >
+              <Link className="link" href="/contact">
                 Contact
               </Link>
             </nav>

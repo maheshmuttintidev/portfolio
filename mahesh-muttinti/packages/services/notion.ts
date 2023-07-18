@@ -31,7 +31,7 @@ async function getSinglePost(title) {
           title: {
             equals: `${title}`,
           },
-        },
+    },
       ],
     },
     sorts: [],

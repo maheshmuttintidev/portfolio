@@ -98,6 +98,6 @@ body {
 
 @layer components {
   .link {
-    @apply dark:text-white md:text-3xl text-4xl py-2 px-4 rounded dark:hover:bg-white hover:text-black border dark:border-white shadow-xl md:w-3/4 w-full
+    @apply dark:text-white md:text-4xl text-2xl py-2 px-4 rounded dark:hover:bg-white hover:text-black border dark:border-white shadow-xl md:w-3/4 w-full
   }
 }

@@ -1,6 +1,8 @@
 import BlogsList from "@/components/posts-list";
 import Head from "next/head";
 
+export const revalidate = 30;
+
 export default async function Page() {
   return (
     <>
