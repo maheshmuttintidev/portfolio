@@ -46,25 +46,25 @@ export default function RootLayout({
             </div>
             <nav className="container flex gap-4 self-center flex-col justify-between mt-10">
               <Link
-                className="text-white md:text-3xl text-4xl py-2 px-4 rounded hover:bg-white hover:text-black border border-white shadow-xl md:w-3/4 w-full"
+                className="link"
                 href="/"
               >
                 Home
               </Link>
               <Link
-                className="text-white md:text-3xl text-4xl py-2 px-4 rounded hover:bg-white hover:text-black border border-white shadow-xl md:w-2/3 w-full"
+                className="link"
                 href="/blogs"
               >
                 Blogs
               </Link>
               <Link
-                className="text-white md:text-3xl text-4xl py-2 px-4 rounded hover:bg-white hover:text-black border border-white shadow-xl md:w-1/2 w-full"
+                className="link"
                 href="/projects"
               >
                 Projects
               </Link>
               <Link
-                className="text-white md:text-3xl text-4xl py-2 px-4 rounded hover:bg-white hover:text-black border border-white shadow-xl md:w-1/2 w-full"
+                className="link"
                 href="/contact"
               >
                 Contact

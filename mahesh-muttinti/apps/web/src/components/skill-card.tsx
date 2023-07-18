@@ -17,20 +17,21 @@ export default function Skill(props: SkillProp): React.ReactElement {
   const { title, imgUrl, percentage } = props;
 
   return (
-    <div className="hover:scale-105 hover:translate-x-10 cursor-pointer hover:bg-violet-400 overflow-hidden transition-transform ease-out">
+    <div className="w-3/4 dark:text-white hover:scale-105 dark:hover:bg-black rounded hover:translate-x-10 cursor-pointer hover:border-violet-400 hover:border hover:border-w-2 overflow-hidden transition-transform ease-out">
       <ListItem
         sx={{
           marginBottom: 5,
+          backgroundColor: 'transparent',
         }}
       >
-        <ListItemAvatar>
-          <Avatar>
-            {/* @ts-ignore */}
+        {/* <ListItemAvatar sx={{color: 'blue'}}>
+          <Avatar sx={{color: 'blue'}}>
+            @ts-ignore
             <Image alt={`${title}`} width={25} height={25} src={imgUrl} />
           </Avatar>
-        </ListItemAvatar>
+        </ListItemAvatar> */}
         <div className="w-full">
-          <p className="text-3xl font-serif pb-5 font-bold">{title}</p>
+          <p className="text-3xl pb-5 font-bold">{title}</p>
           <div
             style={{ width: `${percentage}%` }}
             className="h-5 bg-gradient-to-l from-indigo-500 font-bold rounded-full"

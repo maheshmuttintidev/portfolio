@@ -17,13 +17,16 @@ export default async function Contact() {
 
       <main className="container mx-auto px-4 mb-5">
         <Stack direction={"column"} sx={{ gap: 3, alignItems: "center" }}>
-          <a href="tel:+919603757304">
+          <a
+            href="tel:+919603757304"
+            className="dark:bg-transparent bg-yellow-500 rounded"
+          >
             <Button
               variant="outlined"
               sx={{ color: "yellow", borderColor: "yellow" }}
             >
               <CallIcon sx={{ marginRight: 2 }} />
-              <span>+919603757304</span>
+              <span>Contact via Phone Number</span>
             </Button>
           </a>
           <a href="https://twitter.com/MaheshMuttinti" target="_blank">
@@ -58,7 +61,6 @@ export default async function Contact() {
             </Button>
           </a>
         </Stack>
-
       </main>
     </>
   );

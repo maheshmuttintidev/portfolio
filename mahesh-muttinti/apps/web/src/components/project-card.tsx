@@ -24,17 +24,13 @@ export default function ProjectCard({
       <CardMedia
         component="img"
         alt="project"
-        height="140"
+        height={300}
         image={`${imageUrl}`}
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
           {projectName}
         </Typography>
-        {/* <Typography variant="body2" color="text.secondary">
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
-        </Typography> */}
       </CardContent>
       <CardActions sx={{ justifyContent: "center", gap: 2 }}>
         <Button size="small" variant="outlined">

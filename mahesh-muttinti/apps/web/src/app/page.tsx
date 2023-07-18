@@ -5,6 +5,7 @@ import Head from "next/head";
 import "./globals.css";
 import { deepGet } from "./lib/utils/deepGet";
 import Image from "next/image";
+import Typed from "react-typed";
 
 export default async function Web() {
   const response = await getMyPortfolioContent();
@@ -22,9 +23,9 @@ export default async function Web() {
         <title>Mahesh Muttinti | Portfolio</title>
       </Head>
 
-      <main className="container mx-auto px-4 pb-8 text-center">
-        <div className="flex gap-3 flex-wrap items-center justify-center bg-black">
-          <div className="flex justify-center items-center rounded-full self-center text-center">
+      <main className="container mx-auto pb-8 text-center">
+        <div className="shadow-xl flex gap-3 flex-wrap items-center justify-center dark:bg-black">
+          <div className="flex flex-[1/4] max-w-[20rem] justify-center items-center rounded-full self-center text-center">
             <Image
               src={"/main.jpg"}
               height={200}
@@ -51,14 +52,13 @@ export default async function Web() {
           </div>
         </div>
 
-        <p className="mt-10 font-sans font-bold md:text-4xl text-2xl text-center leading-[3rem]">
+        <p className="mt-10 font-sans md:text-4xl text-2xl text-justify leading-[3rem]">
           {AboutMeDescription}
         </p>
-        <div className="border border-w-5 bg-red-500 h-4 mt-7"></div>
 
         <div className="mt-8 flex flex-wrap">
-          <h2 className="text-5xl underline mb-5 font-bold text-yellow-400">
-            <span className="font-sans text-6xl">S</span>kills:
+          <h2 className="text-5xl underline mb-5 font-bold text-yellow-400" title='skills'>
+            <span className="font-sans text-6xl">S</span>kills
           </h2>
           <SkillsItemsList />
         </div>

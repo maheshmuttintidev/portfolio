@@ -12,9 +12,9 @@ export default async function BlogsList() {
       {posts?.results?.map((post, index) => {
         return (
           <div key={`post-${index}`} className="flex items-center mb-10 h-48 overflow-hidden border border-w-2">
-           <div className="flex-1/3 bg-black h-full self-center pt-5">
+           <div className="flex-1/3 h-full self-center pt-5">
             <Link
-              className="font-mono text-white py-2 px-4 rounded hover:bg-blue-600 md:text-4xl text-3xl"
+              className="font-mono dark:text-white py-2 px-4 rounded hover:bg-blue-600 md:text-4xl text-3xl"
               href={`blogs/${splitWith(
                 deepGet(post, [
                   "properties",
@@ -39,7 +39,7 @@ export default async function BlogsList() {
                 return (
                   <div
                     key={`${item}_${index}`}
-                    className="h-10 bg-black w-full mx-auto mb-4"
+                    className="h-10 w-full mx-auto mb-4"
                   >{`Content Goes Here Line ${item}`}</div>
                 );
               })}
