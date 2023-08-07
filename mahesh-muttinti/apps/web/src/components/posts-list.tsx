@@ -8,45 +8,42 @@ export default async function BlogsList() {
   const posts = await getPosts();
   console.log("posts", JSON.stringify(posts));
   return (
-    <div className="mt-5 container">
+    <div className="mt-5 container grid md:grid-cols-2">
       {posts?.results?.map((post, index) => {
         return (
-          <div
-            key={`post-${index}`}
-            className="flex flex-wrap items-center justify-center mb-10"
-          >
+          <div key={`post-${index}`} className="flex flex-wrap mb-10 px-4">
             <Link
               className="font-mono dark:text-white rounded md:text-4xl text-3xl w-full"
-                href={`posts/${splitWith(
+              href={`posts/${splitWith(
+                deepGet(post, [
+                  "properties",
+                  "Title",
+                  "title",
+                  0,
+                  "text",
+                  "content",
+                ])
+              )}`}
+            >
+              <Image
+                alt="banner"
+                priority
+                height={300}
+                width={1200}
+                src={
                   deepGet(post, [
                     "properties",
-                    "Title",
-                    "title",
+                    "Banner",
+                    "files",
                     0,
-                    "text",
-                    "content",
-                  ])
-                )}`}
-              >
-                <Image
-                  alt="banner"
-                  priority
-                  height={300}
-                  width={1200}
-                  src={
-                    deepGet(post, [
-                      "properties",
-                      "Banner",
-                      "files",
-                      0,
-                      "file",
-                      "url",
-                    ]) ||
-                    "https://via.placeholder.com/500x200.png?text=Post+Sample+Banner"
-                  }
-                  className="self-center m-auto"
-                />
-              </Link>
+                    "file",
+                    "url",
+                  ]) ||
+                  "https://via.placeholder.com/500x200.png?text=Post+Sample+Banner"
+                }
+                className="self-center m-auto"
+              />
+            </Link>
             <div className="pt-5 pb-10">
               <Link
                 className="font-mono dark:text-white px-4 rounded md:text-4xl text-3xl"
