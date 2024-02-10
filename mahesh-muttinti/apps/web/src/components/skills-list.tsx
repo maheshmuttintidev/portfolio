@@ -44,26 +44,29 @@ const skills = [
 
 export default function Skills(): React.ReactElement {
   return (
-      <List
-        sx={{
-          width: "100%",
-          marginLeft: "auto",
-          // marginRight: "auto",
-          justifyContent: "center",
-          backgroundColor: "transparent",
-          paddingTop: 8,
-          overflow: "hidden",
-        }}
-      >
-        {skills?.map((skill, index) => (
-          <Skill
-            key={index}
-            title={skill?.title || ""}
-            text={skill?.text || ""}
-            imgUrl={skill?.imgUrl || ""}
-            percentage={skill?.percentage || 0}
-          />
-        ))}
-      </List>
+    <List
+      sx={{
+        width: "100%",
+        marginLeft: "auto",
+        // marginRight: "auto",
+        justifyContent: "center",
+        backgroundColor: "transparent",
+        paddingTop: 8,
+        overflow: "hidden",
+        flexWrap: "wrap",
+        display: "flex",
+      }}
+    >
+      {skills?.map((skill, index) => (
+        <Skill
+          key={index}
+          title={skill?.title || ""}
+          text={skill?.text || ""}
+          imgUrl={skill?.imgUrl || ""}
+          percentage={skill?.percentage || 0}
+          length={skills?.length}
+        />
+      ))}
+    </List>
   );
 }

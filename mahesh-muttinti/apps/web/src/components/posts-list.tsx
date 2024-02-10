@@ -6,7 +6,6 @@ import { getPosts } from "services";
 
 export default async function BlogsList() {
   const posts = await getPosts();
-  console.log("posts", JSON.stringify(posts));
   return (
     <div className="mt-5 container grid md:grid-cols-2">
       {posts?.results?.map((post, index) => {
@@ -25,24 +24,33 @@ export default async function BlogsList() {
                 ])
               )}`}
             >
-              <Image
-                alt="banner"
-                priority
-                height={300}
-                width={1200}
-                src={
-                  deepGet(post, [
-                    "properties",
-                    "Banner",
-                    "files",
-                    0,
-                    "file",
-                    "url",
-                  ]) ||
-                  "https://via.placeholder.com/500x200.png?text=Post+Sample+Banner"
-                }
-                className="self-center m-auto"
-              />
+              {deepGet(post, [
+                "properties",
+                "Banner",
+                "files",
+                0,
+                "file",
+                "url",
+              ]) ? (
+                <Image
+                  alt="banner"
+                  priority
+                  height={300}
+                  width={1200}
+                  src={
+                    deepGet(post, [
+                      "properties",
+                      "Banner",
+                      "files",
+                      0,
+                      "file",
+                      "url",
+                    ]) ||
+                    "https://via.placeholder.com/500x200.png?text=Post+Sample+Banner"
+                  }
+                  className="self-center m-auto"
+                />
+              ) : null}
             </Link>
             <div className="pt-5 pb-10">
               <Link

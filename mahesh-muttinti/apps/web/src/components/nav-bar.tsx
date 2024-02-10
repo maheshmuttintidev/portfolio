@@ -106,7 +106,7 @@ function ResponsiveAppBar() {
                     noWrap
                     component="a"
                   >
-                    {page?.name}
+                    <span style={{ fontFamily: "Jomhuria" }}>{page?.name}</span>
                   </Typography>
                 </MenuItem>
               ))}

@@ -11,17 +11,19 @@ interface SkillProp {
   imgUrl?: string;
   text?: string;
   percentage?: number;
+  length?: number;
 }
 
 export default function Skill(props: SkillProp): React.ReactElement {
-  const { title, imgUrl, percentage } = props;
+  const { title, imgUrl, percentage, length } = props;
 
   return (
-    <div className="w-3/4 dark:text-white hover:scale-105 dark:hover:bg-black rounded hover:translate-x-10 cursor-pointer hover:border-violet-400 hover:border hover:border-w-2 overflow-hidden transition-transform ease-out">
+    <div className="flex-1/3 px-8 dark:text-white hover:scale-105 dark:hover:bg-black rounded hover:translate-x-10 cursor-pointer hover:border-violet-400 hover:border hover:border-w-2 overflow-hidden transition-transform ease-out">
       <ListItem
         sx={{
           marginBottom: 5,
-          backgroundColor: 'transparent',
+          backgroundColor: "transparent",
+          flex: 1 / 3,
         }}
       >
         {/* <ListItemAvatar sx={{color: 'blue'}}>

@@ -23,11 +23,52 @@ export default async function Web() {
         <title>Mahesh Muttinti | Portfolio</title>
       </Head>
 
-      <main className="container mx-auto pb-8 text-center">
-        <div className="shadow-xl flex gap-3 flex-wrap items-center justify-center dark:bg-black">
-          <div className="flex flex-[1/4] max-w-[20rem] justify-center items-center rounded-full self-center text-center">
+      <main className="mx-auto pb-8 text-center">
+        <div className="flex gap-3 flex-wrap items-center justify-center dark:bg-[#0E1339]">
+          <div className="flex flex-[1/4] justify-center items-center rounded-full self-center text-center">
             <Image
-              src={"/main.jpg"}
+              src={"https://i.ibb.co/hKH07Sg/hero.png"}
+              height={200}
+              width={500}
+              className="rounded"
+              alt="Mahesh Muttinti Banner Logo"
+              title="Mahesh Muttinti Banner Logo"
+            />
+
+            {/* <img src="https://i.ibb.co/drYZ6xh/dev-pose-in-chair.png" alt="dev-pose-in-chair" border="0"> */}
+            {/* <img src="https://i.ibb.co/MpwCBmL/laptop.png" alt="laptop" border="0"> */}
+            {/* <img src="https://i.ibb.co/z27TLdM/prof-look-for-contacting.png" alt="prof-look-for-contacting" border="0"> */}
+          </div>
+
+          <div className="self-center items-center">
+            <h2 className="md:text-5xl text-2xl font-bold text-blue-500 leading-[4rem] text-center p-3">
+              This is{" "}
+              <span className="md:text-6xl text-3xl text-white">
+                Mahesh Muttinti
+              </span>
+              <br />
+              <span className="text-yellow-500 underline">
+                <span className="md:text-6xl text-3xl">
+                  Full Stack Web & Mobile Developer
+                </span>
+              </span>{" "}
+            </h2>
+          </div>
+        </div>
+
+        <div className="flex flex-row gap-4">
+          <div className="w-2/3 ">
+            <h1 className="md:text-5xl text-4xl text-yellow-400">
+              More About Me:
+            </h1>
+
+            <p className="mt-10 md:text-4xl text-3xl text-justify leading-[3rem]">
+              {AboutMeDescription}
+            </p>
+          </div>
+          <div className="w-1/3">
+            <Image
+              src={"https://i.ibb.co/drYZ6xh/dev-pose-in-chair.png"}
               height={200}
               width={500}
               className="rounded"
@@ -35,33 +76,13 @@ export default async function Web() {
               title="Mahesh Muttinti Banner Logo"
             />
           </div>
-
-          <div className="self-center items-center">
-            <h2 className="md:text-5xl text-2xl font-bold text-blue-500 leading-[4rem] text-center p-3">
-              Full Stack{" "}
-              <span className="font-sans text-red-500 underline">
-                <span className="md:text-6xl text-3xl">M</span>obile
-              </span>{" "}
-              <br />
-              And{" "}
-              <span className="font-sans text-yellow-500 underline">
-                <span className="md:text-6xl text-3xl">W</span>eb
-              </span>{" "}
-              Developer!
-            </h2>
-          </div>
         </div>
-
-        <p className="mt-10 font-sans md:text-4xl text-2xl text-justify leading-[3rem]">
-          {AboutMeDescription}
-        </p>
-
         <div className="mt-8 flex flex-wrap">
           <h2
             className="text-5xl underline mb-5 font-bold text-yellow-400"
             title="skills"
           >
-            <span className="font-sans text-6xl">S</span>kills
+            <span className="text-6xl">Skills</span>
           </h2>
           <SkillsItemsList />
         </div>

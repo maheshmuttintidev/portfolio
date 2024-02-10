@@ -1,6 +1,7 @@
 import Link from "next/link";
 import "./globals.css";
 import Footer from "@/components/footer";
+import Image from "next/image";
 
 export const metadata = {
   title: "Mahesh Muttinti | Professional Website",
@@ -14,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="bg-[#0E1339]">
       <head>
         <meta property="og:type" content="Home" />
         <meta property="og:url" content="https://maheshmuttintidev.in" />
@@ -28,23 +29,12 @@ export default function RootLayout({
           name="robots"
           content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"
         />
-        <meta
-          property="og:image"
-          content="https://i.ibb.co/kSd8fPg/main.jpg"
-        />
+        <meta property="og:image" content="https://i.ibb.co/kSd8fPg/main.jpg" />
       </head>
       <body>
-        <div className="container flex justify-center flex-wrap m-auto mb-10 h-[20rem] md:h-[30rem] rounded-xl backdrop-blur self-center w-full px-4">
-          <div className="self-center">
-            <div>
-              <h1
-                title="Mahesh Muttinti Main Text"
-                className="border-white text-teal-300 text-[2rem] md:text-[6rem] font-extrabold text-center md:leading-[6rem]"
-              >
-                Mahesh Muttinti
-              </h1>
-            </div>
-            <nav className="container flex gap-4 self-center flex-col md:flex-row justify-between mt-10">
+        <div className="container mx-auto">
+          <div className="flex justify-center flex-wrap mx-auto rounded-xl self-center w-full px-4">
+            <nav className="h-max pt-3 mt-3 flex gap-4 flex-col self-end items-end md:flex-row justify-between sticky top-2">
               <Link className="link" href="/">
                 Home
               </Link>
@@ -59,10 +49,10 @@ export default function RootLayout({
               </Link>
             </nav>
           </div>
-        </div>
-        <div className="md:pt-4 px-5">{children}</div>
-        <div className="container mx-auto flex flex-col justify-center">
-          <Footer />
+          <div className="md:pt-4 px-5 pt-3">{children}</div>
+          <div className="mx-auto flex flex-col justify-center">
+            <Footer />
+          </div>
         </div>
       </body>
     </html>
