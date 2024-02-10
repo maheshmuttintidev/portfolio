@@ -17,7 +17,7 @@ export default async function Contact() {
       </Head>
 
       <main className="container mx-auto px-4 mb-5">
-        <div className="flex flex-row flex-wrap mt-3">
+        <div className="flex flex-row flex-wrap mt-3 justify-center items-center">
           <Image
             src={"https://i.ibb.co/z27TLdM/prof-look-for-contacting.png"}
             height={200}
@@ -28,7 +28,7 @@ export default async function Contact() {
           />
 
           <div className="w-2/3 flex flex-col gap-10 text-center justify-center items-center">
-            <p className="text-2xl font-sans">
+            <p className="text-xl font-sans text-center md:text-3xl">
               If you need any help with website development or mobile app
               development, I've got your back. Let's collaborate and bring your
               ideas to life! Looking forward to working together.
