@@ -15,7 +15,7 @@ export default async function Web() {
         <title>Mahesh Muttinti | Portfolio</title>
       </Head>
 
-      <main className="mx-auto pb-8 text-center scroll-smooth snap-y snap-mandatory h-screen w-screen container overflow-scroll snap-center">
+      <main className="mx-auto pb-8 text-center container">
         <HeroSectionOne />
         {/* @ts-ignore */}
         <AboutMeDescription />

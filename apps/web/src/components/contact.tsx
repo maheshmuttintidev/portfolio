@@ -31,7 +31,12 @@ export const Contact = () => {
             </p>
             <Stack
               direction={"row"}
-              sx={{ gap: 3, alignItems: "center", flexWrap: "wrap" }}
+              sx={{
+                gap: 3,
+                alignItems: "center",
+                flexWrap: "wrap",
+                justifyContent: "center",
+              }}
             >
               <a
                 href="tel:+919603757304"

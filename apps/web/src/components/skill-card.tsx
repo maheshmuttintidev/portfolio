@@ -18,12 +18,11 @@ export default function Skill(props: SkillProp): React.ReactElement {
   const { title, imgUrl, percentage, length } = props;
 
   return (
-    <div className="mb-2 flex-1/3 px-8 dark:text-slate-500 bg-black hover:scale-105 dark:hover:bg-black rounded hover:translate-x-10 cursor-pointer hover:border-violet-400 hover:border hover:border-w-2 overflow-hidden transition-transform ease-out">
+    <div className="dark:text-slate-500 rounded cursor-pointer overflow-hidden transition-transform ease-out">
       <ListItem
         sx={{
           marginBottom: 5,
           backgroundColor: "transparent",
-          flex: 1 / 3,
         }}
       >
         {/* <ListItemAvatar sx={{color: 'blue'}}>
@@ -32,14 +31,14 @@ export default function Skill(props: SkillProp): React.ReactElement {
             <Image alt={`${title}`} width={25} height={25} src={imgUrl} />
           </Avatar>
         </ListItemAvatar> */}
-        <div className="w-full">
-          <p className="text-3xl pb-5 font-bold">{title}</p>
+        <div className="w-full flex flex-col gap-3 justify-center items-center">
           <div
-            style={{ width: `${percentage}%` }}
-            className="h-5 bg-gradient-to-l from-indigo-500 font-bold rounded-full"
+            style={{ height: `${percentage}%`, width: 50 }}
+            className="text-white h-5 bg-gradient-to-l from-violet-700 to-red-400 font-bold rounded-full text-center flex flex-col items-center justify-center"
           >
             {percentage}%
           </div>
+          <p className="md:text-3xl text-2xl pb-5 font-bold">{title}</p>
         </div>
       </ListItem>
     </div>

@@ -46,22 +46,21 @@ export default function Skills(): React.ReactElement {
   return (
     <section className="container mt-8 flex flex-wrap bg-slate-100 px-4 py-3">
       <h2
-        className="text-5xl underline mb-3 font-bold text-yellow-400"
+        className="text-5xl underline mb-3 font-bold text-black text-center"
         title="skills"
       >
-        <span className="text-5xl">Skills</span>
+        <span className="text-4xl">Skills</span>
       </h2>
       <List
         sx={{
           width: "100%",
           marginLeft: "auto",
-          // marginRight: "auto",
           justifyContent: "center",
           backgroundColor: "transparent",
-          paddingTop: 8,
           overflow: "hidden",
-          // flexWrap: "wrap",
-          // display: "flex",
+          display: "flex",
+          flexWrap: "wrap",
+          gap: 6,
         }}
       >
         {skills?.map((skill, index) => (
