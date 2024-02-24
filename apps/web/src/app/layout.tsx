@@ -32,24 +32,8 @@ export default function RootLayout({
         <meta property="og:image" content="https://i.ibb.co/kSd8fPg/main.jpg" />
       </head>
       <body>
-        <div className="container mx-auto">
-          <div className="flex justify-center flex-wrap mx-auto rounded-xl self-center w-full px-4">
-            <nav className="h-max pt-3 mt-3 flex gap-4 flex-col self-end items-end md:flex-row justify-between sticky top-2">
-              <Link className="link" href="/">
-                Home
-              </Link>
-              <Link className="link" href="/posts">
-                Posts
-              </Link>
-              <Link className="link" href="/projects">
-                Projects
-              </Link>
-              <Link className="link" href="/contact">
-                Contact
-              </Link>
-            </nav>
-          </div>
-          <div className="md:pt-4 px-5 pt-3">{children}</div>
+        <div className="mx-auto w-full overflow-hidden dark:text-white text-black">
+          <div className="md:pt-4 px-5 pt-3 dark:bg-[#0E1339]">{children}</div>
           <div className="mx-auto flex flex-col justify-center">
             <Footer />
           </div>

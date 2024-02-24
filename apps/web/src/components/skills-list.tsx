@@ -44,29 +44,37 @@ const skills = [
 
 export default function Skills(): React.ReactElement {
   return (
-    <List
-      sx={{
-        width: "100%",
-        marginLeft: "auto",
-        // marginRight: "auto",
-        justifyContent: "center",
-        backgroundColor: "transparent",
-        paddingTop: 8,
-        overflow: "hidden",
-        flexWrap: "wrap",
-        display: "flex",
-      }}
-    >
-      {skills?.map((skill, index) => (
-        <Skill
-          key={index}
-          title={skill?.title || ""}
-          text={skill?.text || ""}
-          imgUrl={skill?.imgUrl || ""}
-          percentage={skill?.percentage || 0}
-          length={skills?.length}
-        />
-      ))}
-    </List>
+    <section className="container mt-8 flex flex-wrap bg-slate-100 px-4 py-3">
+      <h2
+        className="text-5xl underline mb-3 font-bold text-yellow-400"
+        title="skills"
+      >
+        <span className="text-5xl">Skills</span>
+      </h2>
+      <List
+        sx={{
+          width: "100%",
+          marginLeft: "auto",
+          // marginRight: "auto",
+          justifyContent: "center",
+          backgroundColor: "transparent",
+          paddingTop: 8,
+          overflow: "hidden",
+          // flexWrap: "wrap",
+          // display: "flex",
+        }}
+      >
+        {skills?.map((skill, index) => (
+          <Skill
+            key={index}
+            title={skill?.title || ""}
+            text={skill?.text || ""}
+            imgUrl={skill?.imgUrl || ""}
+            percentage={skill?.percentage || 0}
+            length={skills?.length}
+          />
+        ))}
+      </List>
+    </section>
   );
 }

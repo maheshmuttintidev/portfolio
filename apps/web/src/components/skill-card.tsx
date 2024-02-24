@@ -18,7 +18,7 @@ export default function Skill(props: SkillProp): React.ReactElement {
   const { title, imgUrl, percentage, length } = props;
 
   return (
-    <div className="flex-1/3 px-8 dark:text-white hover:scale-105 dark:hover:bg-black rounded hover:translate-x-10 cursor-pointer hover:border-violet-400 hover:border hover:border-w-2 overflow-hidden transition-transform ease-out">
+    <div className="mb-2 flex-1/3 px-8 dark:text-slate-500 bg-black hover:scale-105 dark:hover:bg-black rounded hover:translate-x-10 cursor-pointer hover:border-violet-400 hover:border hover:border-w-2 overflow-hidden transition-transform ease-out">
       <ListItem
         sx={{
           marginBottom: 5,
