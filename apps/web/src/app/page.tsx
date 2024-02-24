@@ -17,6 +17,7 @@ export default async function Web() {
 
       <main className="mx-auto pb-8 text-center scroll-smooth snap-y snap-mandatory h-screen w-screen container overflow-scroll snap-center">
         <HeroSectionOne />
+        {/* @ts-ignore */}
         <AboutMeDescription />
         <Skills />
         <Contact />
