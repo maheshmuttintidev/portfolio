@@ -19,7 +19,6 @@ export const AboutMeDescription = async () => {
       className="container flex flex-row flex-wrap gap-4 justify-center items-center mt-10 bg-slate-500 py-3"
     >
       <div className="w-2/3">
-        <h1 className="md:text-5xl text-4xl">More About Me:</h1>
 
         <p className="mt-10 md:text-4xl text-2xl text-justify leading-[2.5rem]">
           {aboutFromApi}

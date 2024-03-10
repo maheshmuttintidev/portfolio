@@ -1,4 +1,3 @@
-"use client";
 import * as React from "react";
 import Head from "next/head";
 import Footer from "@/components/footer";
@@ -9,7 +8,7 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import { Button, Stack, Typography } from "@mui/material";
 import Image from "next/image";
 
-export default async function Contact() {
+export default function Contact() {
   return (
     <>
       <Head>
