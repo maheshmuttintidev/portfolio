@@ -1,11 +1,9 @@
-"use client";
 import React from "react";
 import Image from "next/image";
-import { FramerMotionWrapper } from "./framer-motion-wrapper";
 
 export const HeroSectionOne = () => {
   return (
-    <FramerMotionWrapper>
+    <div className="h-0">
       <section className="flex flex-col items-center">
         <section className="flex gap-3 flex-wrap items-center justify-center dark:bg-[#0E1339]">
           <div className="flex justify-center items-center rounded-full self-center text-center">
@@ -35,6 +33,6 @@ export const HeroSectionOne = () => {
           </div> */}
         </section>
       </section>
-    </FramerMotionWrapper>
+    </div>
   );
 };
