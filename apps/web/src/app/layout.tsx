@@ -1,7 +1,7 @@
-import Link from "next/link";
 import "./globals.css";
 import Footer from "@/components/footer";
-import Image from "next/image";
+import {NavBar} from "@/components/nav-bar";
+
 
 export const metadata = {
   title: "Mahesh Muttinti | Professional Website",
@@ -33,6 +33,7 @@ export default function RootLayout({
       </head>
       <body>
         <div className="mx-auto w-full overflow-hidden dark:text-white text-black">
+          <NavBar />
           <div className="md:pt-4 pt-3 dark:bg-[#0E1339]">{children}</div>
           <div className="mx-auto flex flex-col justify-center">
             <Footer />

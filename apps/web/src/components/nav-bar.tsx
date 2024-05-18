@@ -16,14 +16,14 @@ import AdbIcon from "@mui/icons-material/Adb";
 import Link from "next/link";
 
 const pages = [
-  { name: "Home", redirectTo: "/" },
-  { name: "Projects", redirectTo: "/projects" },
-  { name: "Posts", redirectTo: "/posts" },
-  { name: "Contact", redirectTo: "/contact" },
+  // { name: "Home", redirectTo: "/" },
+  // { name: "Projects", redirectTo: "/projects" },
+  // { name: "Posts", redirectTo: "/posts" },
+  // { name: "Contact", redirectTo: "/contact" },
 ];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
-function ResponsiveAppBar() {
+export function NavBar() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
     null
   );
@@ -50,7 +50,7 @@ function ResponsiveAppBar() {
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
+          {/* <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} /> */}
           <Typography
             variant="h6"
             noWrap
@@ -60,13 +60,13 @@ function ResponsiveAppBar() {
               mr: 2,
               display: { xs: "none", md: "flex" },
               fontFamily: "monospace",
-              fontWeight: 700,
+              fontWeight: 800,
               letterSpacing: ".3rem",
               color: "inherit",
               textDecoration: "none",
             }}
           >
-            LOGO
+            Mahesh Muttinti
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -106,7 +106,7 @@ function ResponsiveAppBar() {
                     noWrap
                     component="a"
                   >
-                    <span style={{ fontFamily: "Jomhuria" }}>{page?.name}</span>
+                    <Link href={`${page?.redirectTo}}`}>{page?.name}</Link>
                   </Typography>
                 </MenuItem>
               ))}
@@ -129,7 +129,7 @@ function ResponsiveAppBar() {
               textDecoration: "none",
             }}
           >
-            LOGO
+            MAHESH MUTTINTI
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page, index) => (
@@ -146,7 +146,7 @@ function ResponsiveAppBar() {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                <Avatar alt="Mahesh Muttinti" src="/static/images/avatar/2.jpg" />
               </IconButton>
             </Tooltip>
             <Menu
@@ -177,4 +177,3 @@ function ResponsiveAppBar() {
     </AppBar>
   );
 }
-export default ResponsiveAppBar;

@@ -33,8 +33,8 @@ export default function Skill(props: SkillProp): React.ReactElement {
         </ListItemAvatar> */}
         <div className="w-full flex flex-col gap-3 justify-center items-center">
           <div
-            style={{ height: `${percentage}%`, width: 50 }}
-            className="text-white h-5 bg-gradient-to-l from-violet-700 to-red-400 font-bold rounded-full text-center flex flex-col items-center justify-center"
+            style={{ height: percentage * 4, width: 50 }}
+            className="text-white h-5 bg-gradient-to-l from-cyan-700 to-green-400 font-bold rounded-full text-center flex flex-col items-center justify-center"
           >
             {percentage}%
           </div>
