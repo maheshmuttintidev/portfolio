@@ -15,13 +15,13 @@ import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 import Link from "next/link";
 
-const pages = [
+// const pages = [
   // { name: "Home", redirectTo: "/" },
   // { name: "Projects", redirectTo: "/projects" },
   // { name: "Posts", redirectTo: "/posts" },
   // { name: "Contact", redirectTo: "/contact" },
-];
-const settings = ["Profile", "Account", "Dashboard", "Logout"];
+// ];
+const settings:Array<String> = ["Profile", "Account", "Dashboard", "Logout"];
 
 export function NavBar() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
