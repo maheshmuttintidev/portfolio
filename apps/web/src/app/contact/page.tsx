@@ -1,11 +1,11 @@
-import * as React from "react";
+'use client';
+import React from "react";
 import Head from "next/head";
-import Footer from "@/components/footer";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import CallIcon from "@mui/icons-material/Call";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
-import { Button, Stack, Typography } from "@mui/material";
+import { Button, Stack } from "@mui/material";
 import Image from "next/image";
 
 export default function Contact() {

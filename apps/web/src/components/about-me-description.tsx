@@ -1,9 +1,8 @@
+'use client';
 import React from "react";
 import Image from "next/image";
-import { getMyPortfolioContent } from "services";
-import { deepGet } from "@/app/lib/utils/deepGet";
 
-export const AboutMeDescription = async () => {
+export const AboutMeDescription =  () => {
   // const response = await getMyPortfolioContent();
 
   // const aboutFromApi = deepGet(response?.results?.[0], [

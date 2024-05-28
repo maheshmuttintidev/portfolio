@@ -1,4 +1,5 @@
-import * as React from "react";
+'use client';
+import React from "react";
 import Skill from "./skill-card";
 import List from "@mui/material/List";
 

@@ -1,4 +1,5 @@
-import * as React from "react";
+'use client';
+import React from "react";
 import Head from "next/head";
 import "./globals.css";
 import { HomePageLayoutComponents } from "@/components/home-page-layout-components";

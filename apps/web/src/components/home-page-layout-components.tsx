@@ -1,4 +1,4 @@
-"use client";
+'use client';
 import React from "react";
 import { HeroSectionOne } from "./hero-section-1";
 import Skills from "./skills-list";
