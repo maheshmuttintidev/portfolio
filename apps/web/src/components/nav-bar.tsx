@@ -15,12 +15,12 @@ import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 import Link from "next/link";
 
-// const pages = [
-  // { name: "Home", redirectTo: "/" },
-  // { name: "Projects", redirectTo: "/projects" },
-  // { name: "Posts", redirectTo: "/posts" },
-  // { name: "Contact", redirectTo: "/contact" },
-// ];
+const pages = [
+  { name: "Home", redirectTo: "/" },
+  { name: "Projects", redirectTo: "/projects" },
+  { name: "Posts", redirectTo: "/posts" },
+  { name: "Contact", redirectTo: "/contact" },
+];
 const settings:Array<String> = ["Profile", "Account", "Dashboard", "Logout"];
 
 export function NavBar() {
@@ -98,7 +98,7 @@ export function NavBar() {
                 display: { xs: "block", md: "none" },
               }}
             >
-              {pages?.map((page, index) => (
+              {pages?.map((page) => (
                 <MenuItem onClick={handleCloseNavMenu}>
                   <Typography
                     textAlign="center"
@@ -166,7 +166,7 @@ export function NavBar() {
               onClose={handleCloseUserMenu}
             >
               {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
+                <MenuItem onClick={handleCloseUserMenu}>
                   <Typography textAlign="center">{setting}</Typography>
                 </MenuItem>
               ))}

@@ -10,12 +10,11 @@ interface SkillProp {
   title?: string;
   imgUrl?: string;
   text?: string;
-  percentage?: number;
+  percentage?: any;
   length?: number;
 }
 
 export default function Skill(props: SkillProp): React.ReactElement {
-  const { title, imgUrl, percentage, length } = props;
 
   return (
     <div className="dark:text-slate-500 rounded cursor-pointer overflow-hidden transition-transform ease-out">
@@ -33,12 +32,12 @@ export default function Skill(props: SkillProp): React.ReactElement {
         </ListItemAvatar> */}
         <div className="w-full flex flex-col gap-3 justify-center items-center">
           <div
-            style={{ height: percentage * 4, width: 50 }}
+            style={{ height: props?.percentage * 4, width: 50 }}
             className="text-white h-5 bg-gradient-to-l from-cyan-700 to-green-400 font-bold rounded-full text-center flex flex-col items-center justify-center"
           >
-            {percentage}%
+            {props?.percentage}%
           </div>
-          <p className="md:text-3xl text-2xl pb-5 font-bold">{title}</p>
+          <p className="md:text-3xl text-2xl pb-5 font-bold">{props?.title}</p>
         </div>
       </ListItem>
     </div>
