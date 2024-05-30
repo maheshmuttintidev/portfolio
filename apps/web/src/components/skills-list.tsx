@@ -17,9 +17,9 @@ const skills = [
     percentage: 40,
   },
   {
-    title: "JS",
+    title: "JavaScript",
     imgUrl: "/skills/js.svg",
-    text: "JavasScript",
+    text: "Java Script",
     percentage: 35,
   },
   {
@@ -38,26 +38,41 @@ const skills = [
     title: "NODE-JS",
     imgUrl: "/skills/node.svg",
     text: "Node JS",
+    percentage: 40,
+  },
+  {
+    title: "KNEX-JS",
+    imgUrl: "/skills/js.svg",
+    text: "Knex JS",
+    percentage: 30,
+  },
+  {
+    title: "PostgreSQL",
+    imgUrl: "/skills/js.svg",
+    text: "PostgreSQL",
+    percentage: 40,
+  },
+  {
+    title: "MongoDB",
+    imgUrl: "/skills/js.svg",
+    text: "Mongo DB",
     percentage: 25,
   },
 ];
 
 export default function Skills(): React.ReactElement {
   return (
-    <>
-      <section className="container mt-8 flex flex-wrap bg-slate-100 px-4 py-3">
+      <section className="container mt-8 flex flex-wrap px-4 py-3">
         <h2
-          className="text-5xl underline mb-3 font-bold text-black text-center"
+          className="text-5xl underline underline-offset-4 mb-3 font-bold text-red-400 text-center"
           title="skills"
         >
-          <span className="text-4xl">Skills</span>
+          <span className="text-4xl text-white">Skills</span>
         </h2>
         <List
           sx={{
             width: "100%",
-            marginLeft: "auto",
             justifyContent: "center",
-            backgroundColor: "transparent",
             overflow: "hidden",
             display: "flex",
             flexWrap: "wrap",
@@ -66,7 +81,7 @@ export default function Skills(): React.ReactElement {
         >
           {skills?.map((skill, index) => (
             <Skill
-              key={index}
+              key={`skill_${index}`}
               title={skill?.title || ""}
               text={skill?.text || ""}
               imgUrl={skill?.imgUrl || ""}
@@ -76,6 +91,5 @@ export default function Skills(): React.ReactElement {
           ))}
         </List>
       </section>
-    </>
   );
 }

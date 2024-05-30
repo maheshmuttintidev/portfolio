@@ -98,8 +98,8 @@ export function NavBar() {
                 display: { xs: "block", md: "none" },
               }}
             >
-              {pages?.map((page) => (
-                <MenuItem onClick={handleCloseNavMenu}>
+              {pages?.map((page, index) => (
+                <MenuItem key={`page_title_${index}`} onClick={handleCloseNavMenu}>
                   <Typography
                     textAlign="center"
                     href={`${page?.redirectTo}}`}
@@ -132,7 +132,7 @@ export function NavBar() {
             MAHESH MUTTINTI
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            {pages.map((page, index) => (
+            {pages?.map((page, index) => (
               <Button
                 key={`page_item_button_${index}`}
                 onClick={handleCloseNavMenu}
@@ -165,8 +165,8 @@ export function NavBar() {
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
             >
-              {settings.map((setting) => (
-                <MenuItem onClick={handleCloseUserMenu}>
+              {settings?.map((setting, index) => (
+                <MenuItem key={`settings_${index}`} onClick={handleCloseUserMenu}>
                   <Typography textAlign="center">{setting}</Typography>
                 </MenuItem>
               ))}
