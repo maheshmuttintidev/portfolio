@@ -6,22 +6,20 @@ import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
-import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Avatar from "@mui/material/Avatar";
-import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-import AdbIcon from "@mui/icons-material/Adb";
 import Link from "next/link";
 
 const pages = [
   { name: "Home", redirectTo: "/" },
   { name: "Projects", redirectTo: "/projects" },
   { name: "Posts", redirectTo: "/posts" },
+  { name: "Social Networks", redirectTo: "/social-networks" },
   { name: "Contact", redirectTo: "/contact" },
 ];
-const settings:Array<String> = ["Profile", "Account", "Dashboard", "Logout"];
+const settings: Array<String> = ["Profile", "Account", "Dashboard", "Logout"];
 
 export function NavBar() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
@@ -61,92 +59,27 @@ export function NavBar() {
               display: { xs: "none", md: "flex" },
               fontFamily: "monospace",
               fontWeight: 800,
-              letterSpacing: ".3rem",
               color: "inherit",
               textDecoration: "none",
             }}
           >
             Mahesh Muttinti
           </Typography>
-
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
-            <IconButton
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpenNavMenu}
-              color="inherit"
-            >
-              <MenuIcon />
-            </IconButton>
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: "bottom",
-                horizontal: "left",
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "left",
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
-              sx={{
-                display: { xs: "block", md: "none" },
-              }}
-            >
-              {pages?.map((page, index) => (
-                <MenuItem key={`page_title_${index}`} onClick={handleCloseNavMenu}>
-                  <Typography
-                    textAlign="center"
-                    href={`${page?.redirectTo}}`}
-                    noWrap
-                    component="a"
-                  >
-                    <Link href={`${page?.redirectTo}}`}>{page?.name}</Link>
-                  </Typography>
-                </MenuItem>
-              ))}
-            </Menu>
-          </Box>
-          <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
-          <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            href=""
-            sx={{
-              mr: 2,
-              display: { xs: "flex", md: "none" },
-              flexGrow: 1,
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "inherit",
-              textDecoration: "none",
-            }}
-          >
-            MAHESH MUTTINTI
-          </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+          <nav className="flex flex-wrap gap-5 container ml-3">
             {pages?.map((page, index) => (
-              <Button
-                key={`page_item_button_${index}`}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
-              >
-                {page?.name}
-              </Button>
+              <React.Fragment key={`page_${index}`}>
+                <Link className="text-sans font-semibold hover:underline" href={page?.redirectTo}>{page?.name}</Link>
+              </React.Fragment>
             ))}
-          </Box>
+          </nav>
 
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Mahesh Muttinti" src="/static/images/avatar/2.jpg" />
+                <Avatar
+                  alt="Mahesh Muttinti"
+                  src="/static/images/avatar/2.jpg"
+                />
               </IconButton>
             </Tooltip>
             <Menu
@@ -166,7 +99,10 @@ export function NavBar() {
               onClose={handleCloseUserMenu}
             >
               {settings?.map((setting, index) => (
-                <MenuItem key={`settings_${index}`} onClick={handleCloseUserMenu}>
+                <MenuItem
+                  key={`settings_${index}`}
+                  onClick={handleCloseUserMenu}
+                >
                   <Typography textAlign="center">{setting}</Typography>
                 </MenuItem>
               ))}

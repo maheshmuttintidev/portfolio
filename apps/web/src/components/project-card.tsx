@@ -7,6 +7,7 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import VisibilityRoundedIcon from "@mui/icons-material/VisibilityRounded";
 import DesktopWindowsRoundedIcon from "@mui/icons-material/DesktopWindowsRounded";
+import { PlaceholderEmbed } from "react-social-media-embed";
 
 interface ProjectCardProps {
   imageUrl: string;
@@ -27,6 +28,7 @@ export default function ProjectCard({
         height={300}
         image={`${imageUrl}`}
       />
+      {/* <PlaceholderEmbed width={300} url={projectLiveUrl} /> */}
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
           <span className="dark:text-white">{projectName}</span>

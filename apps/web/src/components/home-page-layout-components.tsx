@@ -9,7 +9,6 @@ export function HomePageLayoutComponents() {
   return (
     <>
       <HeroSectionOne />
-      {/* @ts-ignore */}
       <AboutMeDescription />
       <Skills />
       <Contact />
