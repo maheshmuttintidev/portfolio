@@ -3,7 +3,7 @@ import React from "react";
 import Skill from "./skill-card";
 import List from "@mui/material/List";
 
-const skills = [
+export const skills = [
   {
     title: "HTML5",
     imgUrl: "/skills/html5.svg",

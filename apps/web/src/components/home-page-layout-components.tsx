@@ -10,7 +10,6 @@ export function HomePageLayoutComponents() {
     <>
       <HeroSectionOne />
       <AboutMeDescription />
-      <Skills />
       <Contact />
     </>
   );

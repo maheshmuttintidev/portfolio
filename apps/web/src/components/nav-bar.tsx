@@ -13,7 +13,6 @@ import MenuItem from "@mui/material/MenuItem";
 import Link from "next/link";
 
 const pages = [
-  { name: "Home", redirectTo: "/" },
   { name: "Projects", redirectTo: "/projects" },
   { name: "Posts", redirectTo: "/posts" },
   { name: "Social Networks", redirectTo: "/social-networks" },

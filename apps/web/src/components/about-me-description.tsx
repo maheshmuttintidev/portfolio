@@ -1,8 +1,10 @@
-'use client';
+"use client";
 import React from "react";
 import Image from "next/image";
+import { skills } from "./skills-list";
+import Skill from "./skill-card";
 
-export const AboutMeDescription =  () => {
+export const AboutMeDescription = () => {
   // const response = await getMyPortfolioContent();
 
   // const aboutFromApi = deepGet(response?.results?.[0], [
@@ -15,28 +17,35 @@ export const AboutMeDescription =  () => {
   return (
     <section
       id="about"
-      className="container min-h-screen p-5 mt-4 flex gap-4 justify-center items-center bg-slate-500 py-3"
+      className="container p-5 mt-4 flex gap-4 justify-end items-center py-3"
     >
-        <div className="">
-        <Image
-          src={"https://i.ibb.co/drYZ6xh/dev-pose-in-chair.png"}
-          height={200}
-          width={500}
-          className="rounded"
-          alt="Mahesh Muttinti Banner Logo"
-          title="Mahesh Muttinti Banner Logo"
-        />
-      </div>
-      <div className='w-[45%]'>
-      <p className="text-[3rem] text-white font-['Holtwood One SC']">
-          More About Me:
-        </p>
+      <div className="flex justify-end bg-[url('https://i.ibb.co/drYZ6xh/dev-pose-in-chair.png')] h-screen bg-contain bg-no-repeat">
+        <div className="w-2/3">
+          <p className="text-[3rem] text-white text-end font-['Holtwood One SC']">
+            More About Me:
+          </p>
 
-        <p className="mt-10 md:text-4xl text-2xl text-justify leading-[2.5rem] font-['Inter']">
-        I'm Mahesh Muttinti, a Full Stack Web & Mobile Application Developer with a passion for creating awesome digital experiences. With 3 years of experience in React JS, React Native, and Node JS, I specialize in building stunning websites and mobile apps. 
-        </p>
+          <p className="mt-3 text-3xl text-end leading-[2.5rem] font-['Inter']">
+            {`I'm Mahesh Muttinti, a Full Stack Web & Mobile Application Developer
+            with a passion for creating awesome digital experiences. With 3
+            years of experience in React JS, React Native, and Node JS, I
+            specialize in building stunning websites and mobile apps`}
+          </p>
+          <div className="flex gap-3">
+
+          {skills?.map((skill, index) => (
+            <Skill
+              key={`skill_${index}`}
+              title={skill?.title || ""}
+              text={skill?.text || ""}
+              imgUrl={skill?.imgUrl || ""}
+              percentage={skill?.percentage || 0}
+              length={skills?.length}
+            />
+          ))}
+          </div>
         </div>
-    
+      </div>
     </section>
   );
 };

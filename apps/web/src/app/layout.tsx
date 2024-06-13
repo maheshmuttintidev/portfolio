@@ -34,7 +34,7 @@ export default function RootLayout({
       <body>
         <div className="mx-auto w-full overflow-hidden dark:text-white text-black">
           <NavBar />
-          <div className="md:pt-4 pt-3 dark:bg-[#0E1339]">{children}</div>
+          <div className="md:pt-4 dark:bg-[#0E1339]">{children}</div>
           <div className="mx-auto flex flex-col justify-center">
             <Footer />
           </div>
