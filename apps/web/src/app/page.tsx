@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import React from "react";
 import Head from "next/head";
 import "./globals.css";
@@ -10,6 +10,13 @@ export default async function Web() {
     <>
       <Head>
         <title>Mahesh Muttinti | Portfolio</title>
+
+        <meta property="og:title" content="Mahesh Muttinti | Portfolio" />
+        <meta
+          property="og:description"
+          content="Mahesh is an full stack web and mobile application developer"
+        />
+        <meta property="og:image" content="public/main.png" />
       </Head>
 
       <main className="mx-auto pb-8 text-center container">
