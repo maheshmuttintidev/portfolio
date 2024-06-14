@@ -47,7 +47,7 @@ export default function Contact() {
                   <CallIcon sx={{ marginRight: 2, height: 40, width: 40 }} />
                 </Button>
               </a>
-              <a href="https://twitter.com/MaheshMuttinti" target="_blank">
+              <a href="https://twitter.com/MaheshMuttinti" target="_blank" rel="noopener">
                 <Button
                   variant="text"
                   sx={{ color: "royalblue", borderColor: "royalblue" }}
@@ -70,8 +70,9 @@ export default function Contact() {
               </a>
 
               <a
-                href="https://wa.me/919603757304?text=Hello%Mahesh%Muttinti!"
+                href="https://wa.me/919603757304?text=Hello%20Mahesh%20Muttinti!"
                 target="_blank"
+                rel="noopener"
               >
                 <Button
                   variant="text"

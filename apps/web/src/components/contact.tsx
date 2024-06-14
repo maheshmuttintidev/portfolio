@@ -1,12 +1,10 @@
 "use client";
 import * as React from "react";
-import Head from "next/head";
-import Footer from "@/components/footer";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import CallIcon from "@mui/icons-material/Call";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
-import { Button, Stack, Typography } from "@mui/material";
+import { Button, Stack } from "@mui/material";
 import Image from "next/image";
 
 export const Contact = () => {
@@ -49,7 +47,7 @@ export const Contact = () => {
                   <CallIcon sx={{ marginRight: 2, height: 40, width: 40 }} />
                 </Button>
               </a>
-              <a href="https://twitter.com/MaheshMuttinti" target="_blank">
+              <a href="https://twitter.com/MaheshMuttinti" target="_blank" rel="noopener">
                 <Button
                   variant="text"
                   sx={{ color: "royalblue", borderColor: "royalblue" }}
@@ -58,8 +56,9 @@ export const Contact = () => {
                 </Button>
               </a>
               <a
-                href="https://www.instagram.com/mahesh.muttinti/"
+                href="https://www.instagram.com/mahesh_muttinti/"
                 target="_blank"
+                rel="noopener"
               >
                 <Button
                   variant="text"
@@ -74,6 +73,7 @@ export const Contact = () => {
               <a
                 href="https://wa.me/919603757304?text=Hello Mahesh Muttinti!"
                 target="_blank"
+                rel="noopener"
               >
                 <Button
                   variant="text"

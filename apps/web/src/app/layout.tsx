@@ -6,7 +6,7 @@ import {NavBar} from "@/components/nav-bar";
 export const metadata = {
   title: "Mahesh Muttinti | Professional Website",
   description:
-    "Mahesh Muttinti is Full Stack Developer and he can develop mobile and android applications using react, react-native",
+    "My Name is Mahesh Muttinti. I am a Full Stack Web & Mobile Application Developer. I have 2 years of experience in React JS, React Native and Node JS. I am working on Mainly Website development, Mobile App development for now.",
 };
 
 export default function RootLayout({

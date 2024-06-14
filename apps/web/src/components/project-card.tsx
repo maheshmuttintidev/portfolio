@@ -40,7 +40,7 @@ export default function ProjectCard({
           <span>Preview</span>
         </Button>
 
-        <a href={projectLiveUrl} target="_blank">
+        <a href={projectLiveUrl} target="_blank" rel="noopener">
           <Button size="small" variant="outlined" sx={{ color: "green" }}>
             <DesktopWindowsRoundedIcon
               sx={{ color: "green", marginRight: 2 }}

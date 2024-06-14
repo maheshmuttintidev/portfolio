@@ -17,15 +17,15 @@ export const AboutMeDescription = () => {
   return (
     <section
       id="about"
-      className="container p-5 mt-4 flex gap-4 justify-end items-center py-3"
+      className="container p-5 mt-4 flex flex-wrap gap-4 justify-end items-center py-3"
     >
-      <div className="flex justify-end bg-[url('https://i.ibb.co/drYZ6xh/dev-pose-in-chair.png')] h-screen bg-contain bg-no-repeat">
+      <div className="flex flex-wrap justify-end bg-[url('https://i.ibb.co/drYZ6xh/dev-pose-in-chair.png')] h-screen bg-contain bg-no-repeat">
         <div className="w-2/3">
           <p className="text-[3rem] text-white text-end font-['Holtwood One SC']">
             More About Me:
           </p>
 
-          <p className="mt-3 text-3xl text-end leading-[2.5rem] font-['Inter']">
+          <p className="mt-3 text-base md:text-3xl text-end leading-[2.5rem] font-['Inter']">
             {`I'm Mahesh Muttinti, a Full Stack Web & Mobile Application Developer
             with a passion for creating awesome digital experiences. With 3
             years of experience in React JS, React Native, and Node JS, I
