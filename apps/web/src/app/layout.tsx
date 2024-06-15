@@ -1,9 +1,6 @@
 import "./globals.css";
 import Footer from "@/components/footer";
-import {NavBar} from "@/components/nav-bar";
-import "pdfjs-dist";
-import '@react-pdf-viewer/core/lib/styles/index.css';
-
+import { NavBar } from "@/components/nav-bar";
 
 export const metadata = {
   title: "Mahesh Muttinti | Professional Website",
