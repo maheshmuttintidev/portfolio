@@ -21,11 +21,11 @@ export const AboutMeDescription = () => {
     >
       <div className="flex flex-wrap justify-end bg-[url('https://i.ibb.co/drYZ6xh/dev-pose-in-chair.png')] h-screen bg-contain bg-no-repeat">
         <div className="w-2/3">
-          <p className="text-[3rem] text-white text-end font-['Holtwood One SC']">
+          <p className="text-2xl text-white text-end font-['Holtwood One SC']">
             More About Me:
           </p>
 
-          <p className="mt-3 text-base md:text-3xl text-end leading-[2.5rem] font-['Inter']">
+          <p className="mt-3 text-end font-['Inter']">
             {`I'm Mahesh Muttinti, a Full Stack Web & Mobile Application Developer
             with a passion for creating awesome digital experiences. With 3
             years of experience in React JS, React Native, and Node JS, I

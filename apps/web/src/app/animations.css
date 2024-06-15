@@ -1,0 +1,8 @@
+@keyframes skeleton-loading {
+    from {
+        @apply bg-gradient-to-r from-blue-300 to-slate-400
+    }
+    to {
+        @apply bg-gradient-to-r to-blue-300 from-slate-400
+    }
+}
