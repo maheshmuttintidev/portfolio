@@ -15,7 +15,7 @@ export default function Contact() {
         <title>Mahesh Muttinti | Portfolio</title>
       </Head>
 
-      <main className="container mx-auto px-4 my-5">
+      <main className="container mx-auto px-4 mb-5 mt-10">
         <div className="flex flex-row flex-wrap mt-3 justify-center items-center">
           <Image
             src={"https://i.ibb.co/z27TLdM/prof-look-for-contacting.png"}
@@ -26,15 +26,20 @@ export default function Contact() {
             title="Mahesh Muttinti Banner Logo"
           />
 
-          <div className="w-2/3 flex flex-col gap-10 text-center justify-center items-center">
-            <p className="text-xl font-sans text-center md:text-3xl">
+          <div className="mt-3 flex flex-col gap-10 text-center justify-center items-center">
+            <p className="text-xl text-center md:text-3xl font-['Inter']">
               {`If you need any help with website development or mobile app
               development, I've got your back. Let's collaborate and bring your
               ideas to life! Looking forward to working together.`}
             </p>
             <Stack
               direction={"row"}
-              sx={{ gap: 3, alignItems: "center", flexWrap: "wrap" }}
+              sx={{
+                gap: 3,
+                alignItems: "center",
+                justifyContent: "center",
+                flexWrap: "wrap",
+              }}
             >
               <a
                 href="tel:+919603757304"
@@ -47,7 +52,11 @@ export default function Contact() {
                   <CallIcon sx={{ marginRight: 2, height: 40, width: 40 }} />
                 </Button>
               </a>
-              <a href="https://twitter.com/MaheshMuttinti" target="_blank" rel="noopener">
+              <a
+                href="https://twitter.com/MaheshMuttinti"
+                target="_blank"
+                rel="noopener"
+              >
                 <Button
                   variant="text"
                   sx={{ color: "royalblue", borderColor: "royalblue" }}

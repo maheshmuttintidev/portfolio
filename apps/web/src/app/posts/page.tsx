@@ -10,7 +10,7 @@ export default async function Page() {
         <title>Mahesh Muttinti | Posts</title>
       </Head>
 
-      <div className="h-full w-full flex flex-col container text-center self-center justify-center m-auto">
+      <div className="h-full w-full flex flex-col container text-center self-center justify-center m-auto mt-20 md:mt-3">
         {/* @ts-ignore */}
         <BlogsList />
       </div>

@@ -21,8 +21,8 @@ export const Contact = () => {
             title="Mahesh Muttinti Banner Logo"
           />
 
-          <div className="w-2/3 flex flex-col gap-10 text-center justify-center items-center ">
-            <p className="text-xl font-sans text-center md:text-3xl">
+          <div className="flex flex-col gap-10 text-center justify-center items-center ">
+            <p className="text-xl text-center md:text-3xl font-['Inter']">
               If you need any help with website development or mobile app
               development, I've got your back. Let's collaborate and bring your
               ideas to life! Looking forward to working together.
@@ -47,7 +47,11 @@ export const Contact = () => {
                   <CallIcon sx={{ marginRight: 2, height: 40, width: 40 }} />
                 </Button>
               </a>
-              <a href="https://twitter.com/MaheshMuttinti" target="_blank" rel="noopener">
+              <a
+                href="https://twitter.com/MaheshMuttinti"
+                target="_blank"
+                rel="noopener"
+              >
                 <Button
                   variant="text"
                   sx={{ color: "royalblue", borderColor: "royalblue" }}

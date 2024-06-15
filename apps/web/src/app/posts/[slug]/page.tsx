@@ -28,14 +28,15 @@ export default async function Page({ params }: any) {
   ]);
 
   return (
-    <>
-      <div className="mx-auto container items-center">
-        <Link className="text-3xl font-semibold text-left pb-5" href="/posts">
-          Back
-        </Link>
+    <div className="mx-auto container items-center mt-20 md:mt-3 font-['Inter']">
+      <Link
+        className="text-2xl md:text-3xl font-semibold text-left pb-5"
+        href="/posts"
+      >
+        {"<"}
+      </Link>
 
-        <PostDetail title={slug} description={desc} bannerImage={bannerImage} />
-      </div>
-    </>
+      <PostDetail title={slug} description={desc} bannerImage={bannerImage} />
+    </div>
   );
 }

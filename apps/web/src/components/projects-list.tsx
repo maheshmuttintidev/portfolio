@@ -44,15 +44,15 @@ const projects = [
 ];
 export default function ProjectsList() {
   return (
-    <div className="container justify-center self-center items-center">
+    <div className="container justify-center self-center items-center mt-20 md:mt-3">
       <Grid container spacing={5} justifyContent="center">
         {projects?.map((project, key) => (
           <Grid item xs={12} sm={6} key={`project-${key}`}>
-              <ProjectCard
-                imageUrl={project?.imageUrl}
-                projectName={project?.projectName}
-                projectLiveUrl={project?.projectLiveUrl}
-              />
+            <ProjectCard
+              imageUrl={project?.imageUrl}
+              projectName={project?.projectName}
+              projectLiveUrl={project?.projectLiveUrl}
+            />
           </Grid>
         ))}
       </Grid>

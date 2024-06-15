@@ -6,7 +6,7 @@ export default function Loading() {
         .map((_, index) => {
           return (
             <div
-              className="h-10 my-2 w-full bg-gradient-to-r from-slate-100 to-slate-500 rounded-md"
+              className="skeleton-loading mt-20 md:mt-3 h-10 my-2 w-full bg-gradient-to-r from-slate-100 to-slate-500 rounded-md"
               key={`skeleton_${index}`}
             ></div>
           );

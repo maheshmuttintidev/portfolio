@@ -3,7 +3,7 @@ import React from "react";
 
 const PrivacyPolicy = () => {
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto font-['Inter'] px-3 mt-20 md:mt-5">
       <h1 className="text-3xl md:text-5xl font-bold mb-4">Privacy Policy</h1>
       <p className="mb-4 text-xl md:text-2xl">
         This privacy policy describes how we handle personal information

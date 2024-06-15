@@ -35,10 +35,13 @@ const socialNetworks = [
 
 export default function SocialNetwork() {
   return (
-    <section className="flex flex-wrap gap-5 container p-3">
+    <section className="flex flex-wrap gap-5 container p-3 justify-center items-center font-['Inter']">
       {socialNetworks?.map((socialNetwork, socialNetworkIndex) => {
         return (
-          <section className="flex-[0.6]" key={`socialNetwork_${socialNetworkIndex}`}>
+          <section
+            className="flex-[0.6]"
+            key={`socialNetwork_${socialNetworkIndex}`}
+          >
             <h2
               className={"text-xl py-3 font-bold ".concat(
                 `text-[#${((Math.random() * 0xfffff) << 0)
@@ -57,7 +60,7 @@ export default function SocialNetwork() {
                         className="w-[320px]"
                         key={`postItem_${postItemIndex}`}
                       >
-                        <h3 className="text-md font-semibold py-3 text-cyan-500">
+                        <h3 className="text-md font-semibold py-3 text-red-500">
                           {key?.toUpperCase()?.split("_")?.join(" ")}
                         </h3>
                         {postItem?.map((pi, piIdx) => {

@@ -5,104 +5,275 @@ import React from "react";
 
 export default function SocialNetwork() {
   return (
-    <section className="flex flex-wrap gap-5 container p-3">
-      <pre className="bg-white p-3">
-        Mahesh Muttinti Full Stack Web & Mobile App Developer About Me I have an
-        ambitious personality and thrive on challenges. While setting new goals
-        for myself, I aim for results that will make me more productive and
-        effective in my environment. I am not comfortable with settling for
-        something I’m not comfortable with, thus looking for opportunities where
-        I can get to perform better. I enjoy interacting with people and sharing
-        my skills and also learning from them. Work Experience OHM E Logistics
-        Private Limited Hyderabad Designation: Senior Software Engineer Year of
-        Experience: 2023 August - 2024 April, 8 Months Projects Contributed &
-        Brief Summary: 1. OHM Dispatcher App ● OHM Dispatcher App is the crucial
-        mobile application for OHM organization which will enable the
-        dispatchers to create and execute the trips from Airports majorly. ●
-        Worked as an Android and iOS Mobile Application developer and used React
-        Native as the technology. ● Integrated the APIs in the entire
-        application throughout the flow including the device permissions such as
-        push notifications, sockets, geo-location services. ● Successfully
-        published the application into the Play Store and App Store. 2. OHM User
-        App ● OHM User App is the crucial mobile application for OHM
-        organization which will enable the users to book the rides with
-        affordable prices with EV Vehicles such as Sedan, Luxury vehicle
-        services ● Worked as an Android and iOS Mobile Application developer and
-        used React Native as the technology. ● Integrated the APIs in the entire
-        application throughout the flow including the device permissions such as
-        push notifications, sockets, geo-location services. ● Successfully
-        published the application into the Play Store and App StoreBetalectic IT
-        Projects Limited Hyderabad Year of Experience: 2021 July - 2023 August,
-        2 years 1 month Designation: Full Stack Developer Projects Contributed &
-        Brief Summary: 1. Nemo ● Nemo is a neo-banking platform that provides
-        financial tools and business services for small businesses in India ●
-        Worked as an Android Mobile Application UI developer and used React
-        Native as the technology ● Integrated the APIs in different screens in
-        the Dashboard, Banking, Business, and Profiles modules ● Worked as a
-        Node Js backend API developer and Implemented a Few APIs at Banking,
-        Business, and Profiles modules 2. WiredUp ● Wired Up is a B2B
-        Marketplace Application catering to Corporate finance and Fx Risk
-        management needs of companies globally. It provides Multiple
-        Modules/Services such as Sell & Source, Learn & Earn, Seek & Hire
-        (Recruiter & Candidate), and many more. ● Worked as an Android & iOS
-        Mobile Application UI developer and used React Native as the technology
-        ● Integrated the APIs in different screens in Seek & Hire, Learn & Earn,
-        Sell & Source modules ● Worked as a Node Js backend API developer and
-        Implemented a Few APIs at Seek & Hire, Learn & Earn, and Sell & Source
-        modules 3. FinEzzy ● FinEzzy is a B2B Marketplace Application that will
-        give Loans Against Mutual Funds (LAMF), Risk Management, Portfolio
-        Reports, Investing in Mutual Funds, and many more. ● Worked as an
-        Android & iOS Mobile Application UI developer and used React Native as
-        the technology ● Integrated the APIs in different screens in the Signup,
-        Login, Mobile OTP Verification, Email Verification, Onboarding, and
-        Dashboard modules ● Integrated third-party APIs such as PulseLabs,
-        Digilocker (KYC), Signzy, and AllCloud - LMS in the Backend and Frontend
-        ● Worked as a Node Js backend API developer and Implemented a Few APIs
-        for the LAMF moduleProfessional Summary 1. Core Competencies ●
-        Communication and problem-solving skills ● Curiosity to learn ● Patience
-        and time management ● Focusing more on the impact my work and skills
-        gives out on the output of production. ● Working in line with the
-        business/organization goals and objectives to bring out productive
-        personnel and team members. ● Working effectively under minimal
-        supervision, guided by honesty and trustworthiness. 2. Areas of
-        Expertise / Skills ● Languages: JavaScript (ES6 features), HTML5, CSS3,
-        Typescript, Python (version 3) ● Front-end: Web: React JS, Next JS,
-        Tailwind CSS Mobile: React Native ● Back-end: Technologies: Node JS,
-        Express, KnexJs APIs: REST ● Dev-Ops: AWS RDS, AWS EC2, AWS ECS ●
-        Databases: PostgreSQL, Mongo, Firebase ● Tools: Git, GitHub, Visual
-        Studio Code, Linux, Windows, Android Studio, XCode, Postman, Browser
-        tools, Jest, Webpack, Babel ● Deployment-Platforms: Front-end: Netlify,
-        Heroku, Vercel Backend: Heroku 3. Professional Training Full Stack
-        Development – MERN Stack at Digital-Lync, Hyderabad Well-trained in Full
-        stack web development using MERN stack in 4-5 months
-        durationAchievements ● Currently a team lead of a developer community
-        where we learn and build mini-projects to practice what we learn,
-        hands-on code. ● Built my portfolio using the languages I learned
-        (self-taught), React JS, and HTML/CSS. ● Successfully implemented a
-        simple python GUI music player after learning it in my code simple
-        python GUI music player. ● Contributed to open-source projects. ●
-        Writing technical articles explaining how to build projects and using
-        languages and development tools Projects Freelance Projects 1. Machine
-        code technologies – https://machinecode.in ● Worked as a front-end UI
-        developer and developed the website. ● Successfully deployed the website
-        in Netlify's free serverless platform and mapped it with the GoDaddy
-        domain. Personal Projects 1. TelNewz – https://telnewz.in ● Static
-        Website using Next JS (deployed the website in Vercel) ● Deprecated due
-        to Domain Hosting Expired 2. Ticaret – https://ticaret-001.netlify.app
-        and https://ticaret-002.netlify.app ● Implemented static screens and
-        Google Authentication and APIs using MongoDB (which is hosted in Heroku
-        serverless platform). Developer & Social Links ● GitHub:
-        https://github.com/maheshmuttintidev ● Stack-Overflow:
-        https://stackoverflow.com/users/15017210/mahesh-muttinti ● LinkedIn:
-        https://www.linkedin.com/in/mahesh-muttinti-4a2b61202/ ● Twitter:
-        https://x.com/MMuttintiEducation Degree College Name: G.I.E.T College of
-        Engineering, Rajahmundry Specialization: Bachelor of Technology in
-        Electronics and Communication Engineering GPA: 63.25 Year of Graduation:
-        2017 - 2020 Diploma College Name: E.S.C. Government Polytechnic College,
-        Nandyal Specialization: Electronics and Communication Engineering GPA:
-        85.25 Year of Graduation: 2014-2017 SSC School Name: S.H.K.Z.P High
-        School, Hukumpeta GPA: 9.2 Year of Graduation: 2014
-      </pre>
+    <section className="flex flex-col gap-5 container p-3 font-['Inter'] bg-white text-black mx-auto px-3">
+      <h1 className="text-4xl font-bold text-center my-4">Mahesh Muttinti</h1>
+      <h2 className="text-2xl font-semibold text-center mb-8">
+        Full Stack Web & Mobile App Developer
+      </h2>
+
+      <section className="mb-8">
+        <h3 className="text-xl font-semibold mb-2">About Me</h3>
+        <p className="text-justify">
+          I have an ambitious personality and thrive on challenges. While
+          setting new goals for myself, I aim for results that will make me more
+          productive and effective in my environment. I am not comfortable with
+          settling for something I’m not comfortable with, thus looking for
+          opportunities where I can get to perform better. I enjoy interacting
+          with people and sharing my skills and also learning from them.
+        </p>
+      </section>
+
+      <section className="mb-8">
+        <h3 className="text-xl font-semibold mb-2">Work Experience</h3>
+
+        <div className="mb-6">
+          <h4 className="text-lg font-semibold">
+            OHM E Logistics Private Limited
+          </h4>
+          <p>Hyderabad</p>
+          <p>Designation: Senior Software Engineer</p>
+          <p>Year of Experience: 2023 August - 2024 April, 8 Months</p>
+          <p>Projects Contributed & Brief Summary:</p>
+          <ul className="list-disc ml-5">
+            <li className="mb-2">
+              <strong>OHM Dispatcher App</strong>
+              <ul className="list-disc ml-5">
+                <li>
+                  Worked as an Android and iOS Mobile Application developer
+                  using React Native.
+                </li>
+                <li>
+                  Integrated APIs including push notifications, sockets, and
+                  geo-location services.
+                </li>
+                <li>
+                  Published the application to the Play Store and App Store.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>OHM User App</strong>
+              <ul className="list-disc ml-5">
+                <li>
+                  Worked as an Android and iOS Mobile Application developer
+                  using React Native.
+                </li>
+                <li>
+                  Integrated APIs including push notifications, sockets, and
+                  geo-location services.
+                </li>
+                <li>
+                  Published the application to the Play Store and App Store.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 className="text-lg font-semibold">
+            Betalectic IT Projects Limited
+          </h4>
+          <p>Hyderabad</p>
+          <p>Year of Experience: 2021 July - 2023 August, 2 years 1 month</p>
+          <p>Designation: Full Stack Developer</p>
+          <p>Projects Contributed & Brief Summary:</p>
+          <ul className="list-disc ml-5">
+            <li className="mb-2">
+              <strong>Nemo</strong>
+              <ul className="list-disc ml-5">
+                <li>
+                  Worked as an Android Mobile Application UI developer using
+                  React Native.
+                </li>
+                <li>
+                  Integrated APIs in Dashboard, Banking, Business, and Profiles
+                  modules.
+                </li>
+                <li>
+                  Worked as a Node Js backend API developer and implemented a
+                  few APIs.
+                </li>
+              </ul>
+            </li>
+            <li className="mb-2">
+              <strong>WiredUp</strong>
+              <ul className="list-disc ml-5">
+                <li>
+                  Worked as an Android & iOS Mobile Application UI developer
+                  using React Native.
+                </li>
+                <li>
+                  Integrated APIs in Seek & Hire, Learn & Earn, Sell & Source
+                  modules.
+                </li>
+                <li>
+                  Worked as a Node Js backend API developer and implemented a
+                  few APIs.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>FinEzzy</strong>
+              <ul className="list-disc ml-5">
+                <li>
+                  Worked as an Android & iOS Mobile Application UI developer
+                  using React Native.
+                </li>
+                <li>
+                  Integrated APIs in various modules and third-party APIs.
+                </li>
+                <li>
+                  Worked as a Node Js backend API developer and implemented a
+                  few APIs.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section className="mb-8">
+        <h3 className="text-xl font-semibold mb-2">Professional Summary</h3>
+        <h4 className="text-lg font-semibold mb-1">Core Competencies</h4>
+        <ul className="list-disc ml-5 mb-4">
+          <li>Communication and problem-solving skills</li>
+          <li>Curiosity to learn</li>
+          <li>Patience and time management</li>
+          <li>Focusing on the impact of my work</li>
+          <li>Working in line with business goals</li>
+          <li>Working effectively under minimal supervision</li>
+        </ul>
+        <h4 className="text-lg font-semibold mb-1">
+          Areas of Expertise / Skills
+        </h4>
+        <ul className="list-disc ml-5">
+          <li>Languages: JavaScript (ES6), HTML5, CSS3, Typescript, Python</li>
+          <li>
+            Front-end: React JS, Next JS, Tailwind CSS (Web), React Native
+            (Mobile)
+          </li>
+          <li>Back-end: Node JS, Express, KnexJs</li>
+          <li>APIs: REST</li>
+          <li>Dev-Ops: AWS RDS, AWS EC2, AWS ECS</li>
+          <li>Databases: PostgreSQL, Mongo, Firebase</li>
+          <li>
+            Tools: Git, GitHub, Visual Studio Code, Linux, Windows, Android
+            Studio, XCode, Postman, Browser tools, Jest, Webpack, Babel
+          </li>
+          <li>Deployment-Platforms: Netlify, Heroku, Vercel</li>
+        </ul>
+      </section>
+
+      <section className="mb-8">
+        <h3 className="text-xl font-semibold mb-2">Professional Training</h3>
+        <p>Full Stack Development – MERN Stack at Digital-Lync, Hyderabad</p>
+      </section>
+
+      <section className="mb-8">
+        <h3 className="text-xl font-semibold mb-2">Achievements</h3>
+        <ul className="list-disc ml-5">
+          <li>Team lead of a developer community</li>
+          <li>Built a portfolio using React JS and HTML/CSS</li>
+          <li>Implemented a simple Python GUI music player</li>
+          <li>Contributed to open-source projects</li>
+          <li>Writing technical articles</li>
+        </ul>
+      </section>
+
+      <section className="mb-8">
+        <h3 className="text-xl font-semibold mb-2">Projects</h3>
+        <h4 className="text-lg font-semibold">Freelance Projects</h4>
+        <ul className="list-disc ml-5 mb-4">
+          <li>
+            <strong>Machine code technologies</strong>
+            <ul className="list-disc ml-5">
+              <li>Worked as a front-end UI developer</li>
+              <li>Deployed the website on Netlify</li>
+            </ul>
+          </li>
+        </ul>
+        <h4 className="text-lg font-semibold">Personal Projects</h4>
+        <ul className="list-disc ml-5">
+          <li>
+            <strong>TelNewz</strong>
+            <ul className="list-disc ml-5">
+              <li>Static Website using Next JS (deployed on Vercel)</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Ticaret</strong>
+            <ul className="list-disc ml-5">
+              <li>Implemented static screens and Google Authentication</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <section className="mb-8">
+        <h3 className="text-xl font-semibold mb-2">Developer & Social Links</h3>
+        <ul className="list-disc ml-5">
+          <li>
+            GitHub:{" "}
+            <a
+              href="https://github.com/maheshmuttintidev"
+              className="text-blue-500 hover:underline"
+            >
+              maheshmuttintidev
+            </a>
+          </li>
+          <li>
+            Stack-Overflow:{" "}
+            <a
+              href="https://stackoverflow.com/users/15017210/mahesh-muttinti"
+              className="text-blue-500 hover:underline"
+            >
+              Mahesh Muttinti
+            </a>
+          </li>
+          <li>
+            LinkedIn:{" "}
+            <a
+              href="https://www.linkedin.com/in/mahesh-muttinti-4a2b61202/"
+              className="text-blue-500 hover:underline"
+            >
+              Mahesh Muttinti
+            </a>
+          </li>
+          <li>
+            Twitter:{" "}
+            <a
+              href="https://x.com/MMuttinti"
+              className="text-blue-500 hover:underline"
+            >
+              MMuttinti
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h3 className="text-xl font-semibold mb-2">Education</h3>
+        <h4 className="text-lg font-semibold">Degree</h4>
+        <p>College Name: G.I.E.T College of Engineering, Rajahmundry</p>
+        <p>
+          Specialization: Bachelor of Technology in Electronics and
+          Communication Engineering
+        </p>
+        <p>GPA: 63.25</p>
+        <p>Year of Graduation: 2017 – 2020</p>
+
+        <h4 className="text-lg font-semibold">Diploma</h4>
+        <p>College Name: E.S.C. Government Polytechnic College, Nandyal</p>
+        <p>Specialization: Electronics and Communication Engineering</p>
+        <p>GPA: 85.25</p>
+        <p>Year of Graduation: 2014-2017</p>
+
+        <h4 className="text-lg font-semibold">SSC</h4>
+        <p>School Name: S.H.K.Z.P High School, Hukumpeta</p>
+        <p>GPA: 9.2</p>
+        <p>Year of Graduation: 2014</p>
+      </section>
     </section>
   );
 }

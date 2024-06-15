@@ -12,7 +12,7 @@ export default async function BlogsList() {
         return (
           <div key={`post-${index}`} className="flex flex-wrap mb-10 px-4">
             <Link
-              className="font-mono dark:text-white rounded md:text-4xl text-3xl w-full"
+              className="font-['Inter'] dark:text-white rounded md:text-4xl text-3xl w-full"
               href={`posts/${splitWith(
                 deepGet(post, [
                   "properties",
@@ -52,9 +52,9 @@ export default async function BlogsList() {
                 />
               ) : null}
             </Link>
-            <div className="pt-5 pb-10">
+            <div className="pt-5 pb-10 font-['Inter']">
               <Link
-                className="font-mono dark:text-white px-4 rounded md:text-4xl text-3xl"
+                className="font-['Inter'] dark:text-white px-4 rounded md:text-4xl text-3xl"
                 href={`posts/${splitWith(
                   deepGet(post, [
                     "properties",
