@@ -5,7 +5,7 @@ import { NavBar } from "@/components/nav-bar";
 export const metadata = {
   title: "Mahesh Muttinti | Professional Website",
   description:
-    "My Name is Mahesh Muttinti. I am a Full Stack Web & Mobile Application Developer. I have 2 years of experience in React JS, React Native and Node JS. I am working on Mainly Website development, Mobile App development for now.",
+    "My Name is Mahesh Muttinti. I am a Full Stack Web & Mobile Application Developer. I have 2 years of experience in React JS, React Native and Node JS. I am working on Mainly Website development, Mobile App development.",
 };
 
 export default function RootLayout({
@@ -23,6 +23,7 @@ export default function RootLayout({
           property="og:description"
           content="My Name is Mahesh Muttinti. I am a Full Stack Web & Mobile Application Developer. I have 2 years of experience in React JS, React Native and Node JS. I am working on Mainly Website development, Mobile App development for now. If you require any help from my side either website development or mobile app development."
         />
+        <link rel="icon" type="image/x-icon" href="/public/favicon.ico" />
         <meta property="og:site_name" content="Mahesh Muttinti" />
         <meta
           name="robots"

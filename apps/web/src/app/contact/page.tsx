@@ -67,6 +67,7 @@ export default function Contact() {
               <a
                 href="https://www.instagram.com/mahesh_muttinti/"
                 target="_blank"
+                rel="noopener"
               >
                 <Button
                   variant="text"
