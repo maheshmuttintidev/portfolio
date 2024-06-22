@@ -30,11 +30,11 @@
     "clean": "rm -rf node_modules && rm -rf apps/web/node_modules && rm -rf apps/docs/node_modules && rm -rf packages/ui/node_modules && rm -rf packages/services/node_modules",
     "web:dev": "turbo run web#dev",
     "web:build": "turbo run web#build",
-    "mobile:android": "cd apps/maheshMuttintiRnMobileApp && yarn android && yarn start",
-    "mobile:native:clean": "cd apps/maheshMuttintiRnMobileApp && npx react-native clean",
-    "mobile:android:clean": "cd apps/maheshMuttintiRnMobileApp/android && ./gradlew clean && cd ../../..",
-    "mobile:patch": "cd apps/maheshMuttintiRnMobileApp && npm version patch --no-git-tag-version && cd ../.. && bundle exec fastlane bump",
-    "mobile:build:production:aab": "yarn mobile:android:clean &&  cd apps/maheshMuttintiRnMobileApp && cd android && ./gradlew bundleRelease && cd ../../.. && ./copy.sh"
+    "mobile:android": "cd apps/mobile && yarn android && yarn start",
+    "mobile:native:clean": "cd apps/mobile && npx react-native clean",
+    "mobile:android:clean": "cd apps/mobile/android && ./gradlew clean && cd ../../..",
+    "mobile:patch": "cd apps/mobile && npm version patch --no-git-tag-version && cd ../.. && bundle exec fastlane bump",
+    "mobile:build:production:aab": "yarn mobile:android:clean &&  cd apps/mobile && cd android && ./gradlew bundleRelease && cd ../../.. && ./copy.sh"
   },
   "devDependencies": {
     "prettier": "latest",
@@ -45,6 +45,5 @@
     "npm": ">=7.0.0",
     "node": ">=14.0.0"
   },
-  "packageManager": "yarn@1.22.19",
-  "dependencies": {}
+  "packageManager": "yarn@3.6.4"
 }
