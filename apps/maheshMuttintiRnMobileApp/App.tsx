@@ -1,16 +1,19 @@
-/* eslint-disable react-native/no-inline-styles */
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
-'use client';
-import React, {useEffect} from 'react';
-import {View} from 'react-native';
-import {WebView} from 'react-native-webview';
+import React, {createRef, useEffect} from 'react';
 import SplashScreen from 'react-native-splash-screen';
 import {sleep} from 'utils';
+import {
+  NavigationContainer,
+  NavigationContainerRef,
+} from '@react-navigation/native';
+import {createStackNavigator} from '@react-navigation/stack';
+import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import {GeneralStack} from './src/stacks';
+import {Contact, Home, Projects, Resume, Skills} from './src/screens';
+const Stack = createStackNavigator();
+const Tab = createBottomTabNavigator();
+
+// @ts-ignore
+const navigationRef: React.RefObject<NavigationContainerRef> = createRef();
 
 function App(): JSX.Element {
   useEffect(() => {
@@ -21,16 +24,29 @@ function App(): JSX.Element {
     init();
   }, []);
 
-  return (
-    <View style={{flex: 1}}>
-      <WebView
-        originWhitelist={['*']}
-        source={{uri: 'https://maheshmuttintidev.in'}}
-        style={{flex: 1}}
-        automaticallyAdjustContentInsets={false}
-      />
-    </View>
-  );
+  return <TabNavigator />;
 }
+
+const TabNavigator = () => {
+  return (
+    <Tab.Navigator>
+      <Tab.Screen name="Home" component={Home} />
+      <Tab.Screen name="Skills" component={Skills} />
+      <Tab.Screen name="Projects" component={Projects} />
+      <Tab.Screen name="Resume" component={Resume} />
+      <Tab.Screen name="Contact" component={Contact} />
+    </Tab.Navigator>
+  );
+};
+
+export const StackNavigator = () => {
+  return (
+    <NavigationContainer ref={navigationRef}>
+      <Stack.Navigator>
+        <Stack.Screen name="General" component={GeneralStack} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+};
 
 export default App;
