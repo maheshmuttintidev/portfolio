@@ -5,7 +5,7 @@ import React from "react";
 
 export default function SocialNetwork() {
   return (
-    <section className="flex flex-col gap-5 container p-3 font-['Inter'] bg-white text-black mx-auto px-3">
+    <section className="flex flex-col gap-5 container p-3 font-['Inter'] bg-white text-black mx-auto px-3 md:mt-0 mt-6">
       <h1 className="text-4xl font-bold text-center my-4">Mahesh Muttinti</h1>
       <h2 className="text-2xl font-semibold text-center mb-8">
         Full Stack Web & Mobile App Developer

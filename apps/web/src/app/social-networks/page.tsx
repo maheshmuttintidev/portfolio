@@ -35,7 +35,7 @@ const socialNetworks = [
 
 export default function SocialNetwork() {
   return (
-    <section className="flex flex-wrap gap-5 container p-3 justify-center items-center font-['Inter']">
+    <section className="flex flex-wrap gap-5 container p-3 justify-center items-center font-['Inter'] overflow-hidden">
       {socialNetworks?.map((socialNetwork, socialNetworkIndex) => {
         return (
           <section
@@ -57,7 +57,7 @@ export default function SocialNetwork() {
                   ([key, postItem], postItemIndex) => {
                     return (
                       <div
-                        className="w-[320px]"
+                        className="w-[300px]"
                         key={`postItem_${postItemIndex}`}
                       >
                         <h3 className="text-md font-semibold py-3 text-red-500">

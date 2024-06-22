@@ -122,7 +122,7 @@ export function NavBar() {
       </div>
 
       {showMenu ? (
-        <nav className="z-10 bg-gradient-to-r from-red-400 to-yellow-200 fixed top-14 right-0 flex flex-col container mx-auto justify-center items-center">
+        <nav className="z-10 bg-gradient-to-r from-[#0E133901] to-[#0E1339] fixed top-14 right-0 flex flex-col container mx-auto justify-center items-center">
           {pages?.map((page, index) => (
             <React.Fragment key={`page_${index}`}>
               <Link
