@@ -12,7 +12,7 @@ export default function Page({ slug }: any) {
   return (
     <div>
       <div>My Project - {slug}</div>
-      <Link href="/">Home</Link>
+      <Link prefetch={false} href="/">Home</Link>
     </div>
   );
 }

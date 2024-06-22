@@ -12,7 +12,7 @@ export default function SocialNetwork() {
       </h2>
 
       <section className="mb-8">
-        <h3 className="text-xl font-semibold mb-2">About Me</h3>
+        <h3 className="text-2xl font-semibold mb-2">About Me</h3>
         <p className="text-justify">
           I have an ambitious personality and thrive on challenges. While
           setting new goals for myself, I aim for results that will make me more
@@ -24,7 +24,7 @@ export default function SocialNetwork() {
       </section>
 
       <section className="mb-8">
-        <h3 className="text-xl font-semibold mb-2">Work Experience</h3>
+        <h3 className="text-2xl font-semibold mb-2">Work Experience</h3>
 
         <div className="mb-6">
           <h4 className="text-lg font-semibold">
@@ -32,7 +32,7 @@ export default function SocialNetwork() {
           </h4>
           <p>Hyderabad</p>
           <p>Designation: Senior Software Engineer</p>
-          <p>Year of Experience: 2023 August - 2024 April, 8 Months</p>
+          <p>Year of Experience: 2023 August - 2024 May, 9 Months</p>
           <p>Projects Contributed & Brief Summary:</p>
           <ul className="list-disc ml-5">
             <li className="mb-2">
@@ -134,7 +134,7 @@ export default function SocialNetwork() {
       </section>
 
       <section className="mb-8">
-        <h3 className="text-xl font-semibold mb-2">Professional Summary</h3>
+        <h3 className="text-2xl font-semibold mb-2">Professional Summary</h3>
         <h4 className="text-lg font-semibold mb-1">Core Competencies</h4>
         <ul className="list-disc ml-5 mb-4">
           <li>Communication and problem-solving skills</li>
@@ -166,12 +166,12 @@ export default function SocialNetwork() {
       </section>
 
       <section className="mb-8">
-        <h3 className="text-xl font-semibold mb-2">Professional Training</h3>
+        <h3 className="text-2xl font-semibold mb-2">Professional Training</h3>
         <p>Full Stack Development – MERN Stack at Digital-Lync, Hyderabad</p>
       </section>
 
       <section className="mb-8">
-        <h3 className="text-xl font-semibold mb-2">Achievements</h3>
+        <h3 className="text-2xl font-semibold mb-2">Achievements</h3>
         <ul className="list-disc ml-5">
           <li>Team lead of a developer community</li>
           <li>Built a portfolio using React JS and HTML/CSS</li>
@@ -182,7 +182,7 @@ export default function SocialNetwork() {
       </section>
 
       <section className="mb-8">
-        <h3 className="text-xl font-semibold mb-2">Projects</h3>
+        <h3 className="text-2xl font-semibold mb-2">Projects</h3>
         <h4 className="text-lg font-semibold">Freelance Projects</h4>
         <ul className="list-disc ml-5 mb-4">
           <li>
@@ -211,7 +211,7 @@ export default function SocialNetwork() {
       </section>
 
       <section className="mb-8">
-        <h3 className="text-xl font-semibold mb-2">Developer & Social Links</h3>
+        <h3 className="text-2xl font-semibold mb-2">Developer & Social Links</h3>
         <ul className="list-disc ml-5">
           <li>
             GitHub:{" "}
@@ -241,19 +241,19 @@ export default function SocialNetwork() {
             </a>
           </li>
           <li>
-            Twitter:{" "}
+            X:{" "}
             <a
-              href="https://x.com/MMuttinti"
+              href="https://x.com/MaheshMuttinti"
               className="text-blue-500 hover:underline"
             >
-              MMuttinti
+              MaheshMuttinti
             </a>
           </li>
         </ul>
       </section>
 
       <section>
-        <h3 className="text-xl font-semibold mb-2">Education</h3>
+        <h3 className="text-2xl font-semibold mb-2">Education</h3>
         <h4 className="text-lg font-semibold">Degree</h4>
         <p>College Name: G.I.E.T College of Engineering, Rajahmundry</p>
         <p>

@@ -27,7 +27,7 @@
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "clean": "rm -rf node_modules && rm -rf apps/web/node_modules && rm -rf apps/docs/node_modules && rm -rf packages/ui/node_modules && rm -rf packages/services/node_modules",
+    "clean": "rm -rf node_modules && rm -rf apps/web/node_modules && rm -rf packages/ui/node_modules && rm -rf packages/services/node_modules",
     "web:dev": "turbo run web#dev",
     "web:build": "turbo run web#build",
     "mobile:android": "cd apps/mobile && yarn android && yarn start",

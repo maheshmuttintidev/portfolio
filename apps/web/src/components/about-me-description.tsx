@@ -1,25 +1,15 @@
-"use client";
 import React from "react";
-// import Image from "next/image";
 import { skills } from "./skills-list";
 import Skill from "./skill-card";
 
 export const AboutMeDescription = () => {
-  // const response = await getMyPortfolioContent();
-
-  // const aboutFromApi = deepGet(response?.results?.[0], [
-  //   "heading_2",
-  //   "rich_text",
-  //   0,
-  //   "plain_text",
-  // ]);
-
   return (
     <section
       id="about"
       className="container flex flex-wrap gap-4 justify-end items-center p-3"
     >
-      <div className="flex flex-wrap justify-center bg-[url('https://i.ibb.co/drYZ6xh/dev-pose-in-chair.png')] h-screen bg-contain bg-no-repeat">
+      <div className="flex flex-wrap justify-center ">
+        {/* bg-[url('https://i.ibb.co/drYZ6xh/dev-pose-in-chair.png')] bg-contain bg-no-repeat */}
         <div className="flex flex-wrap gap-5 justify-center items-center">
           <div className="">
             <p className="md:text-3xl text-4xl text-white text-center font-['Inter'] font-bold">
