@@ -1,4 +1,4 @@
-package com.maheshmuttinti
+package com.maheshmuttintirnmobileapp
 
 import com.facebook.react.ReactActivity
 import com.facebook.react.ReactActivityDelegate

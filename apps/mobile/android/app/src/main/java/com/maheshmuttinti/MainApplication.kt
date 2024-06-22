@@ -1,4 +1,4 @@
-package com.maheshmuttinti
+package com.maheshmuttintirnmobileapp
 
 import android.app.Application
 import com.facebook.react.PackageList
