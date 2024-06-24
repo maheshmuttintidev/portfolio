@@ -17,12 +17,12 @@ const pages = [
     className: "font-bold text-xl",
     isActive: false,
   },
-  {
-    name: "Social Networks",
-    redirectTo: "/social-networks",
-    className: "font-bold text-xl",
-    isActive: false,
-  },
+  // {
+  //   name: "Social Networks",
+  //   redirectTo: "/social-networks",
+  //   className: "font-bold text-xl",
+  //   isActive: false,
+  // },
   {
     name: "Contact",
     redirectTo: "/contact",
@@ -76,7 +76,7 @@ export function NavBar() {
 
   return (
     <>
-        <div className="fixed top-0 left-0 h-12 w-full bg-[#0E1339] shadow-lg shadow-black">
+        <div className="fixed top-0 left-0 h-12 w-full bg-slate-900 z-[4] shadow-sm shadow-white">
           <Link prefetch={false} href={"/"} className="py-3">
             <Image
               src={WebsiteIcon}
@@ -85,7 +85,7 @@ export function NavBar() {
             />
           </Link>
         </div>
-      <div className="hidden md:block py-5">
+      <div className="hidden md:block py-5 z-10">
         <nav className="flex flex-wrap gap-5 container md:mt-10 mx-auto justify-center items-center">
           {pages?.map((page, index) => (
             <React.Fragment key={`page_${index}`}>
@@ -101,10 +101,10 @@ export function NavBar() {
         </nav>
       </div>
 
-      <div className="relative flex flex-wrap gap-3 items-center justify-center bg-zinc-100">
+      <div className="relative flex flex-wrap gap-3 items-center justify-center bg-zinc-100 z-10">
         <div
           onClick={toggleMenu}
-          className="transition-all fixed top-0 mt-2 right-5 flex cursor-pointer flex-wrap items-center justify-center gap-1 md:hidden py-2 border border-2 border-white rounded-md h-10 w-12"
+          className="transition-all fixed top-0 mt-1 right-5 flex cursor-pointer flex-wrap items-center justify-center gap-1 md:hidden py-2 border border-2 border-white rounded-md h-10 w-12"
         >
           {showMenu ? (
             <div className="text-4xl text-center mt-[-12px]">x</div>
@@ -122,7 +122,7 @@ export function NavBar() {
       </div>
 
       {showMenu ? (
-        <nav className="z-10 bg-gradient-to-r from-[#0E133901] to-[#0E1339] fixed top-14 right-0 flex flex-col container mx-auto justify-center items-center">
+        <nav className="z-10 bg-gradient-to-r from-[#0E1311] to-[#0E1339] fixed top-14 right-0 flex flex-col container mx-auto justify-center items-center">
           {pages?.map((page, index) => (
             <React.Fragment key={`page_${index}`}>
               <Link

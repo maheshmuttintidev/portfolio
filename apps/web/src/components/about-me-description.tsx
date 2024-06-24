@@ -8,7 +8,7 @@ export const AboutMeDescription = () => {
       id="about"
       className="container flex flex-wrap gap-4 justify-end items-center p-3"
     >
-      <div className="flex flex-wrap justify-center ">
+      <div className="flex flex-wrap justify-center">
         {/* bg-[url('https://i.ibb.co/drYZ6xh/dev-pose-in-chair.png')] bg-contain bg-no-repeat */}
         <div className="flex flex-wrap gap-5 justify-center items-center">
           <div className="">
@@ -16,11 +16,11 @@ export const AboutMeDescription = () => {
               More About Me:
             </p>
 
-            <p className="mt-3 text-center font-['Inter'] md:text-2xl text-xl">
+            <p className="mt-3 text-justify font-['Inter'] md:text-2xl text-xl">
               {`I'm Mahesh Muttinti, a Full Stack Web & Mobile Application Developer
             with a passion for creating awesome digital experiences. With 3
             years of experience in React JS, React Native, and Node JS, I
-            specialize in building stunning websites and mobile apps`}
+            specialize in building stunning websites and mobile apps.`}
             </p>
           </div>
 
@@ -28,7 +28,7 @@ export const AboutMeDescription = () => {
             <h3 className="md:text-3xl text-4xl font-bold font-['Inter'] py-4">
               Technical Skills:
             </h3>
-            <div className="flex gap-3 flex-wrap justify-center items-center">
+            <div className="flex gap-3 flex-wrap justify-center items-center z-0">
               {skills?.map((skill, index) => (
                 <Skill
                   key={`skill_${index}`}

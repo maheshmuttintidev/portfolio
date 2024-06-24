@@ -31,10 +31,10 @@ export default function ProjectCard({
       {/* <PlaceholderEmbed width={300} url={projectLiveUrl} /> */}
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          <span className="dark:text-white">{projectName}</span>
+          <span className="dark:text-white md:text-2xl text-md">{projectName}</span>
         </Typography>
       </CardContent>
-      <CardActions sx={{ justifyContent: "center", gap: 2 }}>
+      <CardActions sx={{ justifyContent: "center", gap: 2, flexWrap: 'wrap' }}>
         <Button size="small" variant="outlined">
           <VisibilityRoundedIcon sx={{ marginRight: 2 }} />
           <span>Preview</span>

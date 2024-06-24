@@ -17,6 +17,11 @@ const projects = [
     projectLiveUrl: "https://machinecode.in",
   },
   {
+    imageUrl: "/projects/avahi.png",
+    projectName: "Avahi Pvt Limited",
+    projectLiveUrl: "https://avahi.netlify.app",
+  },
+  {
     imageUrl: "/projects/telnewz.png",
     projectName: "TelNewz",
     projectLiveUrl: "https://telnewz.in",
@@ -44,18 +49,39 @@ const projects = [
 ];
 export default function ProjectsList() {
   return (
-    <div className="container justify-center self-center items-center mt-20 md:mt-3">
-      <Grid container spacing={5} justifyContent="center">
-        {projects?.map((project, key) => (
-          <Grid item xs={12} sm={6} key={`project-${key}`}>
-            <ProjectCard
-              imageUrl={project?.imageUrl}
-              projectName={project?.projectName}
-              projectLiveUrl={project?.projectLiveUrl}
-            />
-          </Grid>
-        ))}
-      </Grid>
+    <div className="container flex gap-10 justify-center self-center mt-20 md:mt-3">
+      <div>
+        <h3 className="font-['Inter'] text-xl md:text-2xl font-bold py-4 underline">
+          Own Projects
+        </h3>
+        <Grid container spacing={5} justifyContent="start">
+          {projects?.slice(0, 2).map((project, key) => (
+            <Grid item xs={12} sm={10} key={`project-${key}`}>
+              <ProjectCard
+                imageUrl={project?.imageUrl}
+                projectName={project?.projectName}
+                projectLiveUrl={project?.projectLiveUrl}
+              />
+            </Grid>
+          ))}
+        </Grid>
+      </div>
+      <div>
+        <h3 className="font-['Inter'] text-xl md:text-2xl font-bold py-4 underline">
+          Freelance Projects
+        </h3>
+        <Grid container spacing={5} justifyContent="center">
+          {projects?.slice(2)?.map((project, key) => (
+            <Grid item xs={12} sm={6} key={`project-${key}`}>
+              <ProjectCard
+                imageUrl={project?.imageUrl}
+                projectName={project?.projectName}
+                projectLiveUrl={project?.projectLiveUrl}
+              />
+            </Grid>
+          ))}
+        </Grid>
+      </div>
     </div>
   );
 }

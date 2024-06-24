@@ -1,4 +1,3 @@
-"use client";
 import * as React from "react";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
@@ -9,89 +8,83 @@ import Image from "next/image";
 
 export const Contact = () => {
   return (
-    <>
-      <main className="container mx-auto px-4 mb-5 mt-32">
-        <div className="flex flex-row flex-wrap mt-3 justify-center items-center">
-          <Image
-            src={"https://i.ibb.co/z27TLdM/prof-look-for-contacting.png"}
-            height={200}
-            width={400}
-            className="rounded"
-            alt="Mahesh Muttinti Banner Logo"
-            title="Mahesh Muttinti Banner Logo"
-          />
+    <main className="container mx-auto px-4 pt-3 mb-5">
+      <div className="flex flex-row flex-wrap mt-3 justify-center items-center">
+        <Image
+          src={"https://i.ibb.co/z27TLdM/prof-look-for-contacting.png"}
+          height={200}
+          width={400}
+          className="rounded"
+          alt="Mahesh Muttinti Banner Logo"
+          title="Mahesh Muttinti Banner Logo"
+        />
 
-          <div className="flex flex-col gap-10 text-center justify-center items-center ">
-            <p className="text-xl text-center md:text-3xl font-['Inter']">
-              If you need any help with website development or mobile app
-              development, I've got your back. Let's collaborate and bring your
-              ideas to life! Looking forward to working together.
-            </p>
-            <Stack
-              direction={"row"}
-              sx={{
-                gap: 3,
-                alignItems: "center",
-                flexWrap: "wrap",
-                justifyContent: "center",
-              }}
+        <div className="flex flex-col gap-10 text-center justify-center items-center ">
+          <p className="text-xl text-justify md:text-3xl font-['Inter']">
+            If you need any help with website development or mobile app
+            development, I've got your back. Let's collaborate and bring your
+            ideas to life! Looking forward to working together.
+          </p>
+          <Stack
+            direction={"row"}
+            sx={{
+              gap: 3,
+              alignItems: "center",
+              flexWrap: "wrap",
+              justifyContent: "center",
+            }}
+          >
+            <a
+              href="tel:+919603757304"
+              className="dark:bg-transparent bg-yellow-500 rounded"
             >
-              <a
-                href="tel:+919603757304"
-                className="dark:bg-transparent bg-yellow-500 rounded"
+              <Button
+                variant="text"
+                sx={{ color: "yellow", borderColor: "yellow" }}
               >
-                <Button
-                  variant="text"
-                  sx={{ color: "yellow", borderColor: "yellow" }}
-                >
-                  <CallIcon sx={{ marginRight: 2, height: 40, width: 40 }} />
-                </Button>
-              </a>
-              <a
-                href="https://twitter.com/MaheshMuttinti"
-                target="_blank"
-                rel="noopener"
+                <CallIcon sx={{ marginRight: 2, height: 40, width: 40 }} />
+              </Button>
+            </a>
+            <a
+              href="https://twitter.com/MaheshMuttinti"
+              target="_blank"
+              rel="noopener"
+            >
+              <Button
+                variant="text"
+                sx={{ color: "royalblue", borderColor: "royalblue" }}
               >
-                <Button
-                  variant="text"
-                  sx={{ color: "royalblue", borderColor: "royalblue" }}
-                >
-                  <TwitterIcon sx={{ marginRight: 2, height: 40, width: 40 }} />
-                </Button>
-              </a>
-              <a
-                href="https://www.instagram.com/mahesh_muttinti/"
-                target="_blank"
-                rel="noopener"
+                <TwitterIcon sx={{ marginRight: 2, height: 40, width: 40 }} />
+              </Button>
+            </a>
+            <a
+              href="https://www.instagram.com/mahesh_muttinti/"
+              target="_blank"
+              rel="noopener"
+            >
+              <Button
+                variant="text"
+                sx={{ color: "orange", borderColor: "orange" }}
               >
-                <Button
-                  variant="text"
-                  sx={{ color: "orange", borderColor: "orange" }}
-                >
-                  <InstagramIcon
-                    sx={{ marginRight: 2, height: 40, width: 40 }}
-                  />
-                </Button>
-              </a>
+                <InstagramIcon sx={{ marginRight: 2, height: 40, width: 40 }} />
+              </Button>
+            </a>
 
-              <a
-                href="https://wa.me/919603757304?text=Hello Mahesh Muttinti!"
-                target="_blank"
-                rel="noopener"
+            <a
+              href="https://wa.me/919603757304?text=Hello Mahesh Muttinti!"
+              target="_blank"
+              rel="noopener"
+            >
+              <Button
+                variant="text"
+                sx={{ color: "lime", borderColor: "lime" }}
               >
-                <Button
-                  variant="text"
-                  sx={{ color: "lime", borderColor: "lime" }}
-                >
-                  <WhatsAppIcon
-                    sx={{ marginRight: 2, height: 40, width: 40 }}
-                  />
-                </Button>
-              </a>
-            </Stack>
-          </div>
+                <WhatsAppIcon sx={{ marginRight: 2, height: 40, width: 40 }} />
+              </Button>
+            </a>
+          </Stack>
         </div>
-      </main>
-    </>
+      </div>
+    </main>
   );
 };

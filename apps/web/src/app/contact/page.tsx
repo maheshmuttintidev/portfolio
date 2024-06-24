@@ -27,7 +27,7 @@ export default function Contact() {
           />
 
           <div className="mt-3 flex flex-col gap-10 text-center justify-center items-center">
-            <p className="text-xl text-center md:text-3xl font-['Inter']">
+            <p className="text-xl text-justify md:text-3xl font-['Inter']">
               {`If you need any help with website development or mobile app
               development, I've got your back. Let's collaborate and bring your
               ideas to life! Looking forward to working together.`}

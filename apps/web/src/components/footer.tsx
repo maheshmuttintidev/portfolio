@@ -7,42 +7,38 @@ const Footer = () => {
 
   return (
     <>
-      <footer className="py-4 mt-2 font-['Inter'] text-center">
-        <div className="container mx-auto px-4">
-          <div className="flex items-center justify-center flex-col">
-            <Link
-              href="https://play.google.com/store/apps/details?id=com.maheshmuttintirnmobileapp"
-              rel="noopener"
-              target="_blank"
+      <footer className="py-4 font-['Inter'] text-center bg-slate-900 mt-5 shadow-lg shadow-white">
+        <div className="container mx-auto px-4 flex flex-col justify-between items-center md:flex-row flex-wrap gap-5">
+          <Link
+            href="https://play.google.com/store/apps/details?id=com.maheshmuttintirnmobileapp"
+            rel="noopener"
+            target="_blank"
+            className="flex flex-col items-center gap-3"
+          >
+            <img
+              src={imageUrl}
+              alt="Mahesh Muttinti Mobile App"
+              className="w-10 h-10 rounded-full"
+            />
+            <p className="text-center">Mobile App</p>
+          </Link>
+          <p className="text-green-500 mt-4">
+            &copy; {new Date().getFullYear()}{" "}
+            <span
+              className="font-bold font-mono underline"
+              title="Mahesh Muttinti Official Website"
             >
-              <img
-                src={imageUrl}
-                alt="Mahesh Muttinti Mobile App"
-                style={{
-                  width: "100px",
-                  height: "100px",
-                  borderRadius: "20px",
-                }}
-              />
+              maheshmuttintidev.in
+            </span>
+            . All rights reserved.
+            <br />
+            <Link
+              href="/legal/privacy-policy"
+              className="text-yellow-500 ml-2 hover:underline active:underline"
+            >
+              Privacy Policy
             </Link>
-            <p className="text-green-500 mt-4">
-              &copy; {new Date().getFullYear()}{" "}
-              <span
-                className="font-bold font-mono underline"
-                title="Mahesh Muttinti Official Website"
-              >
-                maheshmuttintidev.in
-              </span>
-              . All rights reserved.
-              <br />
-              <Link
-                href="/legal/privacy-policy"
-                className="text-blue-500 ml-2 hover:underline active:underline"
-              >
-                Privacy Policy
-              </Link>
-            </p>
-          </div>
+          </p>
         </div>
       </footer>
     </>
