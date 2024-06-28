@@ -8,12 +8,22 @@ const nextConfig = {
       {
         protocol: "https",
         hostname: "i.ibb.co",
+        pathname: "maheshmuttintidev.in/*",
       },
-      { protocol: "https", hostname: "s3.us-west-2.amazonaws.com" },
-      { protocol: "https", hostname: "via.placeholder.com" },
+      {
+        protocol: "https",
+        hostname: "s3.us-west-2.amazonaws.com",
+        pathname: "maheshmuttintidev.in/*",
+      },
+      {
+        protocol: "https",
+        hostname: "via.placeholder.com",
+        pathname: "maheshmuttintidev.in/*",
+      },
       {
         protocol: "https",
         hostname: "prod-files-secure.s3.us-west-2.amazonaws.com",
+        pathname: "maheshmuttintidev.in/*",
       },
     ],
   },
