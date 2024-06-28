@@ -52,7 +52,7 @@ export default function ProjectsList() {
     <div className="container flex gap-10 justify-center self-center mt-20 md:mt-3">
       <div>
         <h3 className="font-['Inter'] text-xl md:text-2xl font-bold py-4 underline">
-          Own Projects
+          Freelance Projects
         </h3>
         <Grid container spacing={5} justifyContent="start">
           {projects?.slice(0, 2).map((project, key) => (
@@ -68,7 +68,7 @@ export default function ProjectsList() {
       </div>
       <div>
         <h3 className="font-['Inter'] text-xl md:text-2xl font-bold py-4 underline">
-          Freelance Projects
+          Own Projects
         </h3>
         <Grid container spacing={5} justifyContent="center">
           {projects?.slice(2)?.map((project, key) => (

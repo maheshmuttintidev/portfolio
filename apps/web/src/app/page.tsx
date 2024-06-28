@@ -14,7 +14,7 @@ export default async function Web() {
         <title>Mahesh Muttinti | Portfolio</title>
       </Head>
       <Suspense fallback={<Loading />}>
-        <main className="mx-auto pb-8 text-center container">
+        <main className="mx-auto text-center container">
           <HomePageLayoutComponents />
         </main>
       </Suspense>

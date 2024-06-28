@@ -6,15 +6,15 @@ export const metadata = {
   title: "Mahesh Muttinti | Professional Website",
   description:
     "My Name is Mahesh Muttinti. I am a Full Stack Web & Mobile Application Developer. I have more than 2 years of experience in React JS, React Native and Node JS. I am working on Mainly Website development, Mobile App development.",
-    openGraph: {
-      title: 'Mahesh Muttiti',
-      description:
-        'My Name is Mahesh Muttinti. I am a Full Stack Web & Mobile Application Developer. I have more than 2 years of experience in React JS, React Native and Node JS. I am working on Mainly Website development, Mobile App development.',
-      url: 'https://maheshmuttintidev.in/', //pending mark as canonical
-      siteName: 'Mahesh Muttinti',
-      locale: 'en',
-      type: 'website',
-    },
+  openGraph: {
+    title: "Mahesh Muttiti",
+    description:
+      "My Name is Mahesh Muttinti. I am a Full Stack Web & Mobile Application Developer. I have more than 2 years of experience in React JS, React Native and Node JS. I am working on Mainly Website development, Mobile App development.",
+    url: "https://maheshmuttintidev.in/", //pending mark as canonical
+    siteName: "Mahesh Muttinti",
+    locale: "en",
+    type: "website",
+  },
   keywords: [
     "Mahesh",
     "Mahesh M",
@@ -22,7 +22,7 @@ export const metadata = {
     "maheshmuttinti",
     "mahesh muttinti",
   ],
-  icons: '/favicon.ico',
+  icons: "/favicon.ico",
 };
 
 export default function RootLayout({
@@ -31,7 +31,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="bg-[#0E1339]">
+    <html lang="en" className="theme-bg">
       <head>
         <meta property="og:type" content="Home" />
         <meta property="og:url" content="https://maheshmuttintidev.in" />
@@ -49,12 +49,10 @@ export default function RootLayout({
         <meta property="og:image" content="/favicon.ico" />
       </head>
       <body>
-        <div className="mx-auto w-full overflow-hidden dark:text-white text-black">
+        <div className="mx-auto w-full overflow-hidden">
           <NavBar />
-          <div className="md:pt-4 dark:bg-[#0E1339]">{children}</div>
-          <div className="mx-auto flex flex-col justify-center">
-            <Footer />
-          </div>
+          <div className="md:pt-4 theme-bg theme-text">{children}</div>
+          <Footer />
         </div>
       </body>
     </html>
