@@ -10,7 +10,7 @@ export const metadata = {
     title: "Mahesh Muttiti",
     description:
       "My Name is Mahesh Muttinti. I am a Full Stack Web & Mobile Application Developer. I have more than 2 years of experience in React JS, React Native and Node JS. I am working on Mainly Website development, Mobile App development.",
-    url: "https://maheshmuttintidev.in/", //pending mark as canonical
+    url: "https://maheshmuttintidev.in/",
     siteName: "Mahesh Muttinti",
     locale: "en",
     type: "website",
@@ -38,9 +38,9 @@ export default function RootLayout({
         <meta property="og:title" content="Mahesh Muttinti | Portfolio" />
         <meta
           property="og:description"
-          content="My Name is Mahesh Muttinti. I am a Full Stack Web & Mobile Application Developer. I have 2 years of experience in React JS, React Native and Node JS. I am working on Mainly Website development, Mobile App development for now. If you require any help from my side either website development or mobile app development."
+          content="My Name is Mahesh Muttinti. I am a Full Stack Web & Mobile Application Developer. I have 2 years, 10 months of experience in React JS, React Native and Node JS. I am working on Mainly Website development, Mobile App development for now. If you require any help from my side either website development or mobile app development."
         />
-        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.ico" />
         <meta property="og:site_name" content="Mahesh Muttinti" />
         <meta
           name="robots"
