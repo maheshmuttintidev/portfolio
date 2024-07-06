@@ -14,6 +14,18 @@ export const metadata = {
     siteName: "Mahesh Muttinti",
     locale: "en",
     type: "website",
+    image: "/brand_banner.webp",
+  },
+  twitter: {
+    card: "/brand_banner.webp",
+    title: "Mahesh Muttiti",
+    description:
+      "My Name is Mahesh Muttinti. I am a Full Stack Web & Mobile Application Developer. I have more than 2 years of experience in React JS, React Native and Node JS. I am working on Mainly Website development, Mobile App development.",
+    url: "https://maheshmuttintidev.in/",
+    siteName: "Mahesh Muttinti",
+    locale: "en",
+    type: "website",
+    image: "/brand_banner.webp",
   },
   keywords: [
     "Mahesh",
@@ -40,13 +52,22 @@ export default function RootLayout({
           property="og:description"
           content="My Name is Mahesh Muttinti. I am a Full Stack Web & Mobile Application Developer. I have 2 years, 10 months of experience in React JS, React Native and Node JS. I am working on Mainly Website development, Mobile App development for now. If you require any help from my side either website development or mobile app development."
         />
-        <link rel="icon" href="/favicon.ico" />
         <meta property="og:site_name" content="Mahesh Muttinti" />
+        <meta property="og:image" content="/brand_banner.webp" />
+        <meta property="twitter:url" content="https://maheshmuttintidev.in" />
+        <meta property="twitter:site" content="@MaheshMuttinti" />
+        <meta property="twitter:title" content="Mahesh Muttinti | Portfolio" />
+        <meta
+          property="twitter:description"
+          content="My Name is Mahesh Muttinti. I am a Full Stack Web & Mobile Application Developer. I have 2 years, 10 months of experience in React JS, React Native and Node JS. I am working on Mainly Website development, Mobile App development for now. If you require any help from my side either website development or mobile app development."
+        />
+        <meta property="twitter:site_name" content="Mahesh Muttinti" />
+        <meta property="twitter:image" content="/brand_banner.webp" />
+        <link rel="icon" href="/favicon.ico" />
         <meta
           name="robots"
           content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"
         />
-        <meta property="og:image" content="/favicon.ico" />
       </head>
       <body>
         <div className="mx-auto w-full overflow-hidden">
