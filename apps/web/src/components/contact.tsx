@@ -3,7 +3,6 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import CallIcon from "@mui/icons-material/Call";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
-import { Button, Stack } from "@mui/material";
 import Image from "next/image";
 
 export const Contact = () => {

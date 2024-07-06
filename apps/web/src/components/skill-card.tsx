@@ -1,9 +1,5 @@
 "use client";
 import * as React from "react";
-import ListItem from "@mui/material/ListItem";
-import ListItemAvatar from "@mui/material/ListItemAvatar";
-import Image from "next/image";
-import styles from "./skills.module.css";
 
 interface SkillProp {
   title?: string;

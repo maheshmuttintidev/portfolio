@@ -1,11 +1,8 @@
-"use client";
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
-import { DownArrow } from "../svgs/down-arrow";
-import HeroSectionImage from "../../public/banner/brand_banner.jpg";
+import HeroSectionImage from "../../public/banner/brand_banner.webp";
 
-export const HeroSectionOne = () => {
+export const HeroSection = () => {
   return (
     <section className="flex md:flex-row md:justify-center flex-col gap-3 md:border md:border-1 md:border-teal-400">
       <section className="md:pt-0 md:w-1/2 pt-10">
