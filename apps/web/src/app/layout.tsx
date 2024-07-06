@@ -7,6 +7,9 @@ export const metadata = {
   description:
     "My Name is Mahesh Muttinti. I am a Full Stack Web & Mobile Application Developer. I have more than 2 years of experience in React JS, React Native and Node JS. I am working on Mainly Website development, Mobile App development.",
   metadataBase: new URL("https://maheshmuttintidev.in"),
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "Mahesh Muttiti | Portfolio Website",
     description:
@@ -18,16 +21,12 @@ export const metadata = {
     image: "/brand_banner.webp",
   },
   twitter: {
-    card: "/brand_banner.webp",
+    card: "summary_large_image",
     title: "Mahesh Muttiti | Portfolio Website",
-    site: "@MaheshMuttinti",
     description:
       "My Name is Mahesh Muttinti. I am a Full Stack Web & Mobile Application Developer. I have more than 2 years of experience in React JS, React Native and Node JS. I am working on Mainly Website development, Mobile App development.",
-    url: "https://maheshmuttintidev.in",
-    siteName: "Mahesh Muttinti | Portfolio Website",
-    locale: "en",
-    type: "website",
-    image: "/brand_banner.webp",
+    creator: "@MaheshMuttinti",
+    images: ["https://maheshmuttintidev.in/brand_banner.webp"],
   },
   keywords: [
     "Mahesh",
@@ -39,7 +38,13 @@ export const metadata = {
     "MaheshMuttinti",
     "M Mahesh",
   ],
-  icons: "/favicon.ico",
+  icons: {
+    icon: [
+      { url: "/favicon.ico" },
+      new URL("/favicon.ico", "https://maheshmuttintidev.in"),
+    ],
+    apple: [{ url: "/apple-touch-icon.png" }],
+  },
 };
 
 export default function RootLayout({
