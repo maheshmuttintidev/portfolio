@@ -6,27 +6,28 @@ export const metadata = {
   title: "Mahesh Muttinti | Professional Website",
   description:
     "My Name is Mahesh Muttinti. I am a Full Stack Web & Mobile Application Developer. I have more than 2 years of experience in React JS, React Native and Node JS. I am working on Mainly Website development, Mobile App development.",
+  metadataBase: new URL("https://maheshmuttintidev.in"),
   openGraph: {
     title: "Mahesh Muttiti | Portfolio Website",
     description:
       "My Name is Mahesh Muttinti. I am a Full Stack Web & Mobile Application Developer. I have more than 2 years of experience in React JS, React Native and Node JS. I am working on Mainly Website development, Mobile App development.",
-    url: "https://maheshmuttintidev.in/",
+    url: "https://maheshmuttintidev.in",
     siteName: "Mahesh Muttinti | Portfolio Website",
     locale: "en",
     type: "website",
-    image: "/banner/brand_banner.webp",
+    image: "/brand_banner.webp",
   },
   twitter: {
-    card: "/banner/brand_banner.webp",
+    card: "/brand_banner.webp",
     title: "Mahesh Muttiti | Portfolio Website",
     site: "@MaheshMuttinti",
     description:
       "My Name is Mahesh Muttinti. I am a Full Stack Web & Mobile Application Developer. I have more than 2 years of experience in React JS, React Native and Node JS. I am working on Mainly Website development, Mobile App development.",
-    url: "https://maheshmuttintidev.in/",
+    url: "https://maheshmuttintidev.in",
     siteName: "Mahesh Muttinti | Portfolio Website",
     locale: "en",
     type: "website",
-    image: "/banner/brand_banner.webp",
+    image: "/brand_banner.webp",
   },
   keywords: [
     "Mahesh",
