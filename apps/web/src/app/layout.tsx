@@ -73,6 +73,10 @@ export default function RootLayout({
           name="robots"
           content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"
         />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        />
       </head>
       <body>
         <div className="mx-auto w-full overflow-hidden">
@@ -84,6 +88,7 @@ export default function RootLayout({
               maheshmuttinti@gmail.com
             </a>
           </div>
+
           <NavBar />
           <div className="md:pt-4 theme-bg theme-text">{children}</div>
           <Footer />

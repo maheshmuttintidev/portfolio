@@ -6,21 +6,20 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer components {
   .link {
     @apply font-['Inter'] dark:text-white text-black md:text-5xl text-3xl py-2 px-4 rounded dark:hover:bg-white hover:text-black shadow-sm shadow-neutral-400 h-max w-max;
   }
   .theme-bg {
-    @apply bg-slate-100 dark:bg-[#0E1339]
+    @apply bg-slate-100 dark:bg-[#0E1339];
   }
   .nav-theme-bg {
-    @apply bg-white dark:bg-[#302a20e7]
+    @apply bg-white dark:bg-[#302a20e7];
   }
   .theme-text {
-    @apply text-black dark:text-white font-['Inter']
+    @apply text-black dark:text-white font-['Inter'];
   }
   .nav-theme-menu-bg {
-    @apply dark:bg-gradient-to-r dark:from-[#0E1311] dark:to-[#090909] bg-gradient-to-r from-[#ebe7e8] to-white
+    @apply dark:bg-gradient-to-r dark:from-[#0E1311] dark:to-[#090909] bg-gradient-to-r from-[#ebe7e8] to-white;
   }
 }

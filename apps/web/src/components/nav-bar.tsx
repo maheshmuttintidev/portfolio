@@ -17,12 +17,6 @@ const pages = [
     className: "font-bold text-xl",
     isActive: false,
   },
-  // {
-  //   name: "Social Networks",
-  //   redirectTo: "/social-networks",
-  //   className: "font-bold text-xl",
-  //   isActive: false,
-  // },
   {
     name: "Contact",
     redirectTo: "/contact",
@@ -77,11 +71,11 @@ export function NavBar() {
   return (
     <>
       <div className="fixed top-0 left-0 h-12 w-full nav-theme-bg z-[4] shadow-sm shadow-white">
-        <Link prefetch={false} href={"/"} className="py-3">
+        <Link prefetch={false} href={"/"} className="py-3" title="Home Page">
           <Image
             src={WebsiteIcon}
             className="object-contain w-full h-10 top-1"
-            alt="website icon"
+            alt="Website Logo"
           />
         </Link>
       </div>
@@ -104,7 +98,7 @@ export function NavBar() {
       <div className="nav-theme-bg relative flex flex-wrap gap-3 items-center justify-center bg-zinc-100 z-10">
         <div
           onClick={toggleMenu}
-          className="transition-all fixed top-0 mt-1 right-5 flex cursor-pointer flex-wrap items-center justify-center gap-1 md:hidden py-2 border border-2 border-black dark:border-white rounded-md h-10 w-12"
+          className="transition-all fixed top-0 mt-1 right-5 flex cursor-pointer flex-wrap items-center justify-center gap-1 md:hidden py-2 border-2 border-black dark:border-white rounded-md h-10 w-12"
         >
           {showMenu ? (
             <p className="text-4xl text-center theme-text mt-[-12px]">x</p>

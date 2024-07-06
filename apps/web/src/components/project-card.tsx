@@ -5,7 +5,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import VisibilityRoundedIcon from "@mui/icons-material/VisibilityRounded";
+// import VisibilityRoundedIcon from "@mui/icons-material/VisibilityRounded";
 import DesktopWindowsRoundedIcon from "@mui/icons-material/DesktopWindowsRounded";
 
 interface ProjectCardProps {
@@ -35,12 +35,17 @@ export default function ProjectCard({
         </Typography>
       </CardContent>
       <CardActions sx={{ justifyContent: "center", gap: 2, flexWrap: "wrap" }}>
-        <Button size="small" variant="outlined">
+        {/* <Button size="small" variant="outlined">
           <VisibilityRoundedIcon sx={{ marginRight: 2 }} />
           <span>Preview</span>
-        </Button>
+        </Button> */}
 
-        <a href={projectLiveUrl} target="_blank" rel="noopener">
+        <a
+          href={projectLiveUrl}
+          target="_blank"
+          rel="noopener"
+          title="Live URL"
+        >
           <Button size="small" variant="outlined" sx={{ color: "green" }}>
             <DesktopWindowsRoundedIcon
               sx={{ color: "green", marginRight: 2 }}

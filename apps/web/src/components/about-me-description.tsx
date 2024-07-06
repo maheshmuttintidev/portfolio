@@ -13,12 +13,12 @@ export const AboutMeDescription = () => {
           More About Me:
         </h2>
 
-        <h3 className="mt-3 text-justify font-['Inter'] md:text-2xl text-xl">
-          {`I'm Mahesh Muttinti, a Full Stack Web & Mobile Application Developer
+        <p className="mt-3 text-justify font-['Inter'] md:text-2xl text-xl">
+          {`I'm Mahesh Muttinti, Full Stack Web & Mobile Application Developer
             with a passion for creating awesome digital experiences. With 3
             years of experience in React JS, React Native, and Node JS, I
             specialize in building stunning websites and mobile apps.`}
-        </h3>
+        </p>
       </div>
 
       <div className="md:w-1/3">
