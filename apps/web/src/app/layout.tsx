@@ -5,7 +5,15 @@ import { NavBar } from "@/components/nav-bar";
 export const metadata = {
   title: "Mahesh Muttinti | Professional Website",
   description:
-    "My Name is Mahesh Muttinti. I am a Full Stack Web & Mobile Application Developer. I have more than 2 years of experience in React JS, React Native and Node JS. I am working on Mainly Website development, Mobile App development.",
+    "My Name is Mahesh Muttinti. I am a Full Stack Web & Mobile Application Developer. I have more than 2 years of experience in React JS, React Native and Node JS. I am working on Mainly Website and Mobile App development.",
+
+  icons: {
+    icon: [
+      { url: "/favicon.ico" },
+      new URL("/favicon.ico", "https://maheshmuttintidev.in"),
+    ],
+    apple: [{ url: "/apple-icon.png" }],
+  },
   metadataBase: new URL("https://maheshmuttintidev.in"),
   alternates: {
     canonical: "/",
@@ -13,38 +21,45 @@ export const metadata = {
   openGraph: {
     title: "Mahesh Muttiti | Portfolio Website",
     description:
-      "My Name is Mahesh Muttinti. I am a Full Stack Web & Mobile Application Developer. I have more than 2 years of experience in React JS, React Native and Node JS. I am working on Mainly Website development, Mobile App development.",
+      "My Name is Mahesh Muttinti. I am a Full Stack Web & Mobile Application Developer. I have more than 2 years of experience in React JS, React Native and Node JS. I am working on Mainly Website and Mobile App development.",
     url: "https://maheshmuttintidev.in",
     siteName: "Mahesh Muttinti | Portfolio Website",
     locale: "en",
     type: "website",
-    image: "/brand_banner.webp",
+    image: "https://maheshmuttintidev.in/brand_banner.webp",
   },
   twitter: {
     card: "summary_large_image",
     title: "Mahesh Muttiti | Portfolio Website",
     description:
-      "My Name is Mahesh Muttinti. I am a Full Stack Web & Mobile Application Developer. I have more than 2 years of experience in React JS, React Native and Node JS. I am working on Mainly Website development, Mobile App development.",
+      "My Name is Mahesh Muttinti. I am a Full Stack Web & Mobile Application Developer. I have more than 2 years of experience in React JS, React Native and Node JS. I am working on Mainly Website and Mobile App development.",
     creator: "@MaheshMuttinti",
     images: ["https://maheshmuttintidev.in/brand_banner.webp"],
   },
   keywords: [
+    "Mahesh Muttinti",
     "Mahesh",
     "Mahesh M",
-    "Mahesh Muttinti",
     "maheshmuttinti",
     "mahesh muttinti",
     "maheshMuttinti",
     "MaheshMuttinti",
     "M Mahesh",
+    "React",
+    "react",
+    "React Native",
+    "react native",
+    "Mobile Application",
+    "mobile application",
+    "developer",
+    "Developer",
+    "web",
+    "web development",
+    "web application",
+    "Web Application",
+    "Full Stack developer",
+    "Full stack developer",
   ],
-  icons: {
-    icon: [
-      { url: "/favicon.ico" },
-      new URL("/favicon.ico", "https://maheshmuttintidev.in"),
-    ],
-    apple: [{ url: "/apple-touch-icon.png" }],
-  },
 };
 
 export default function RootLayout({
@@ -62,6 +77,14 @@ export default function RootLayout({
       </head>
       <body>
         <div className="mx-auto w-full overflow-hidden">
+          <div itemScope itemType="http://schema.org/Person">
+            <span itemProp="name">Mahesh Muttinti</span>
+            <span itemProp="company">Mahesh Muttinti</span>
+            <span itemProp="tel">+919603757304</span>
+            <a itemProp="email" href="mailto:maheshmuttinti@gmail.com">
+              maheshmuttinti@gmail.com
+            </a>
+          </div>
           <NavBar />
           <div className="md:pt-4 theme-bg theme-text">{children}</div>
           <Footer />

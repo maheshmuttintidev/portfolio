@@ -2,7 +2,7 @@
 import * as React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import WebsiteIcon from "../../public/apple-touch-icon.png";
+import WebsiteIcon from "../app/apple-icon.png";
 
 const pages = [
   {

@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import HeroSectionImage from "../../public/banner/brand_banner.webp";
+import HeroSectionImage from "../../public/brand_banner.webp";
 
 export const HeroSection = () => {
   return (

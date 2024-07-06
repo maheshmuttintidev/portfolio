@@ -12,37 +12,37 @@ export async function generateStaticParams() {
 
 const projects = [
   {
-    imageUrl: "/projects/machinecode.png",
+    imageUrl: "/projects/machinecode.webp",
     projectName: "Machine Code Technologies",
     projectLiveUrl: "https://machinecode.in",
   },
   {
-    imageUrl: "/projects/avahi.png",
+    imageUrl: "/projects/avahi.webp",
     projectName: "Avahi Pvt Limited",
     projectLiveUrl: "https://avahi.netlify.app",
   },
   {
-    imageUrl: "/projects/telnewz.png",
+    imageUrl: "/projects/telnewz.webp",
     projectName: "TelNewz",
     projectLiveUrl: "https://telnewz.in",
   },
   {
-    imageUrl: "/projects/notion_to_md_converter.png",
+    imageUrl: "/projects/notion_to_md_converter.webp",
     projectName: "Notion To MD Converter",
     projectLiveUrl: "https://notion-to-md-converter.vercel.app",
   },
   {
-    imageUrl: "/projects/lokesh_doppasani.png",
+    imageUrl: "/projects/lokesh_doppasani.webp",
     projectName: "Lokesh Doppasani",
     projectLiveUrl: "https://lokesh-doppasani.vercel.app",
   },
   {
-    imageUrl: "/projects/gangababu.png",
+    imageUrl: "/projects/gangababu.webp",
     projectName: "Ganga Babu",
     projectLiveUrl: "https://gangababu.vercel.app/",
   },
   {
-    imageUrl: "/projects/raja_reddy.png",
+    imageUrl: "/projects/raja_reddy.webp",
     projectName: "Raja Reddy",
     projectLiveUrl: "https://rajareddy.vercel.app/",
   },

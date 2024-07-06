@@ -27,7 +27,6 @@ export default function ProjectCard({
         height={300}
         image={`${imageUrl}`}
       />
-      {/* <PlaceholderEmbed width={300} url={projectLiveUrl} /> */}
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
           <span className="dark:text-white md:text-2xl text-md">
