@@ -9,22 +9,22 @@ export const AboutMeDescription = () => {
       className="container flex md:flex-row flex-col gap-4 justify-between items-center p-3"
     >
       <div className="md:w-2/3">
-        <p className="md:text-3xl text-4xl text-center font-['Inter'] font-bold">
+        <h2 className="md:text-3xl text-4xl text-center font-['Inter'] font-bold">
           More About Me:
-        </p>
+        </h2>
 
-        <p className="mt-3 text-justify font-['Inter'] md:text-2xl text-xl">
+        <h3 className="mt-3 text-justify font-['Inter'] md:text-2xl text-xl">
           {`I'm Mahesh Muttinti, a Full Stack Web & Mobile Application Developer
             with a passion for creating awesome digital experiences. With 3
             years of experience in React JS, React Native, and Node JS, I
             specialize in building stunning websites and mobile apps.`}
-        </p>
+        </h3>
       </div>
 
       <div className="md:w-1/3">
-        <h3 className="md:text-3xl text-4xl font-bold font-['Inter'] py-4">
+        <h2 className="md:text-3xl text-4xl font-bold font-['Inter'] py-4">
           Technical Skills:
-        </h3>
+        </h2>
         <div className="flex gap-3 flex-wrap justify-center items-center z-0">
           {skills?.map((skill, index) => (
             <Skill

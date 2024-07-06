@@ -1,4 +1,3 @@
-'use client';
 import React from "react";
 import Skill from "./skill-card";
 import List from "@mui/material/List";
@@ -62,34 +61,34 @@ export const skills = [
 
 export default function Skills(): React.ReactElement {
   return (
-      <section className="container mt-8 flex flex-wrap px-4 py-3">
-        <h2
-          className="text-5xl underline underline-offset-4 mb-3 font-bold text-red-400 text-center"
-          title="skills"
-        >
-          <span className="text-4xl text-white">Skills</span>
-        </h2>
-        <List
-          sx={{
-            width: "100%",
-            justifyContent: "center",
-            overflow: "hidden",
-            display: "flex",
-            flexWrap: "wrap",
-            gap: 6,
-          }}
-        >
-          {skills?.map((skill, index) => (
-            <Skill
-              key={`skill_${index}`}
-              title={skill?.title || ""}
-              text={skill?.text || ""}
-              imgUrl={skill?.imgUrl || ""}
-              percentage={skill?.percentage || 0}
-              length={skills?.length}
-            />
-          ))}
-        </List>
-      </section>
+    <section className="container mt-8 flex flex-wrap px-4 py-3">
+      <h2
+        className="text-5xl underline underline-offset-4 mb-3 font-bold text-red-400 text-center"
+        title="skills"
+      >
+        <span className="text-4xl text-white">Skills</span>
+      </h2>
+      <List
+        sx={{
+          width: "100%",
+          justifyContent: "center",
+          overflow: "hidden",
+          display: "flex",
+          flexWrap: "wrap",
+          gap: 6,
+        }}
+      >
+        {skills?.map((skill, index) => (
+          <Skill
+            key={`skill_${index}`}
+            title={skill?.title || ""}
+            text={skill?.text || ""}
+            imgUrl={skill?.imgUrl || ""}
+            percentage={skill?.percentage || 0}
+            length={skills?.length}
+          />
+        ))}
+      </List>
+    </section>
   );
 }

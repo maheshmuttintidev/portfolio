@@ -1,4 +1,3 @@
-"use client";
 import {
   Typography,
   Card,
@@ -28,7 +27,7 @@ export const PostDetail = ({
             ? bannerImage
             : "https://via.placeholder.com/500x200.png?text=Post+Sample+Banner"
         }`}
-        alt={"Banner Image"}
+        alt={title}
       />
       <CardHeader
         title={<span className="dark:text-white">{title}</span>}

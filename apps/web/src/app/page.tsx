@@ -1,4 +1,3 @@
-"use client";
 import React, { Suspense } from "react";
 import Head from "next/head";
 import "./globals.css";

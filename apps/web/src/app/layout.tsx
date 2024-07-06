@@ -5,8 +5,7 @@ import { NavBar } from "@/components/nav-bar";
 export const metadata = {
   title: "Mahesh Muttinti | Professional Website",
   description:
-    "My Name is Mahesh Muttinti. I am a Full Stack Web & Mobile Application Developer. I have more than 2 years of experience in React JS, React Native and Node JS. I am working on Mainly Website and Mobile App development.",
-
+    "My Name is Mahesh Muttinti. I am a Full Stack Web & Mobile Application Developer. I build Websites and Mobile Applications using React JS, React Native.",
   icons: {
     icon: [
       { url: "/favicon.ico" },
@@ -21,7 +20,7 @@ export const metadata = {
   openGraph: {
     title: "Mahesh Muttiti | Portfolio Website",
     description:
-      "My Name is Mahesh Muttinti. I am a Full Stack Web & Mobile Application Developer. I have more than 2 years of experience in React JS, React Native and Node JS. I am working on Mainly Website and Mobile App development.",
+      "My Name is Mahesh Muttinti. I am a Full Stack Web & Mobile Application Developer. I build Websites and Mobile Applications using React JS, React Native.",
     url: "https://maheshmuttintidev.in",
     siteName: "Mahesh Muttinti | Portfolio Website",
     locale: "en",
@@ -32,7 +31,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Mahesh Muttiti | Portfolio Website",
     description:
-      "My Name is Mahesh Muttinti. I am a Full Stack Web & Mobile Application Developer. I have more than 2 years of experience in React JS, React Native and Node JS. I am working on Mainly Website and Mobile App development.",
+      "My Name is Mahesh Muttinti. I am a Full Stack Web & Mobile Application Developer. I build Websites and Mobile Applications using React JS, React Native.",
     creator: "@MaheshMuttinti",
     images: ["https://maheshmuttintidev.in/brand_banner.webp"],
   },
