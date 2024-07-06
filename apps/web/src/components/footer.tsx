@@ -20,6 +20,7 @@ const Footer = () => {
             src={imageUrl}
             alt="Mahesh Muttinti Mobile App"
             className="w-10 h-10 rounded-full"
+            title="Mahesh Muttinti Mobile App"
           />
           <p className="text-center theme-text">Mobile App</p>
         </Link>

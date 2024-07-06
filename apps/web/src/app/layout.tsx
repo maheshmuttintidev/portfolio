@@ -3,7 +3,7 @@ import Footer from "@/components/footer";
 import { NavBar } from "@/components/nav-bar";
 
 export const metadata = {
-  title: "Mahesh Muttinti | Professional Website",
+  title: "Mahesh Muttinti - Full Stack Web and Mobile Application Developer",
   description:
     "My Name is Mahesh Muttinti. I am a Full Stack Web & Mobile Application Developer. I build Websites and Mobile Applications using React JS, React Native.",
   icons: {
@@ -18,7 +18,7 @@ export const metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Mahesh Muttiti | Portfolio Website",
+    title: "Mahesh Muttinti - Full Stack Web and Mobile Application Developer",
     description:
       "My Name is Mahesh Muttinti. I am a Full Stack Web & Mobile Application Developer. I build Websites and Mobile Applications using React JS, React Native.",
     url: "https://maheshmuttintidev.in",
@@ -29,7 +29,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mahesh Muttiti | Portfolio Website",
+    title: "Mahesh Muttinti - Full Stack Web and Mobile Application Developer",
     description:
       "My Name is Mahesh Muttinti. I am a Full Stack Web & Mobile Application Developer. I build Websites and Mobile Applications using React JS, React Native.",
     creator: "@MaheshMuttinti",

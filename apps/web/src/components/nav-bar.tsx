@@ -76,6 +76,7 @@ export function NavBar() {
             src={WebsiteIcon}
             className="object-contain w-full h-10 top-1"
             alt="Website Logo"
+            title="Website Logo"
           />
         </Link>
       </div>

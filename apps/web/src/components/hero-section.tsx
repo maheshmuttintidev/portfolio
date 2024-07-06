@@ -10,6 +10,7 @@ export const HeroSection = () => {
           src={HeroSectionImage}
           className="object-contain"
           alt="Hero Section Banner Image"
+          title="Hero Section Banner Image"
         />
       </section>
       <div className="md:mt-0 mt-4 flex flex-col gap-5 justify-center items-center md:w-1/2 self-center text-center px-3">
