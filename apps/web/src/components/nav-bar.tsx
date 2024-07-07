@@ -88,6 +88,7 @@ export function NavBar() {
                 prefetch={false}
                 className={"link ml-3 "?.concat(page?.className)}
                 href={page?.redirectTo}
+                title={page?.name}
               >
                 {page?.name}
               </Link>
@@ -125,6 +126,7 @@ export function NavBar() {
                 onClick={closeMenu}
                 className={"link w-full border-0 "?.concat(page?.className)}
                 href={page?.redirectTo}
+                title={page?.name}
               >
                 {page?.name}
               </Link>

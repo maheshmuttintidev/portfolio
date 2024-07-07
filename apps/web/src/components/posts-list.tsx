@@ -32,6 +32,7 @@ export default async function BlogsList() {
               prefetch={false}
               className="font-['Inter'] dark:text-white rounded md:text-4xl text-3xl w-full"
               href={`posts/${getPostSlug(post)}`}
+              title={getPostTitle(post)}
             >
               <Image
                 alt={`${getPostSlug(post)}`}

@@ -33,6 +33,7 @@ export default async function Page({ params }: any) {
         prefetch={false}
         className="text-2xl md:text-3xl font-semibold text-left pb-5"
         href="/posts"
+        title="Home Page"
       >
         {"<"}
       </Link>

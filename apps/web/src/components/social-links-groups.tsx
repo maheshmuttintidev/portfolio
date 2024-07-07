@@ -6,6 +6,8 @@ import Instagram from "@mui/icons-material/Instagram";
 import Reddit from "@mui/icons-material/Reddit";
 import WhatsApp from "@mui/icons-material/WhatsApp";
 import GitHub from "@mui/icons-material/GitHub";
+import YouTube from "@mui/icons-material/YouTube";
+import LinkedIn from "@mui/icons-material/LinkedIn";
 
 export const SocialLinksGroup = () => {
   return (
@@ -55,7 +57,7 @@ export const SocialLinksGroup = () => {
         rel="noopener"
         title="Connect Mahesh Muttinti on Reddit"
       >
-        <Reddit sx={{ height: 40, width: 40, color: "red" }} />
+        <Reddit sx={{ height: 40, width: 40, color: "orange" }} />
       </a>
       <a
         href="https://github.com/maheshmuttintidev/"
@@ -64,6 +66,22 @@ export const SocialLinksGroup = () => {
         title="Connect Mahesh Muttinti on GitHub"
       >
         <GitHub sx={{ height: 40, width: 40, color: "grey" }} />
+      </a>
+      <a
+        href="https://www.linkedin.com/in/mahesh-muttinti-4a2b61202/"
+        target="_blank"
+        rel="noopener"
+        title="Connect Mahesh Muttinti on LinkedIn"
+      >
+        <LinkedIn sx={{ height: 40, width: 40, color: "cyan" }} />
+      </a>
+      <a
+        href="https://www.youtube.com/channel/UC_4y9u6Id5aU2g-_vUMA5Vg"
+        target="_blank"
+        rel="noopener"
+        title="Connect Mahesh Muttinti on YouTube"
+      >
+        <YouTube sx={{ height: 40, width: 40, color: "red" }} />
       </a>
     </div>
   );

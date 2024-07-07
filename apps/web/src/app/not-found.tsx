@@ -8,6 +8,7 @@ export default function NotFound() {
       <Link
         prefetch={false}
         href={"/"}
+        title="Home Page"
         className="text-white from-violet-400 font-bold to-violet-600 bg-gradient-to-r w-max rounded-md p-2"
       >
         Go to Home Page
