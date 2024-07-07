@@ -31,7 +31,6 @@ export const AboutMeDescription = () => {
               key={`skill_${index}`}
               title={skill?.title || ""}
               text={skill?.text || ""}
-              imgUrl={skill?.imgUrl || ""}
               percentage={skill?.percentage || 0}
               length={skills?.length}
             />

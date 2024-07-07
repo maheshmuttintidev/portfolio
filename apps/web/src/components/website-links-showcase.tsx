@@ -2,11 +2,6 @@ import React from "react";
 
 const websites = [
   {
-    name: "Santha Market World",
-    url: "https://santhamarket-world.maheshmuttintidev.in/",
-    description: "A global marketplace platform for diverse products.",
-  },
-  {
     name: "Omega Developer",
     url: "https://omega-developer.maheshmuttintidev.in/",
     description:
@@ -16,6 +11,11 @@ const websites = [
     name: "Live Markdown Previewer",
     url: "https://live-markdown-previewer.maheshmuttintidev.in/",
     description: "A live preview tool for Markdown files.",
+  },
+  {
+    name: "Santha Market World",
+    url: "https://santhamarket-world.maheshmuttintidev.in/",
+    description: "A global marketplace platform for diverse products.",
   },
   {
     name: "React All",
@@ -29,13 +29,13 @@ const WebsiteCard = ({ name, url, description }: any) => (
     <h4 className="text-2xl font-bold mb-2 text-gray-900 dark:text-gray-100">
       {name}
     </h4>
-    <p className="text-gray-700 dark:text-gray-300 mb-4">{description}</p>
+    <p className="text-gray-800 dark:text-gray-300 mb-4">{description}</p>
     <a
       href={url}
       title={name}
       target="_blank"
       rel="noopener noreferrer"
-      className="text-blue-500 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-600 underline"
+      className="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-600 underline"
     >
       Visit {name}
     </a>

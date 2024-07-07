@@ -3,7 +3,7 @@ import Footer from "@/components/footer";
 import { NavBar } from "@/components/nav-bar";
 
 export const metadata = {
-  title: "Mahesh Muttinti - Full Stack Web and Mobile Application Developer",
+  title: "Mahesh Muttinti - Full Stack Web & Mobile Application Developer",
   description:
     "My Name is Mahesh Muttinti. I am a Full Stack Web & Mobile Application Developer. I build Websites and Mobile Applications using React JS, React Native.",
   icons: {
@@ -18,18 +18,18 @@ export const metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Mahesh Muttinti - Full Stack Web and Mobile Application Developer",
+    title: "Mahesh Muttinti - Full Stack Web & Mobile Application Developer",
     description:
       "My Name is Mahesh Muttinti. I am a Full Stack Web & Mobile Application Developer. I build Websites and Mobile Applications using React JS, React Native.",
     url: "https://maheshmuttintidev.in",
-    siteName: "Mahesh Muttinti | Portfolio Website",
+    siteName: "Mahesh Muttinti - Full Stack Web & Mobile Application Developer",
     locale: "en",
     type: "website",
     image: "https://maheshmuttintidev.in/brand_banner.webp",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mahesh Muttinti - Full Stack Web and Mobile Application Developer",
+    title: "Mahesh Muttinti - Full Stack Web & Mobile Application Developer",
     description:
       "My Name is Mahesh Muttinti. I am a Full Stack Web & Mobile Application Developer. I build Websites and Mobile Applications using React JS, React Native.",
     creator: "@MaheshMuttinti",
@@ -73,17 +73,15 @@ export default function RootLayout({
           name="robots"
           content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"
         />
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-        />
       </head>
       <body>
         <div className="mx-auto w-full overflow-hidden">
           <div itemScope itemType="http://schema.org/Person">
-            <span itemProp="name">Mahesh Muttinti</span>
+            <span itemProp="name">
+              Mahesh Muttinti - Full Stack Web & Mobile Application Developer
+            </span>
             <span itemProp="company">Mahesh Muttinti</span>
-            <span itemProp="tel">+919603757304</span>
+            <span itemProp="tel">+91-9603757304</span>
             <a itemProp="email" href="mailto:maheshmuttinti@gmail.com">
               maheshmuttinti@gmail.com
             </a>
