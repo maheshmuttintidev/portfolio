@@ -25,7 +25,7 @@ const websites = [
 ];
 
 const WebsiteCard = ({ name, url, description }: any) => (
-  <div className="bg-white dark:bg-slate-800 shadow-md rounded-lg p-6 m-4">
+  <div className="bg-white dark:bg-slate-700 shadow-md rounded-lg p-6 m-4">
     <h4 className="text-2xl font-bold mb-2 text-gray-900 dark:text-gray-100">
       {name}
     </h4>

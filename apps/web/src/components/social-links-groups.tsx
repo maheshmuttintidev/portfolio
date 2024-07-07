@@ -1,8 +1,11 @@
 import React from "react";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import XIcon from "@mui/icons-material/X";
-import CallIcon from "@mui/icons-material/Call";
-import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import Facebook from "@mui/icons-material/Facebook";
+import X from "@mui/icons-material/X";
+import Call from "@mui/icons-material/Call";
+import Instagram from "@mui/icons-material/Instagram";
+import Reddit from "@mui/icons-material/Reddit";
+import WhatsApp from "@mui/icons-material/WhatsApp";
+import GitHub from "@mui/icons-material/GitHub";
 
 export const SocialLinksGroup = () => {
   return (
@@ -12,7 +15,7 @@ export const SocialLinksGroup = () => {
         className="dark:bg-transparent rounded "
         title="Call Mahesh Muttinti"
       >
-        <CallIcon sx={{ height: 40, width: 40, color: "royalblue" }} />
+        <Call sx={{ height: 40, width: 40, color: "royalblue" }} />
       </a>
       <a
         href="https://x.com/MaheshMuttinti"
@@ -20,7 +23,15 @@ export const SocialLinksGroup = () => {
         rel="noopener"
         title="Connect Mahesh Muttinti on X"
       >
-        <XIcon sx={{ height: 40, width: 40 }} />
+        <X sx={{ height: 40, width: 40 }} />
+      </a>
+      <a
+        href="https://www.facebook.com/mahesh.muttinti.1999/"
+        target="_blank"
+        rel="noopener"
+        title="Connect Mahesh Muttinti on Facebook"
+      >
+        <Facebook sx={{ height: 40, width: 40, color: "royalblue" }} />
       </a>
       <a
         href="https://www.instagram.com/mahesh.muttinti/"
@@ -28,16 +39,31 @@ export const SocialLinksGroup = () => {
         rel="noopener"
         title="Connect Mahesh Muttinti on Instagram"
       >
-        <InstagramIcon sx={{ height: 40, width: 40, color: "tomato" }} />
+        <Instagram sx={{ height: 40, width: 40, color: "tomato" }} />
       </a>
-
       <a
         href="https://wa.me/919603757304?text=Hello Mahesh Muttinti!"
         target="_blank"
         rel="noopener"
         title="Connect Mahesh Muttinti on WhatsApp"
       >
-        <WhatsAppIcon sx={{ height: 40, width: 40, color: "lime" }} />
+        <WhatsApp sx={{ height: 40, width: 40, color: "lime" }} />
+      </a>
+      <a
+        href="https://www.reddit.com/user/mahesh-muttinti/"
+        target="_blank"
+        rel="noopener"
+        title="Connect Mahesh Muttinti on Reddit"
+      >
+        <Reddit sx={{ height: 40, width: 40, color: "red" }} />
+      </a>
+      <a
+        href="https://github.com/maheshmuttintidev/"
+        target="_blank"
+        rel="noopener"
+        title="Connect Mahesh Muttinti on GitHub"
+      >
+        <GitHub sx={{ height: 40, width: 40, color: "grey" }} />
       </a>
     </div>
   );
