@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 flex flex-col justify-between items-center md:flex-row flex-wrap gap-5">
         <Link
           href="https://play.google.com/store/apps/details?id=com.maheshmuttintirnmobileapp"
-          rel="noopener"
+          rel="noopener noreferrer"
           target="_blank"
           className="flex flex-col items-center gap-3"
           title="Mobile Application Link"
