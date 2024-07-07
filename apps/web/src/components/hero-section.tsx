@@ -8,6 +8,8 @@ export const HeroSection = () => {
       <section className="md:pt-0 md:w-1/2 pt-10">
         <Image
           src={HeroSectionImage}
+          fetchPriority="high"
+          priority
           className="object-contain"
           alt="Hero Section Banner Image"
           title="Hero Section Banner Image"
