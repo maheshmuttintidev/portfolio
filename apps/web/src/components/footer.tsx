@@ -24,6 +24,8 @@ const Footer = () => {
             alt="Mahesh Muttinti Mobile App"
             className="w-10 h-10 rounded-full"
             title="Mahesh Muttinti Mobile App"
+            height={40}
+            width={40}
           />
           <p className="text-center theme-text">Mobile App</p>
         </Link>

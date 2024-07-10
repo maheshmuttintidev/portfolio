@@ -75,18 +75,21 @@ export default function RootLayout({
         />
       </head>
       <body>
+        <div
+          className="overflow-hidden h-0"
+          itemScope
+          itemType="http://schema.org/Person"
+        >
+          <span itemProp="name">
+            Mahesh Muttinti - Full Stack Web & Mobile App Developer
+          </span>
+          <span itemProp="company">Mahesh Muttinti</span>
+          <span itemProp="tel">+91-9603757304</span>
+          <a itemProp="email" href="mailto:maheshmuttinti@gmail.com">
+            maheshmuttinti@gmail.com
+          </a>
+        </div>
         <div className="mx-auto w-full overflow-hidden">
-          <div itemScope itemType="http://schema.org/Person">
-            <span itemProp="name">
-              Mahesh Muttinti - Full Stack Web & Mobile App Developer
-            </span>
-            <span itemProp="company">Mahesh Muttinti</span>
-            <span itemProp="tel">+91-9603757304</span>
-            <a itemProp="email" href="mailto:maheshmuttinti@gmail.com">
-              maheshmuttinti@gmail.com
-            </a>
-          </div>
-
           <NavBar />
           <div className="md:pt-4 theme-bg theme-text">{children}</div>
           <Footer />
