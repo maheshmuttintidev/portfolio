@@ -1,6 +1,7 @@
 import "./globals.css";
 import Footer from "@/components/footer";
 import { NavBar } from "@/components/nav-bar";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata = {
   title: "Mahesh Muttinti - Full Stack Web & Mobile App Developer",
@@ -75,6 +76,7 @@ export default function RootLayout({
         />
       </head>
       <body>
+        <Analytics mode="auto" />
         <div
           className="overflow-hidden h-0"
           itemScope
