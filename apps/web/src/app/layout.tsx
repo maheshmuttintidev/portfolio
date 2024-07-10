@@ -76,7 +76,6 @@ export default function RootLayout({
         />
       </head>
       <body>
-        <Analytics mode="auto" />
         <div
           className="overflow-hidden h-0"
           itemScope
@@ -96,6 +95,7 @@ export default function RootLayout({
           <div className="md:pt-4 theme-bg theme-text">{children}</div>
           <Footer />
         </div>
+        <Analytics />
       </body>
     </html>
   );
