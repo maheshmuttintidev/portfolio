@@ -4,7 +4,7 @@ import {Home} from './src/screens/Home';
 
 function App(): React.JSX.Element {
   const backgroundStyle = {
-    backgroundColor: 'white',
+    backgroundColor: 'lightgrey',
     flex: 1,
   };
 
