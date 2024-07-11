@@ -12,12 +12,12 @@
     @apply bg-slate-100 dark:bg-[#0E1339];
   }
   .nav-theme-bg {
-    @apply bg-white dark:bg-[#302a20e7];
+    @apply dark:bg-slate-800 bg-white;
   }
   .theme-text {
     @apply text-black dark:text-white font-['Inter'];
   }
   .nav-theme-menu-bg {
-    @apply dark:bg-gradient-to-r dark:from-[#0E1311] dark:to-[#090909] bg-gradient-to-r from-[#ebe7e8] to-white;
+    @apply dark:bg-gradient-to-r dark:from-[#0E1311] dark:to-[#090909] bg-gradient-to-r from-slate-200 to-white;
   }
 }

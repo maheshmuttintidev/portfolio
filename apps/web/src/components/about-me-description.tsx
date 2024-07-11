@@ -47,26 +47,32 @@ export const AboutMeDescription = () => {
       id="about"
       className="container flex md:flex-row flex-col gap-4 justify-between items-center p-3 bg-slate-100 dark:bg-slate-700 theme-text mt-5"
     >
-      <div className="md:w-2/3">
-        <h2 className="md:text-3xl text-4xl text-center font-['Inter'] font-bold">
-          More About Me:
+      <div className="md:w-2/3 dark:bg-slate-800 bg-white pt-3 shadow-md hover:scale-90 transition-all">
+        <h2 className="md:text-4xl text-3xl text-center font-bold">
+          More About Me
         </h2>
 
-        <p className="mt-3 text-justify font-['Inter'] md:text-2xl text-xl">
-          {`I'm Mahesh Muttinti, Full Stack Web & Mobile Application Developer with a passion for creating awesome digital experiences. With 3 years of experience in React JS, React Native, and Node JS, I specialize in building stunning websites and mobile apps. My technical skills include HTML, CSS, JavaScript, TypeScript, and various libraries and frameworks. I am proficient in developing responsive and dynamic user interfaces.`}
-        </p>
-        <p className="mt-3 text-justify font-['Inter'] md:text-2xl text-xl">
-          {`I have worked on various projects, including B2B finance applications and live tracking mobile applications (Android and iOS). My work involves both front-end and back-end development, ensuring seamless integration and performance. I follow best practices in software development, focusing on clean code, modular architecture, and efficient performance. I am a strong advocate of agile methodologies and enjoy working in collaborative environments. I aim to continue expanding my knowledge and skills, keeping up with the latest trends and technologies in web and mobile development. My goal is to deliver exceptional digital solutions that meet the needs of users and clients.`}
-        </p>
+        <div className="rounded-sm relative md:pr-5">
+          <p className="mt-3 text-justify md:text-2xl text-xl px-5">
+            {`I'm Mahesh Muttinti, Full Stack Web & Mobile Application Developer with a passion for creating awesome digital experiences. With more than 2 years of experience in React JS, React Native, and Node JS, I specialize in building stunning websites and mobile apps. My technical skills include HTML, CSS, JavaScript, TypeScript, and various libraries and frameworks. I am proficient in developing responsive and dynamic user interfaces.`}
+          </p>
+          <p className="mt-3 text-justify md:text-2xl text-xl pb-5 px-5">
+            {`I have worked on various projects, including B2B finance applications and live tracking mobile applications (Android and iOS). My work involves both front-end and back-end development, ensuring seamless integration and performance. I follow best practices in software development, focusing on clean code, modular architecture, and efficient performance. I am a strong advocate of agile methodologies and enjoy working in collaborative environments. I aim to continue expanding my knowledge and skills, keeping up with the latest trends and technologies in web and mobile development. My goal is to deliver exceptional digital solutions that meet the needs of users and clients.`}
+          </p>
+        </div>
       </div>
 
-      <div className="md:w-1/3">
-        <h2 className="md:text-3xl text-4xl font-bold font-['Inter'] py-4">
-          Technical Skills:
+      <div className="md:w-1/3 md:translate-x-[-3rem] md:border-2 dark:bg-slate-800 shadow-md bg-white rounded-md scale-90 hover:scale-100 transition-transform ">
+        <h2 className="md:text-4xl text-3xl font-bold py-4">
+          Technical Skills
         </h2>
-        <div className="flex gap-3 flex-wrap justify-center items-center z-0">
+        <div className="flex gap-3 flex-wrap justify-center items-center z-0 rounded-md">
           {skills.map((skill, index) => (
-            <Skill key={index} icon={skill.icon} title={skill.title} />
+            <Skill
+              key={`skill_${index}`}
+              icon={skill.icon}
+              title={skill.title}
+            />
           ))}
         </div>
       </div>

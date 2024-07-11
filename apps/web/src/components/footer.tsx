@@ -14,7 +14,7 @@ const Footer = () => {
           href="https://play.google.com/store/apps/details?id=com.maheshmuttintirnmobileapp"
           rel="noopener noreferrer"
           target="_blank"
-          className="flex flex-col items-center gap-3"
+          className="flex flex-col items-center gap-3 hover:scale-105 transition-all"
           title="Mobile Application Link"
         >
           <Image
@@ -42,7 +42,7 @@ const Footer = () => {
           <br />
           <Link
             href="/legal/privacy-policy"
-            className="text-yellow-500 ml-2 hover:underline active:underline"
+            className="text-yellow-500 md:font-semibold font-bold ml-2 hover:underline active:underline"
             title="Privacy Policy"
           >
             Privacy Policy
