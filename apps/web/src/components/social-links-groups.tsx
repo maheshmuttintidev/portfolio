@@ -93,6 +93,20 @@ export const SocialLinksGroup = () => {
       >
         <YouTube sx={{ height: 40, width: 40, color: "red" }} />
       </a>
+      <a
+        id="cy-effective-orcid-url"
+        className="hover:scale-105 transition-all"
+        href="https://orcid.org/0009-0000-3994-5923"
+        target="orcid.widget"
+        rel="me noopener noreferrer"
+        title="Connect Mahesh Muttinti on ORCID"
+      >
+        <img
+          src="https://orcid.org/sites/default/files/images/orcid_16x16.png"
+          alt="ORCID iD icon"
+          className="h-10 w-10"
+        />
+      </a>
     </div>
   );
 };
