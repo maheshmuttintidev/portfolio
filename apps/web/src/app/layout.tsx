@@ -2,6 +2,7 @@ import "./globals.css";
 import Footer from "@/components/footer";
 import { NavBar } from "@/components/nav-bar";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export const metadata = {
   title: "Mahesh Muttinti - Full Stack Web & Mobile App Developer",
@@ -96,6 +97,7 @@ export default function RootLayout({
           <Footer />
         </div>
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
