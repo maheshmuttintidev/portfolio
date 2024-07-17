@@ -82,7 +82,6 @@ export default function RootLayout({
         ></meta>
       </head>
       <body>
-        <AdSense pId="ca-pub-3909331636598544" />
         <div
           className="overflow-hidden h-0"
           itemScope
@@ -104,6 +103,7 @@ export default function RootLayout({
         </div>
         <Analytics />
         <SpeedInsights />
+        <AdSense pId="ca-pub-3909331636598544" />
       </body>
     </html>
   );
