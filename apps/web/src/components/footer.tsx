@@ -8,7 +8,10 @@ const imageUrl =
 
 const Footer = () => {
   return (
-    <footer className="py-4 font-['Inter'] text-center nav-theme-menu-bg mt-5 shadow-lg shadow-white">
+    <footer
+      id="footer"
+      className="py-4 font-['Inter'] text-center nav-theme-menu-bg mt-5 shadow-lg shadow-white"
+    >
       <div className="container mx-auto px-4 flex flex-col justify-between items-center md:flex-row flex-wrap gap-5">
         <Link
           href="https://play.google.com/store/apps/details?id=com.maheshmuttintirnmobileapp"
