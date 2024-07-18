@@ -8,6 +8,7 @@ import WhatsApp from "@mui/icons-material/WhatsApp";
 import GitHub from "@mui/icons-material/GitHub";
 import YouTube from "@mui/icons-material/YouTube";
 import LinkedIn from "@mui/icons-material/LinkedIn";
+import Image from "next/image";
 
 export const SocialLinksGroup = () => {
   return (
@@ -85,6 +86,21 @@ export const SocialLinksGroup = () => {
         <LinkedIn sx={{ height: 40, width: 40, color: "cyan" }} />
       </a>
       <a
+        href="https://stackoverflow.com/users/26418164/mahesh-muttinti"
+        target="_blank"
+        rel="noopener"
+        className="hover:scale-105 transition-all"
+        title="Connect Mahesh Muttinti on LinkedIn"
+      >
+        <Image
+          src="https://cdn.sstatic.net/Sites/stackoverflow/Img/apple-touch-icon.png?v=c78bd457575a"
+          alt="Stack Overflow Icon"
+          className="object-contain"
+          width={40}
+          height={40}
+        />
+      </a>
+      <a
         href="https://www.youtube.com/channel/UC_4y9u6Id5aU2g-_vUMA5Vg"
         target="_blank"
         rel="noopener"
@@ -101,10 +117,12 @@ export const SocialLinksGroup = () => {
         rel="me noopener noreferrer"
         title="Connect Mahesh Muttinti on ORCID"
       >
-        <img
+        <Image
           src="https://orcid.org/sites/default/files/images/orcid_16x16.png"
           alt="ORCID iD icon"
-          className="h-10 w-10"
+          className="object-contain"
+          height={40}
+          width={40}
         />
       </a>
     </div>
