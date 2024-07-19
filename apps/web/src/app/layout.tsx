@@ -4,8 +4,9 @@ import Footer from "@/components/footer";
 import { NavBar } from "@/components/nav-bar";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Metadata } from 'next';
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Mahesh Muttinti - Full Stack Web & Mobile App Developer",
   description:
     "My Name is Mahesh Muttinti. I am a Full Stack Web & Mobile Application Developer. I build Websites and Mobile Applications using React JS, React Native.",
