@@ -25,6 +25,7 @@ export const metadata: Metadata = {
     siteName: "Mahesh Muttinti - Posts",
     locale: "en",
     type: "website",
+    // @ts-ignore
     image: "https://maheshmuttintidev.in/brand_banner.webp",
   },
   twitter: {
