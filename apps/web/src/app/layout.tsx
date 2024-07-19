@@ -76,10 +76,12 @@ export default function RootLayout({
           name="robots"
           content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"
         />
+        <meta name="google-adsense-account" content="ca-pub-3909331636598544" />
         <meta
-          name="google-adsense-account"
-          content="ca-pub-3909331636598544"
-        ></meta>
+          http-equiv="Content-Security-Policy"
+          content="default-src 'self'; img-src https://*; child-src 'none';"
+        />
+        <meta http-equiv="X-Content-Type-Options" content="nosniff" />
       </head>
       <body>
         <div
