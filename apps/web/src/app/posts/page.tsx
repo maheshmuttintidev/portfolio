@@ -14,14 +14,14 @@ export const metadata: Metadata = {
     ],
     apple: [{ url: "/apple-icon.png" }],
   },
-  metadataBase: new URL("https://maheshmuttintidev.in"),
+  metadataBase: new URL("https://maheshmuttintidev.in/posts"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
     title: "Mahesh Muttinti - Posts",
     description: "Find My Recent Posts in this web page.",
-    url: "https://maheshmuttintidev.in",
+    url: "https://maheshmuttintidev.in/posts",
     siteName: "Mahesh Muttinti - Posts",
     locale: "en",
     type: "website",
