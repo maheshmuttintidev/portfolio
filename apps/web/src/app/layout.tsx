@@ -4,7 +4,7 @@ import Footer from "@/components/footer";
 import { NavBar } from "@/components/nav-bar";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import { Metadata } from 'next';
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Mahesh Muttinti - Full Stack Web & Mobile App Developer",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     siteName: "Mahesh Muttinti - Full Stack Web & Mobile App Developer",
     locale: "en",
     type: "website",
-    image: "https://maheshmuttintidev.in/brand_banner.webp",
+    images: ["https://maheshmuttintidev.in/brand_banner.webp"],
   },
   twitter: {
     card: "summary_large_image",
