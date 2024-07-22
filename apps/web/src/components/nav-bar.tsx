@@ -24,6 +24,12 @@ const pages = [
     isActive: false,
   },
   {
+    name: "Recent Interviews",
+    redirectTo: "/interview-attempts",
+    className: "font-bold text-xl",
+    isActive: false,
+  },
+  {
     name: "Resume",
     redirectTo: "/resume",
     className: "font-bold text-xl",
