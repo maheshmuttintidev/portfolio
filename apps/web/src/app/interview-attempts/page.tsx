@@ -268,7 +268,7 @@ const Improvements: React.FC<ImprovementsProps> = ({ questions }) => {
 
 const InterviewAttempts: React.FC = () => {
   return (
-    <div className="p-6 theme-bg min-h-screen">
+    <div className="p-6 theme-bg min-h-screen container mx-auto">
       {interviewsData.map((interview, iIdx) => (
         <div key={iIdx} className="mb-8">
           <h2 className="text-2xl font-bold mb-4">{interview.companyName}</h2>
