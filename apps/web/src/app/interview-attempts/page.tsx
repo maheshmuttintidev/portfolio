@@ -65,6 +65,7 @@ const interviewsData: InterviewData[] = [
                 "And also i intervined with controlled and uncontrolled components for useRef hook, which is entirely wrong",
               ],
             },
+
             {
               title: "What is forwardRef in react?",
               answered: true,
@@ -142,6 +143,15 @@ const interviewsData: InterviewData[] = [
               myAnswer: "I have used it once, but not more",
               answered: true,
               answerEfficiency: 0,
+            },
+          ],
+          git: [
+            {
+              title: "What is git stash and what is the use of it?",
+              myAnswer:
+                "It is used to store the commit or changes into the temporary bucket. Its like, when we are in the middle of the work and some production bugs comes and you need the current code. In this case, we use the stash and later we will pop that stash and use it.",
+              answered: true,
+              answerEfficiency: 70,
             },
           ],
           postgres: [],
