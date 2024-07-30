@@ -20,7 +20,14 @@ export default function ProjectCard({
   projectLiveUrl,
 }: ProjectCardProps) {
   return (
-    <Card sx={{ backgroundColor: "transparent" }}>
+    <Card
+      sx={{
+        backgroundColor: "#eaae03",
+        borderWidth: 3,
+        borderColor: "tomato",
+        borderRadius: 6,
+      }}
+    >
       <CardMedia
         component="img"
         alt="project"
@@ -29,26 +36,23 @@ export default function ProjectCard({
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          <span className="dark:text-white md:text-2xl text-md">
-            {projectName}
-          </span>
+          <span className="theme-text md:text-2xl text-md">{projectName}</span>
         </Typography>
       </CardContent>
       <CardActions sx={{ justifyContent: "center", gap: 2, flexWrap: "wrap" }}>
-        {/* <Button size="small" variant="outlined">
-          <VisibilityRoundedIcon sx={{ marginRight: 2 }} />
-          <span>Preview</span>
-        </Button> */}
-
         <a
           href={projectLiveUrl}
           target="_blank"
           rel="noopener"
           title="Live URL"
         >
-          <Button size="small" variant="outlined" sx={{ color: "green" }}>
+          <Button
+            size="small"
+            variant="outlined"
+            sx={{ color: "#4e0eff", fontWeight: "600", borderColor: "#4e0eff" }}
+          >
             <DesktopWindowsRoundedIcon
-              sx={{ color: "green", marginRight: 2 }}
+              sx={{ color: "#4e0eff", marginRight: 2 }}
             />
             <span>Live</span>
           </Button>

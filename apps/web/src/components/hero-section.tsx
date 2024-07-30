@@ -4,8 +4,8 @@ import HeroSectionImage from "../../public/brand_banner.webp";
 
 export const HeroSection = () => {
   return (
-    <section className="flex md:flex-row md:justify-center flex-col gap-3 md:border md:border-1 md:border-slate-200 shadow-lg rounded-md dark:bg-slate-800 bg-white">
-      <section className="md:pt-0 md:w-1/2 pt-10 rounded-md">
+    <section className="flex md:flex-row md:justify-center flex-col gap-3 md:border md:border-1 md:border-slate-200 shadow-lg rounded-md nav-theme-bg">
+      <section className="md:pt-0 md:w-1/2 rounded-md">
         <Image
           src={HeroSectionImage}
           fetchPriority="high"

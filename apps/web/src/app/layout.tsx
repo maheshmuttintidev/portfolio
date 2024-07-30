@@ -5,6 +5,9 @@ import { NavBar } from "@/components/nav-bar";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Metadata } from "next";
+import { Inter } from "next/font/google";
+
+// const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Mahesh Muttinti - Full Stack Web & Mobile App Developer",
@@ -79,9 +82,11 @@ export default function RootLayout({
         />
         <meta name="google-adsense-account" content="ca-pub-3909331636598544" />
 
-        <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+        <meta httpEquiv="X-Content-Type-Options" content="nosniff" />
       </head>
-      <body>
+      <body
+      // className={inter.className}
+      >
         <div
           className="overflow-hidden h-0"
           itemScope
@@ -98,7 +103,7 @@ export default function RootLayout({
         </div>
         <div className="mx-auto w-full overflow-hidden">
           <NavBar />
-          <div className="md:pt-4 theme-bg theme-text">{children}</div>
+          <div className="pt-24 theme-bg theme-text">{children}</div>
           <Footer />
         </div>
         <Analytics />

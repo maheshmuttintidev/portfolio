@@ -26,6 +26,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "orcid.org",
       },
+      {
+        protocol: "https",
+        hostname: "upload.wikimedia.org",
+      },
     ],
   },
 };

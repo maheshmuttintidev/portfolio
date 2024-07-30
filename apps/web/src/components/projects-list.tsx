@@ -49,7 +49,7 @@ const projects = [
 ];
 export default function ProjectsList() {
   return (
-    <div className="container flex gap-10 justify-center self-center mt-20 md:mt-3">
+    <div className="container flex gap-10 flex-wrap justify-center self-center mt-20 md:mt-3">
       <div>
         <h3 className="font-['Inter'] text-xl md:text-2xl font-bold py-4 underline">
           Freelance Projects

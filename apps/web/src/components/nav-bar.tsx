@@ -1,8 +1,9 @@
 "use client";
 import * as React from "react";
 import Link from "next/link";
-import Image from "next/image";
-import WebsiteIcon from "../app/apple-icon.png";
+import { usePathname } from "next/navigation";
+import { BaseLinkWithLogo } from "./links/base-link-with-logo";
+import { TextLinkWithSaitama } from "./links/text-links-with-saitama";
 
 const pages = [
   {
@@ -38,6 +39,8 @@ const pages = [
 ];
 
 export function NavBar() {
+  const pathname = usePathname();
+  console.log("adsfsdfd", pathname);
   const [showMenu, setShowMenu] = React.useState(false);
   const [hideMinHeading, setHideMinHeading] = React.useState(false);
 
@@ -75,38 +78,27 @@ export function NavBar() {
   }, []);
 
   return (
-    <>
-      <div className="fixed top-0 left-0 h-12 w-full nav-theme-bg z-[4] shadow-sm shadow-white">
-        <Link prefetch={false} href={"/"} className="py-3" title="Home Page">
-          <Image
-            src={WebsiteIcon}
-            className="object-contain w-full h-10 top-1"
-            alt="Website Logo"
-            title="Website Logo"
-          />
-        </Link>
-      </div>
+    <section className="fixed top-0 w-full z-[100]">
       <div className="hidden md:block pt-5 pb-2 z-10 nav-theme-menu-bg">
-        <nav className="flex flex-wrap gap-5 container md:mt-10 mx-auto justify-center items-center">
+        <nav className="flex flex-wrap gap-5 container mx-auto justify-center items-center">
+          <BaseLinkWithLogo />
           {pages?.map((page, index) => (
-            <React.Fragment key={`page_${index}`}>
-              <Link
-                prefetch={false}
-                className={"link ml-3 "?.concat(page?.className)}
-                href={page?.redirectTo}
-                title={page?.name}
-              >
-                {page?.name}
-              </Link>
-            </React.Fragment>
+            <div key={`page_${index}`}>
+              <TextLinkWithSaitama
+                key={`hamburger_menu_item_${index}`}
+                page={page}
+                closeMenu={closeMenu}
+              />
+            </div>
           ))}
         </nav>
       </div>
 
-      <div className="nav-theme-bg relative flex flex-wrap gap-3 items-center justify-center bg-zinc-100 z-10">
+      <div className="fixed nav-theme-bg w-full flex flex-wrap gap-3 items-center justify-between px-5 z-10">
+        <BaseLinkWithLogo hide />
         <div
           onClick={toggleMenu}
-          className="transition-all fixed top-0 mt-1 right-5 flex cursor-pointer flex-wrap items-center justify-center gap-1 md:hidden py-2 border-2 border-black dark:border-white rounded-md h-10 w-12"
+          className="transition-all flex cursor-pointer flex-wrap items-center justify-center gap-1 md:hidden py-2 border-2 border-black dark:border-white rounded-md h-10 w-12"
         >
           {showMenu ? (
             <p className="text-4xl text-center theme-text mt-[-12px]">x</p>
@@ -124,22 +116,16 @@ export function NavBar() {
       </div>
 
       {showMenu ? (
-        <nav className="z-10 nav-theme-menu-bg fixed top-12 right-0 flex flex-col container mx-auto justify-center items-center">
+        <nav className="z-10 nav-theme-menu-bg fixed top-20 right-0 flex flex-col gap-5 container mx-auto justify-center items-center">
           {pages?.map((page, index) => (
-            <React.Fragment key={`page_${index}`}>
-              <Link
-                prefetch={false}
-                onClick={closeMenu}
-                className={"link w-full border-0 "?.concat(page?.className)}
-                href={page?.redirectTo}
-                title={page?.name}
-              >
-                {page?.name}
-              </Link>
-            </React.Fragment>
+            <TextLinkWithSaitama
+              key={`hamburger_menu_item_${index}`}
+              page={page}
+              closeMenu={closeMenu}
+            />
           ))}
         </nav>
       ) : null}
-    </>
+    </section>
   );
 }

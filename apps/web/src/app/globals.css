@@ -6,18 +6,21 @@
 
 @layer components {
   .link {
-    @apply font-['Inter'] dark:text-white text-black md:text-5xl text-3xl py-2 px-4 rounded dark:hover:bg-white hover:text-black shadow-sm shadow-neutral-400 h-max w-max;
+    @apply font-['Inter'] dark:text-red-500 text-red-500 md:text-5xl text-3xl py-2 px-4 rounded dark:hover:bg-white hover:text-black shadow-sm shadow-neutral-400 h-max w-max;
+  }
+  .active-link {
+    @apply link bg-yellow-400 text-white;
   }
   .theme-bg {
-    @apply bg-slate-100 dark:bg-[#0E1339];
+    @apply bg-red-300 dark:bg-yellow-400;
   }
   .nav-theme-bg {
-    @apply dark:bg-slate-800 bg-white;
+    @apply dark:bg-yellow-300 bg-white;
   }
   .theme-text {
-    @apply text-black dark:text-white font-['Inter'];
+    @apply text-red-500 dark:text-red-500 font-['Inter'];
   }
   .nav-theme-menu-bg {
-    @apply dark:bg-gradient-to-r dark:from-[#0E1311] dark:to-[#090909] bg-gradient-to-r from-slate-200 to-white;
+    @apply dark:bg-gradient-to-r dark:to-red-300 dark:from-yellow-500 bg-gradient-to-r from-yellow-200 to-yellow-400;
   }
 }
