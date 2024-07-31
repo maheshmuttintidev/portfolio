@@ -26,7 +26,11 @@ export default async function BlogsList() {
 
   return (
     <div className="mt-5 container place-items-center grid md:grid-cols-2 my-custom-card">
-      <p className="text-center w-full ">{posts?.message ? posts?.message : null}</p>
+      <p className="text-center w-full ">
+        {/* @ts-ignore */}
+        {posts?.message ? posts?.message : null}
+      </p>
+      {/* @ts-ignore */}
       {posts?.results?.map((post, index) => {
         return (
           <div
