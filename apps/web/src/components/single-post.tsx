@@ -18,10 +18,11 @@ export const PostDetail = ({
   bannerImage,
 }: PostDetailTypes) => {
   return (
-    <Card sx={{ backgroundColor: "transparent" }}>
+    <Card sx={{ backgroundColor: "transparent", marginTop: 6 }}>
       <CardMedia
         component="img"
-        height="200"
+        // height="200"
+        sx={{ objectFit: "contain", height: 200, width: '100%', textAlign: 'center' }}
         image={`${
           bannerImage
             ? bannerImage
@@ -30,12 +31,12 @@ export const PostDetail = ({
         alt={title}
       />
       <CardHeader
-        title={<span className="dark:text-white">{title}</span>}
+        title={<span className="theme-text">{title}</span>}
         subheader=""
       />
       <CardContent>
         <Typography variant="body1">
-          <span className="dark:text-white">{description}</span>
+          <span className="theme-text">{description}</span>
         </Typography>
       </CardContent>
     </Card>

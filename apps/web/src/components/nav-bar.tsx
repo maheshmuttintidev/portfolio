@@ -49,7 +49,6 @@ const pages: PagesType = [
 
 export function NavBar() {
   const pathname = usePathname();
-  console.log("adsfsdfd", pathname);
   const [showMenu, setShowMenu] = React.useState(false);
 
   const toggleMenu = () => {

@@ -45,7 +45,7 @@ export default function ImageWithFallback({
         }}
       />
       {imageLoaded ? null : (
-        <div className="my-custom-card h-24 w-24 border-2"></div>
+        <div className="my-custom-card h-36 w-full border-2 mx-auto text-center flex flex-col items-center justify-center">Failed to load image</div>
       )}
     </>
   );

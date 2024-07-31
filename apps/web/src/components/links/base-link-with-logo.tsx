@@ -12,8 +12,8 @@ export function BaseLinkWithLogo({ hide = false }) {
       href={"/"}
       className={
         pathname === "/"
-          ? `${hide ? "md:hidden" : ""} w-14 h-14 my-2 border-4 border-yellow-300 shadow-xl rounded-full`
-          : `${hide ? "md:hidden" : ""} w-14 h-14 my-2 border-4 border-transparent`
+          ? `${hide ? "md:hidden" : ""} w-14 h-14 border-4 border-yellow-300 shadow-xl rounded-full`
+          : `${hide ? "md:hidden" : ""} w-14 h-14 border-4 border-transparent`
       }
       title="Home Page"
     >

@@ -25,47 +25,46 @@ export default async function BlogsList() {
   const posts = await getPosts();
 
   return (
-    <div className="mt-5 container place-items-center grid md:grid-cols-2 my-custom-card">
+    <>
       <p className="text-center w-full ">
         {/* @ts-ignore */}
         {posts?.message ? posts?.message : null}
       </p>
-      {/* @ts-ignore */}
-      {posts?.results?.map((post, index) => {
-        return (
-          <div
-            key={`post-${index}`}
-            className="flex flex-wrap mb-10 px-4 my-custom-card border-2 border-red-500 p-3 rounded-md"
-          >
-            <Link
-              prefetch={false}
-              className="font-['Inter'] dark:text-white rounded md:text-4xl text-3xl w-full"
-              href={`posts/${getPostSlug(post)}`}
-              title={getPostTitle(post)}
+      <div className="mt-5 container place-items-center grid md:grid-cols-2 my-custom-card">
+        {/* @ts-ignore */}
+        {posts?.results?.map((post, index) => {
+          return (
+            <div
+              key={`post-${index}`}
+              className="flex flex-wrap mb-10 px-4 my-custom-card border-2 border-red-500 p-3 rounded-md"
             >
-              <ImageWithFallback
-                alt={`${getPostSlug(post)}`}
-                priority={true}
-                height={300}
-                width={300}
-                src={
-                  getPostImage(post) ||
-                  "https://via.placeholder.com/500x200.png?text=Post+Sample+Banner"
-                }
-                className="self-center m-auto object-cover"
-              />
-            </Link>
-            <div className="pt-5 pb-10 font-['Inter']">
               <Link
                 prefetch={false}
-                className="font-['Inter'] dark:text-white px-4 rounded md:text-4xl text-3xl"
+                className="font-['Inter'] dark:text-white rounded md:text-4xl text-3xl w-full"
                 href={`posts/${getPostSlug(post)}`}
-              >{`${getPostTitle(post)}`}</Link>
-              <div className="h-10 w-full mx-auto mb-4">{`${getPostDescription(post)}...`}</div>
+                title={getPostTitle(post)}
+              >
+                <ImageWithFallback
+                  alt={`${getPostSlug(post)}`}
+                  priority={true}
+                  height={300}
+                  width={300}
+                  src={getPostImage(post)}
+                  className="self-center m-auto object-cover"
+                />
+              </Link>
+              <div className="pt-5 pb-10 font-['Inter']">
+                <Link
+                  prefetch={false}
+                  className="font-['Inter'] dark:text-white px-4 rounded md:text-4xl text-3xl"
+                  href={`posts/${getPostSlug(post)}`}
+                >{`${getPostTitle(post)}`}</Link>
+                <div className="h-10 w-full mx-auto mb-4">{`${getPostDescription(post)}...`}</div>
+              </div>
             </div>
-          </div>
-        );
-      })}
-    </div>
+          );
+        })}
+      </div>
+    </>
   );
 }

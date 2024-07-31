@@ -2,6 +2,7 @@ import { deepGet } from "@/app/lib/utils/deepGet";
 import { PostDetail } from "@/components/single-post";
 import Link from "next/link";
 import { getSinglePost } from "services";
+import ArrowBack from "@mui/icons-material/ArrowBack";
 
 export const revalidate = 30;
 
@@ -31,11 +32,11 @@ export default async function Page({ params }: any) {
     <div className="mx-auto container items-center mt-20 md:mt-3 font-['Inter']">
       <Link
         prefetch={false}
-        className="text-2xl md:text-3xl font-semibold text-left pb-5"
+        className="text-2xl md:text-3xl font-semibold text-left"
         href="/posts"
         title="Home Page"
       >
-        {"<"}
+        <ArrowBack sx={{ color: "red", width: 40, height: 40 }} />
       </Link>
 
       <PostDetail title={slug} description={desc} bannerImage={bannerImage} />
