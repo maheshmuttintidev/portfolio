@@ -2,6 +2,7 @@ import React from "react";
 import Head from "next/head";
 import Image from "next/image";
 import { ContactForm } from "@/components/contact-form";
+import Saitama from "../../../public/Saitama-8.png";
 
 export default function Contact() {
   return (
@@ -18,7 +19,7 @@ export default function Contact() {
           <Image
             width={300}
             height={200}
-            src={"https://i.ibb.co/z27TLdM/prof-look-for-contacting.png"}
+            src={Saitama}
             className="rounded object-contain"
             alt="Mahesh Muttinti Banner Logo"
             title="Mahesh Muttinti Banner Logo"

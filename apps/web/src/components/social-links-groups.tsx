@@ -1,7 +1,6 @@
 import React from "react";
 import Facebook from "@mui/icons-material/Facebook";
 import X from "@mui/icons-material/X";
-import Call from "@mui/icons-material/Call";
 import Instagram from "@mui/icons-material/Instagram";
 import Reddit from "@mui/icons-material/Reddit";
 import WhatsApp from "@mui/icons-material/WhatsApp";
@@ -13,15 +12,6 @@ import Image from "next/image";
 export const SocialLinksGroup = () => {
   return (
     <div className="flex flex-row flex-wrap justify-center gap-6 dark:text-white text-black">
-      <a
-        href="tel:+919603757304"
-        target="_blank"
-        rel="noopener"
-        className="hover:scale-105 transition-all bg-white shadow-inner rounded-full p-2 dark:bg-transparent"
-        title="Call Mahesh Muttinti"
-      >
-        <Call sx={{ height: 40, width: 40, color: "royalblue" }} />
-      </a>
       <a
         href="https://x.com/MaheshMuttinti"
         target="_blank"

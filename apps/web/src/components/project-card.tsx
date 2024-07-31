@@ -23,8 +23,8 @@ export default function ProjectCard({
     <Card
       sx={{
         backgroundColor: "#eaae03",
-        borderWidth: 3,
-        borderColor: "tomato",
+        borderWidth: 2,
+        borderColor: "#fed",
         borderRadius: 6,
       }}
     >

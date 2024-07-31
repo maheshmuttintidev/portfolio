@@ -27,18 +27,18 @@ const websites = [
 const WebsiteCard = ({ name, url, description }: any) => (
   <div
     title={name}
-    className="bg-white dark:bg-gray-900 dark:hover:bg-[#0a1f0daa] cursor-default hover:bg-slate-100 hover:border-2 border-2 hover:skew-y-3 hover:skew-x-3 hover:odd:skew-x-[-3deg] transition-all shadow-md rounded-lg p-6 m-4 scale-95 hover:scale-100"
+    className="my-custom-card cursor-default hover:bg-slate-100 hover:border-2 border-2 hover:skew-y-3 hover:skew-x-3 hover:odd:skew-x-[-3deg] transition-all shadow-md rounded-lg p-6 m-4 scale-95 hover:scale-100"
   >
-    <h4 className="text-2xl font-bold mb-2 text-gray-900 dark:text-gray-100">
+    <h4 className="text-2xl font-bold mb-2 theme-text">
       {name}
     </h4>
-    <p className="text-gray-800 dark:text-gray-300 mb-4">{description}</p>
+    <p className="theme-text mb-4">{description}</p>
     <a
       href={url}
       title={name}
       target="_blank"
       rel="noopener noreferrer"
-      className="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-600 underline"
+      className="theme-text hover:text-red-700 dark:hover:red-blue-600 underline"
     >
       Visit {name}
     </a>
@@ -46,8 +46,8 @@ const WebsiteCard = ({ name, url, description }: any) => (
 );
 
 export const WebsitesShowcase = () => (
-  <div className="py-10 bg-white dark:bg-slate-700">
-    <h3 className="text-3xl font-bold text-center mb-10 text-gray-900 dark:text-gray-100">
+  <div className="py-10 my-custom-card">
+    <h3 className="text-3xl font-bold text-center mb-10 theme-text">
       My Websites
     </h3>
     <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 scale-95 hover:scale-100 transition-all">

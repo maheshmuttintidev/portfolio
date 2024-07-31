@@ -30,7 +30,6 @@ const Footer = () => {
             height={40}
             width={40}
           />
-          <p className="text-center theme-text">Mobile App</p>
         </Link>
         <SocialLinksGroup />
         <p className="text-green-500 mt-4">
@@ -45,7 +44,7 @@ const Footer = () => {
           <br />
           <Link
             href="/legal/privacy-policy"
-            className="text-yellow-500 md:font-semibold font-bold ml-2 hover:underline active:underline"
+            className="theme-text md:font-semibold font-bold ml-2 hover:underline active:underline"
             title="Privacy Policy"
           >
             Privacy Policy

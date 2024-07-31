@@ -245,7 +245,7 @@ const Improvements: React.FC<ImprovementsProps> = ({ questions }) => {
       ) : (
         <ul className="space-y-4">
           {improvements.map((improvement, index) => (
-            <li key={index} className="p-4 border border-gray-200 rounded-lg">
+            <li key={index} className="my-custom-card p-4 border border-gray-200 rounded-lg">
               <h4 className="text-lg font-medium theme-text">
                 {improvement.category.charAt(0).toUpperCase() +
                   improvement.category.slice(1)}
@@ -273,7 +273,7 @@ const InterviewAttempts: React.FC = () => {
         <div key={iIdx} className="mb-8">
           <h2 className="text-2xl font-bold mb-4">{interview.companyName}</h2>
           {interview.interviewProcedure.map((procedure, pIdx) => (
-            <div key={pIdx} className="theme-bg p-6 rounded-lg shadow-lg mb-6">
+            <div key={pIdx} className="my-custom-card theme-bg p-6 rounded-lg shadow-lg mb-6">
               <h3 className="text-xl font-semibold mb-2">
                 {procedure.type} - {procedure.attemptedAt}
               </h3>

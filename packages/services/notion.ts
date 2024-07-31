@@ -11,12 +11,17 @@ async function getMyPortfolioContent() {
 }
 
 async function getPosts() {
-  const databaseId = "44922cf437074db6962e8eb48f82f631";
-  const response = await client.databases.query({
-    database_id: databaseId,
-    sorts: [],
-  });
-  return response;
+  try {
+    const databaseId = "44922cf437074db6962e8eb48f82f631";
+    const response = await client.databases.query({
+      database_id: databaseId,
+      sorts: [],
+    });
+    return response;
+  } catch (error) {
+    console.log("🚀 ~ getPosts ~ error:", error);
+    return error;
+  }
 }
 // @ts-ignore
 async function getSinglePost(title) {
@@ -30,7 +35,7 @@ async function getSinglePost(title) {
           title: {
             equals: `${title}`,
           },
-    },
+        },
       ],
     },
     sorts: [],

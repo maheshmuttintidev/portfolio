@@ -3,6 +3,7 @@ import { splitWith } from "@/app/lib/utils/splitWith";
 import Image from "next/image";
 import Link from "next/link";
 import { getPosts } from "services";
+import ImageWithFallback from "./image/image-with-fallback";
 
 const getPostSlug = (post: any) =>
   splitWith(
@@ -24,21 +25,25 @@ export default async function BlogsList() {
   const posts = await getPosts();
 
   return (
-    <div className="mt-5 container grid md:grid-cols-2">
+    <div className="mt-5 container place-items-center grid md:grid-cols-2 my-custom-card">
+      <p className="text-center w-full ">{posts?.message ? posts?.message : null}</p>
       {posts?.results?.map((post, index) => {
         return (
-          <div key={`post-${index}`} className="flex flex-wrap mb-10 px-4">
+          <div
+            key={`post-${index}`}
+            className="flex flex-wrap mb-10 px-4 my-custom-card border-2 border-red-500 p-3 rounded-md"
+          >
             <Link
               prefetch={false}
               className="font-['Inter'] dark:text-white rounded md:text-4xl text-3xl w-full"
               href={`posts/${getPostSlug(post)}`}
               title={getPostTitle(post)}
             >
-              <Image
+              <ImageWithFallback
                 alt={`${getPostSlug(post)}`}
-                priority
+                priority={true}
                 height={300}
-                width={1200}
+                width={300}
                 src={
                   getPostImage(post) ||
                   "https://via.placeholder.com/500x200.png?text=Post+Sample+Banner"

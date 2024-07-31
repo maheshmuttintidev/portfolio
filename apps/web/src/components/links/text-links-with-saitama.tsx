@@ -13,7 +13,7 @@ export function TextLinkWithSaitama({
 }) {
   const pathname = usePathname();
   return (
-    <div className="relative mr-4">
+    <div className="relative mr-4 md:mt-0 mb-3">
       {pathname === page.redirectTo ? (
         <div className="border-2 rounded-full border-white absolute h-10 w-10 top-[-20px] right-[-30px]">
           <Image

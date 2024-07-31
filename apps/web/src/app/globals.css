@@ -5,6 +5,9 @@
 @tailwind utilities;
 
 @layer components {
+  .my-custom-card {
+    @apply text-red-500 bg-gradient-to-bl from-yellow-200 to-yellow-400;
+  }
   .link {
     @apply font-['Inter'] dark:text-red-500 text-red-500 md:text-5xl text-3xl py-2 px-4 rounded dark:hover:bg-white hover:text-black shadow-sm shadow-neutral-400 h-max w-max;
   }
@@ -18,9 +21,9 @@
     @apply dark:bg-yellow-300 bg-white;
   }
   .theme-text {
-    @apply text-red-500 dark:text-red-500 font-['Inter'];
+    @apply text-slate-600 dark:text-red-500 font-['Inter'];
   }
   .nav-theme-menu-bg {
-    @apply dark:bg-gradient-to-r dark:to-red-300 dark:from-yellow-500 bg-gradient-to-r from-yellow-200 to-yellow-400;
+    @apply bg-yellow-400;
   }
 }
