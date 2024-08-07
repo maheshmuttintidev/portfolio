@@ -30,6 +30,14 @@ const nextConfig = {
         protocol: "https",
         hostname: "upload.wikimedia.org",
       },
+      {
+        protocol: "https",
+        hostname: "img.icons8.com",
+      },
+      {
+        protocol: "https",
+        hostname: "instagram.fvga4-1.fna.fbcdn.net",
+      },
     ],
   },
 };

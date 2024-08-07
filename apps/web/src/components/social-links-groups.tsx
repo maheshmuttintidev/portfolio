@@ -85,7 +85,7 @@ export const SocialLinksGroup = () => {
         <Image
           src="https://cdn.sstatic.net/Sites/stackoverflow/Img/apple-touch-icon.png?v=c78bd457575a"
           alt="Stack Overflow Icon"
-          className="object-contain shadow-md rounded-full shadow-black"
+          className="object-contain rounded-full"
           width={40}
           height={40}
         />
@@ -110,7 +110,7 @@ export const SocialLinksGroup = () => {
         <Image
           src="https://orcid.org/sites/default/files/images/orcid_16x16.png"
           alt="ORCID iD icon"
-          className="object-contain shadow-md rounded-full shadow-black"
+          className="object-contain rounded-full"
           height={40}
           width={40}
         />
@@ -125,7 +125,37 @@ export const SocialLinksGroup = () => {
         <Image
           src="https://upload.wikimedia.org/wikipedia/commons/8/8e/LeetCode_Logo_1.png"
           alt="Leetcode icon"
-          className="object-contain shadow-md rounded-full shadow-black"
+          className="object-contain rounded-full"
+          height={40}
+          width={40}
+        />
+      </a>
+      <a
+        className="hover:scale-105 transition-all bg-white shadow-inner rounded-full p-2 dark:bg-transparent"
+        href="https://medium.com/@mahesh.muttinti"
+        target="_blank"
+        rel="me noopener noreferrer"
+        title="Connect Mahesh Muttinti on Medium"
+      >
+        <Image
+          src="https://img.icons8.com/?size=40&id=XVNvUWCvvlD9&format=png&color=000000"
+          alt="Medium icon"
+          className="object-contain rounded-full shadow-black"
+          height={40}
+          width={40}
+        />
+      </a>
+      <a
+        className="hover:scale-105 transition-all bg-white shadow-inner rounded-full p-2 dark:bg-transparent"
+        href="https://www.freelancer.com.bd/u/maheshmuttinti"
+        target="_blank"
+        rel="me noopener noreferrer"
+        title="Connect Mahesh Muttinti on Freelancer"
+      >
+        <Image
+          src="https://instagram.fvga4-1.fna.fbcdn.net/v/t51.2885-19/14099561_315748382094564_535645851_a.jpg?stp=dst-jpg_s150x150&_nc_ht=instagram.fvga4-1.fna.fbcdn.net&_nc_cat=100&_nc_ohc=7088Uqo6RoEQ7kNvgGmZ13d&edm=AEhyXUkBAAAA&ccb=7-5&oh=00_AYAEqcE-pTGqMzavuet8686H_yaGmoOcIq12kkzagA5Ziw&oe=66B91E70&_nc_sid=8f1549"
+          alt="Freelancer icon"
+          className="object-contain rounded-full shadow-black"
           height={40}
           width={40}
         />
