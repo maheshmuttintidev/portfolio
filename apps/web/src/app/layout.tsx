@@ -1,13 +1,11 @@
-import { AdSense } from "@/components/ad-sense";
 import "./globals.css";
+import { AdSense } from "@/components/ad-sense";
 import Footer from "@/components/footer";
 import { NavBar } from "@/components/nav-bar";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Metadata } from "next";
-import { Inter } from "next/font/google";
 
-// const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Mahesh Muttinti - Full Stack Web & Mobile App Developer",
@@ -81,12 +79,10 @@ export default function RootLayout({
           content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"
         />
         <meta name="google-adsense-account" content="ca-pub-3909331636598544" />
-
+        <meta name="p:domain_verify" content="799739449f9bdbecbf3055ef33bad597"/>
         <meta httpEquiv="X-Content-Type-Options" content="nosniff" />
       </head>
-      <body
-      // className={inter.className}
-      >
+      <body>
         <div
           className="overflow-hidden h-0"
           itemScope

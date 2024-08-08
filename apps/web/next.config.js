@@ -38,6 +38,18 @@ const nextConfig = {
         protocol: "https",
         hostname: "instagram.fvga4-1.fna.fbcdn.net",
       },
+      {
+        protocol: "https",
+        hostname: "static.cdninstagram.com",
+      },
+      {
+        protocol: "https",
+        hostname: "www.sololearn.com",
+      },
+      {
+        protocol: "https",
+        hostname: "gitlab.com",
+      },
     ],
   },
 };

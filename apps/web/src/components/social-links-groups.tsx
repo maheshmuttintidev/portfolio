@@ -7,6 +7,7 @@ import WhatsApp from "@mui/icons-material/WhatsApp";
 import GitHub from "@mui/icons-material/GitHub";
 import YouTube from "@mui/icons-material/YouTube";
 import LinkedIn from "@mui/icons-material/LinkedIn";
+import Pinterest from "@mui/icons-material/Pinterest";
 import Image from "next/image";
 
 export const SocialLinksGroup = () => {
@@ -28,7 +29,7 @@ export const SocialLinksGroup = () => {
         className="hover:scale-105 transition-all bg-white shadow-inner rounded-full p-2 dark:bg-transparent"
         title="Connect Mahesh Muttinti on Facebook"
       >
-        <Facebook sx={{ height: 40, width: 40, color: "royalblue" }} />
+        <Facebook sx={{ height: 40, width: 40, color: "steelblue" }} />
       </a>
       <a
         href="https://www.instagram.com/mahesh.muttinti/"
@@ -38,6 +39,36 @@ export const SocialLinksGroup = () => {
         title="Connect Mahesh Muttinti on Instagram"
       >
         <Instagram sx={{ height: 40, width: 40, color: "tomato" }} />
+      </a>
+      <a
+        className="hover:scale-105 transition-all bg-white shadow-inner rounded-full p-2 dark:bg-transparent"
+        href="https://www.threads.net/@mahesh.muttinti/"
+        target="_blank"
+        rel="me noopener noreferrer"
+        title="Connect Mahesh Muttinti on Threads"
+      >
+        <Image
+          src="https://static.cdninstagram.com/rsrc.php/ye/r/lEu8iVizmNW.ico"
+          alt="Threads icon"
+          className="object-contain rounded-full"
+          height={40}
+          width={40}
+        />
+      </a>
+      <a
+        className="hover:scale-105 transition-all bg-white shadow-inner rounded-full p-2 dark:bg-transparent"
+        href="https://www.sololearn.com/en/profile/19605155"
+        target="_blank"
+        rel="me noopener noreferrer"
+        title="Connect Mahesh Muttinti on SoloLearn"
+      >
+        <Image
+          src="https://www.sololearn.com/Images/favicon.ico"
+          alt="SoloLearn icon"
+          className="object-contain rounded-full"
+          height={40}
+          width={40}
+        />
       </a>
       <a
         href="https://wa.me/919603757304?text=Hello Mahesh Muttinti!"
@@ -55,8 +86,9 @@ export const SocialLinksGroup = () => {
         className="hover:scale-105 transition-all bg-white shadow-inner rounded-full p-2 dark:bg-transparent"
         title="Connect Mahesh Muttinti on Reddit"
       >
-        <Reddit sx={{ height: 40, width: 40, color: "orange" }} />
+        <Reddit sx={{ height: 40, width: 40, color: "darkred" }} />
       </a>
+
       <a
         href="https://github.com/maheshmuttintidev/"
         target="_blank"
@@ -64,7 +96,31 @@ export const SocialLinksGroup = () => {
         className="hover:scale-105 transition-all bg-white shadow-inner rounded-full p-2 dark:bg-transparent"
         title="Connect Mahesh Muttinti on GitHub"
       >
-        <GitHub sx={{ height: 40, width: 40, color: "grey" }} />
+        <GitHub sx={{ height: 40, width: 40, color: "black" }} />
+      </a>
+      <a
+        href="https://www.pinterest.com/maheshmuttintidev/"
+        target="_blank"
+        rel="noopener"
+        className="hover:scale-105 transition-all bg-white shadow-inner rounded-full p-2 dark:bg-transparent"
+        title="Connect Mahesh Muttinti on Pinterest"
+      >
+        <Pinterest sx={{ height: 40, width: 40, color: "red" }} />
+      </a>
+      <a
+        className="hover:scale-105 transition-all bg-white shadow-inner rounded-full p-2 dark:bg-transparent"
+        href="https://gitlab.com/maheshmuttintidev"
+        target="_blank"
+        rel="me noopener noreferrer"
+        title="Connect Mahesh Muttinti on GitLab"
+      >
+        <Image
+          src="https://gitlab.com/assets/apple-touch-icon-b049d4bc0dd9626f31db825d61880737befc7835982586d015bded10b4435460.png"
+          alt="GitLab icon"
+          className="object-contain rounded-full"
+          height={40}
+          width={40}
+        />
       </a>
       <a
         href="https://www.linkedin.com/in/mahesh-muttinti-4a2b61202/"
@@ -73,7 +129,7 @@ export const SocialLinksGroup = () => {
         className="hover:scale-105 transition-all bg-white shadow-inner rounded-full p-2 dark:bg-transparent"
         title="Connect Mahesh Muttinti on LinkedIn"
       >
-        <LinkedIn sx={{ height: 40, width: 40, color: "cyan" }} />
+        <LinkedIn sx={{ height: 40, width: 40, color: "teal" }} />
       </a>
       <a
         href="https://stackoverflow.com/users/26418164/mahesh-muttinti"
