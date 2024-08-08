@@ -245,7 +245,7 @@ const Improvements: React.FC<ImprovementsProps> = ({ questions }) => {
       ) : (
         <ul className="space-y-4">
           {improvements.map((improvement, index) => (
-            <li key={index} className="my-custom-card p-4 border border-gray-200 rounded-lg">
+            <li key={index} className="my-custom-card p-4 border border-red-800 rounded-lg">
               <h4 className="text-lg font-medium theme-text">
                 {improvement.category.charAt(0).toUpperCase() +
                   improvement.category.slice(1)}
@@ -268,7 +268,7 @@ const Improvements: React.FC<ImprovementsProps> = ({ questions }) => {
 
 const InterviewAttempts: React.FC = () => {
   return (
-    <div className="p-6 theme-bg min-h-screen container mx-auto">
+    <div className="p-6 theme-bg min-h-screen container mx-auto mt-12">
       {interviewsData.map((interview, iIdx) => (
         <div key={iIdx} className="mb-8">
           <h2 className="text-2xl font-bold mb-4">{interview.companyName}</h2>
@@ -303,7 +303,7 @@ const InterviewAttempts: React.FC = () => {
                         (question: Question, qIdx: number) => (
                           <div
                             key={qIdx}
-                            className="p-4 border border-gray-200 rounded-lg"
+                            className="p-4 border border-red-800 rounded-lg"
                           >
                             <p className="theme-text text-red-500 font-semibold text-xl">
                               {question.title}

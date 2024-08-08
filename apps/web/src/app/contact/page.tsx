@@ -11,7 +11,7 @@ export default function Contact() {
         <title>Mahesh Muttinti | Contact</title>
       </Head>
 
-      <main className="container mx-auto px-4 mb-5 mt-10 flex md:flex-row flex-col">
+      <main className="container mx-auto px-4 mb-5 mt-16 md:mt-10 flex md:flex-row flex-col">
         <div className="md:w-1/2 w-full">
           <ContactForm />
         </div>

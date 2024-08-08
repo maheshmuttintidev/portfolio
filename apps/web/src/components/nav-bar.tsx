@@ -80,7 +80,7 @@ export function NavBar() {
 
   return (
     <section className="fixed top-0 w-full z-[100]">
-      <div className="hidden md:block pt-5 z-10 nav-theme-menu-bg">
+      <div className="hidden md:block pt-5 z-10 bg-blue-950">
         <nav className="flex flex-wrap gap-5 container mx-auto justify-center items-center">
           <BaseLinkWithLogo />
           {pages?.map((page, index) => (

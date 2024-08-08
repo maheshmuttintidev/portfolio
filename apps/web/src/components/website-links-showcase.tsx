@@ -2,6 +2,11 @@ import React from "react";
 
 const websites = [
   {
+    name: "Omega Developer",
+    url: "https://omega-developer.maheshmuttintidev.in/",
+    description: "My Youtube Channel Updates",
+  },
+  {
     name: "Live Markdown Previewer",
     url: "https://live-markdown-previewer.maheshmuttintidev.in/",
     description: "A live preview tool for Markdown files.",
@@ -10,12 +15,6 @@ const websites = [
     name: "React All",
     url: "https://react-all.maheshmuttintidev.in/",
     description: "A collection of React components and utilities.",
-  },
-  {
-    name: "Omega Developer",
-    url: "https://omega-developer.maheshmuttintidev.in/",
-    description:
-      "A platform for developers with a variety of tools and resources.",
   },
   {
     name: "Santha Market World",
@@ -27,11 +26,9 @@ const websites = [
 const WebsiteCard = ({ name, url, description }: any) => (
   <div
     title={name}
-    className="my-custom-card cursor-default hover:bg-slate-100 hover:border-2 border-2 hover:skew-y-3 hover:skew-x-3 hover:odd:skew-x-[-3deg] transition-all shadow-md rounded-lg p-6 m-4 scale-95 hover:scale-100"
+    className="my-custom-card cursor-default hover:bg-slate-100 hover:border-2 border-2 border-red-400 hover:skew-y-3 hover:skew-x-3 hover:odd:skew-x-[-3deg] transition-all shadow-md rounded-lg p-6 m-4 scale-95 hover:scale-100"
   >
-    <h4 className="text-2xl font-bold mb-2 theme-text">
-      {name}
-    </h4>
+    <h4 className="text-2xl font-bold mb-2 theme-text">{name}</h4>
     <p className="theme-text mb-4">{description}</p>
     <a
       href={url}

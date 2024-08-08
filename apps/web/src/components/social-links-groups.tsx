@@ -9,24 +9,45 @@ import YouTube from "@mui/icons-material/YouTube";
 import LinkedIn from "@mui/icons-material/LinkedIn";
 import Pinterest from "@mui/icons-material/Pinterest";
 import Image from "next/image";
+import Link from "next/link";
 
 export const SocialLinksGroup = () => {
   return (
     <div className="flex flex-row flex-wrap justify-center gap-6 dark:text-white text-black">
+      <Link
+        href="https://play.google.com/store/apps/details?id=com.maheshmuttintirnmobileapp"
+        rel="noopener noreferrer"
+        target="_blank"
+        className="hover:scale-100 hover:border-yellow-400 ease-in-out scale-90 transition-all"
+        title="Mobile Application Link"
+      >
+        <Image
+          src={
+            "https://static.vecteezy.com/system/resources/previews/022/613/026/large_2x/google-play-store-icon-logo-symbol-free-png.png"
+          }
+          priority
+          fetchPriority="auto"
+          alt="Mahesh Muttinti Mobile App"
+          className="w-12 h-12 rounded-full shadow-animate"
+          title="Mahesh Muttinti Mobile App"
+          height={40}
+          width={40}
+        />
+      </Link>
       <a
         href="https://x.com/MaheshMuttinti"
         target="_blank"
         rel="noopener"
-        className="hover:scale-105 transition-all bg-white shadow-inner rounded-full p-2 dark:bg-transparent"
+        className="hover:scale-100 hover:border-yellow-400 hover:shadow-yellow-300 hover:shadow-2xl hover:bg-black hover:backdrop-blur-sm ease-in-out scale-90 to-top-translate-y shadow-animate transition-all shadow-inner rounded-full p-2 dark:bg-transparent"
         title="Connect Mahesh Muttinti on X"
       >
-        <X sx={{ height: 40, width: 40 }} />
+        <X sx={{ height: 40, width: 40,  color:'white',  }} />
       </a>
       <a
         href="https://www.facebook.com/mahesh.muttinti.1999/"
         target="_blank"
         rel="noopener"
-        className="hover:scale-105 transition-all bg-white shadow-inner rounded-full p-2 dark:bg-transparent"
+        className="hover:scale-100 hover:border-yellow-400 hover:shadow-yellow-300 hover:shadow-2xl hover:bg-black hover:backdrop-blur-sm ease-in-out scale-90 to-top-translate-y shadow-animate transition-all shadow-inner rounded-full p-2 dark:bg-transparent"
         title="Connect Mahesh Muttinti on Facebook"
       >
         <Facebook sx={{ height: 40, width: 40, color: "steelblue" }} />
@@ -35,13 +56,13 @@ export const SocialLinksGroup = () => {
         href="https://www.instagram.com/mahesh.muttinti/"
         target="_blank"
         rel="noopener"
-        className="hover:scale-105 transition-all bg-white shadow-inner rounded-full p-2 dark:bg-transparent"
+        className="hover:scale-100 hover:border-yellow-400 hover:shadow-yellow-300 hover:shadow-2xl hover:bg-black hover:backdrop-blur-sm ease-in-out scale-90 to-top-translate-y shadow-animate transition-all shadow-inner rounded-full p-2 dark:bg-transparent"
         title="Connect Mahesh Muttinti on Instagram"
       >
-        <Instagram sx={{ height: 40, width: 40, color: "tomato" }} />
+        <Instagram sx={{ height: 40, width: 40, color: "yellow" }} />
       </a>
       <a
-        className="hover:scale-105 transition-all bg-white shadow-inner rounded-full p-2 dark:bg-transparent"
+        className="hover:scale-100 hover:border-yellow-400 hover:shadow-yellow-300 hover:shadow-2xl hover:bg-black hover:backdrop-blur-sm ease-in-out scale-90 to-top-translate-y shadow-animate transition-all shadow-inner rounded-full p-2 dark:bg-transparent"
         href="https://www.threads.net/@mahesh.muttinti/"
         target="_blank"
         rel="me noopener noreferrer"
@@ -56,7 +77,7 @@ export const SocialLinksGroup = () => {
         />
       </a>
       <a
-        className="hover:scale-105 transition-all bg-white shadow-inner rounded-full p-2 dark:bg-transparent"
+        className="hover:scale-100 hover:border-yellow-400 hover:shadow-yellow-300 hover:shadow-2xl hover:bg-black hover:backdrop-blur-sm ease-in-out scale-90 to-top-translate-y shadow-animate transition-all shadow-inner rounded-full p-2 dark:bg-transparent"
         href="https://www.sololearn.com/en/profile/19605155"
         target="_blank"
         rel="me noopener noreferrer"
@@ -74,41 +95,41 @@ export const SocialLinksGroup = () => {
         href="https://wa.me/919603757304?text=Hello Mahesh Muttinti!"
         target="_blank"
         rel="noopener"
-        className="hover:scale-105 transition-all bg-white shadow-inner rounded-full p-2 dark:bg-transparent"
+        className="hover:scale-100 hover:border-yellow-400 hover:shadow-yellow-300 hover:shadow-2xl hover:bg-black hover:backdrop-blur-sm ease-in-out scale-90 to-top-translate-y shadow-animate transition-all shadow-inner rounded-full p-2 dark:bg-transparent"
         title="Connect Mahesh Muttinti on WhatsApp"
       >
-        <WhatsApp sx={{ height: 40, width: 40, color: "lime" }} />
+        <WhatsApp sx={{ height: 40, width: 40, color: "green" }} />
       </a>
       <a
         href="https://www.reddit.com/user/mahesh-muttinti/"
         target="_blank"
         rel="noopener"
-        className="hover:scale-105 transition-all bg-white shadow-inner rounded-full p-2 dark:bg-transparent"
+        className="hover:scale-100 hover:border-yellow-400 hover:shadow-yellow-300 hover:shadow-2xl hover:bg-black hover:backdrop-blur-sm ease-in-out scale-90 to-top-translate-y shadow-animate transition-all shadow-inner rounded-full p-2 dark:bg-transparent"
         title="Connect Mahesh Muttinti on Reddit"
       >
-        <Reddit sx={{ height: 40, width: 40, color: "darkred" }} />
+        <Reddit sx={{ height: 40, width: 40, color: "teal" }} />
       </a>
 
       <a
         href="https://github.com/maheshmuttintidev/"
         target="_blank"
         rel="noopener"
-        className="hover:scale-105 transition-all bg-white shadow-inner rounded-full p-2 dark:bg-transparent"
+        className="hover:scale-100 hover:border-yellow-400 hover:shadow-yellow-300 hover:shadow-2xl hover:bg-black hover:backdrop-blur-sm ease-in-out scale-90 to-top-translate-y shadow-animate transition-all shadow-inner rounded-full p-2 dark:bg-transparent"
         title="Connect Mahesh Muttinti on GitHub"
       >
-        <GitHub sx={{ height: 40, width: 40, color: "black" }} />
+        <GitHub sx={{ height: 40, width: 40, color: "white" }} />
       </a>
       <a
         href="https://www.pinterest.com/maheshmuttintidev/"
         target="_blank"
         rel="noopener"
-        className="hover:scale-105 transition-all bg-white shadow-inner rounded-full p-2 dark:bg-transparent"
+        className="hover:scale-100 hover:border-yellow-400 hover:shadow-yellow-300 hover:shadow-2xl hover:bg-black hover:backdrop-blur-sm ease-in-out scale-90 to-top-translate-y shadow-animate transition-all shadow-inner rounded-full p-2 dark:bg-transparent"
         title="Connect Mahesh Muttinti on Pinterest"
       >
         <Pinterest sx={{ height: 40, width: 40, color: "red" }} />
       </a>
       <a
-        className="hover:scale-105 transition-all bg-white shadow-inner rounded-full p-2 dark:bg-transparent"
+        className="hover:scale-100 hover:border-yellow-400 hover:shadow-yellow-300 hover:shadow-2xl hover:bg-black hover:backdrop-blur-sm ease-in-out scale-90 to-top-translate-y shadow-animate transition-all shadow-inner rounded-full p-2 dark:bg-transparent"
         href="https://gitlab.com/maheshmuttintidev"
         target="_blank"
         rel="me noopener noreferrer"
@@ -126,7 +147,7 @@ export const SocialLinksGroup = () => {
         href="https://www.linkedin.com/in/mahesh-muttinti-4a2b61202/"
         target="_blank"
         rel="noopener"
-        className="hover:scale-105 transition-all bg-white shadow-inner rounded-full p-2 dark:bg-transparent"
+        className="hover:scale-100 hover:border-yellow-400 hover:shadow-yellow-300 hover:shadow-2xl hover:bg-black hover:backdrop-blur-sm ease-in-out scale-90 to-top-translate-y shadow-animate transition-all shadow-inner rounded-full p-2 dark:bg-transparent"
         title="Connect Mahesh Muttinti on LinkedIn"
       >
         <LinkedIn sx={{ height: 40, width: 40, color: "teal" }} />
@@ -135,7 +156,7 @@ export const SocialLinksGroup = () => {
         href="https://stackoverflow.com/users/26418164/mahesh-muttinti"
         target="_blank"
         rel="noopener"
-        className="hover:scale-105 transition-all bg-white shadow-inner rounded-full p-2 dark:bg-transparent"
+        className="hover:scale-100 hover:border-yellow-400 hover:shadow-yellow-300 hover:shadow-2xl hover:bg-black hover:backdrop-blur-sm ease-in-out scale-90 to-top-translate-y shadow-animate transition-all shadow-inner rounded-full p-2 dark:bg-transparent"
         title="Connect Mahesh Muttinti on LinkedIn"
       >
         <Image
@@ -150,14 +171,14 @@ export const SocialLinksGroup = () => {
         href="https://www.youtube.com/channel/UC_4y9u6Id5aU2g-_vUMA5Vg"
         target="_blank"
         rel="noopener"
-        className="hover:scale-105 transition-all bg-white shadow-inner rounded-full p-2 dark:bg-transparent"
+        className="hover:scale-100 hover:border-yellow-400 hover:shadow-yellow-300 hover:shadow-2xl hover:bg-black hover:backdrop-blur-sm ease-in-out scale-90 to-top-translate-y shadow-animate transition-all shadow-inner rounded-full p-2 dark:bg-transparent"
         title="Connect Mahesh Muttinti on YouTube"
       >
         <YouTube sx={{ height: 40, width: 40, color: "red" }} />
       </a>
       <a
         id="cy-effective-orcid-url"
-        className="hover:scale-105 transition-all bg-white shadow-inner rounded-full p-2 dark:bg-transparent"
+        className="hover:scale-100 hover:border-yellow-400 hover:shadow-yellow-300 hover:shadow-2xl hover:bg-black hover:backdrop-blur-sm ease-in-out scale-90 to-top-translate-y shadow-animate transition-all shadow-inner rounded-full p-2 dark:bg-transparent"
         href="https://orcid.org/0009-0000-3994-5923"
         target="orcid.widget"
         rel="me noopener noreferrer"
@@ -172,7 +193,7 @@ export const SocialLinksGroup = () => {
         />
       </a>
       <a
-        className="hover:scale-105 transition-all bg-white shadow-inner rounded-full p-2 dark:bg-transparent"
+        className="hover:scale-100 hover:border-yellow-400 hover:shadow-yellow-300 hover:shadow-2xl hover:bg-black hover:backdrop-blur-sm ease-in-out scale-90 to-top-translate-y shadow-animate transition-all shadow-inner rounded-full p-2 dark:bg-transparent"
         href="https://leetcode.com/u/maheshmuttintidev"
         target="_blank"
         rel="me noopener noreferrer"
@@ -187,14 +208,14 @@ export const SocialLinksGroup = () => {
         />
       </a>
       <a
-        className="hover:scale-105 transition-all bg-white shadow-inner rounded-full p-2 dark:bg-transparent"
+        className="hover:scale-100 hover:border-yellow-400 hover:shadow-yellow-300 hover:shadow-2xl hover:bg-black hover:backdrop-blur-sm ease-in-out scale-90 to-top-translate-y shadow-animate transition-all shadow-inner rounded-full p-2 dark:bg-transparent"
         href="https://medium.com/@mahesh.muttinti"
         target="_blank"
         rel="me noopener noreferrer"
         title="Connect Mahesh Muttinti on Medium"
       >
         <Image
-          src="https://img.icons8.com/?size=40&id=XVNvUWCvvlD9&format=png&color=000000"
+          src="https://img.icons8.com/?size=40&id=XVNvUWCvvlD9&format=png&color=ffffff"
           alt="Medium icon"
           className="object-contain rounded-full shadow-black"
           height={40}
@@ -202,7 +223,7 @@ export const SocialLinksGroup = () => {
         />
       </a>
       <a
-        className="hover:scale-105 transition-all bg-white shadow-inner rounded-full p-2 dark:bg-transparent"
+        className="hover:scale-100 hover:border-yellow-400 hover:shadow-yellow-300 hover:shadow-2xl hover:bg-black hover:backdrop-blur-sm ease-in-out scale-90 to-top-translate-y shadow-animate transition-all shadow-inner rounded-full p-2 dark:bg-transparent"
         href="https://www.freelancer.com.bd/u/maheshmuttinti"
         target="_blank"
         rel="me noopener noreferrer"

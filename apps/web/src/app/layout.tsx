@@ -99,7 +99,7 @@ export default function RootLayout({
         </div>
         <div className="mx-auto w-full overflow-hidden">
           <NavBar />
-          <div className="pt-24 theme-bg theme-text">{children}</div>
+          <div className="theme-bg theme-text md:pt-20">{children}</div>
           <Footer />
         </div>
         <Analytics />

@@ -45,9 +45,9 @@ export const AboutMeDescription = () => {
   return (
     <section
       id="about"
-      className="container flex md:flex-row flex-col gap-4 justify-between items-center p-3 my-custom-card theme-text mt-5"
+      className="container flex md:flex-row flex-col gap-4 justify-between items-center p-3 my-custom-card theme-text mt-5 rounded-se-[200px] rounded-bl-[100px]"
     >
-      <div className="md:w-2/3 nav-theme-bg pt-3 shadow-md hover:scale-90 transition-all">
+      <div className="md:w-2/3 pt-3 hover:scale-90 transition-all">
         <h2 className="md:text-4xl text-3xl text-center font-bold">
           More About Me
         </h2>
@@ -62,8 +62,8 @@ export const AboutMeDescription = () => {
         </div>
       </div>
 
-      <div className="md:w-1/3 md:translate-x-[-3rem] md:border-2 shadow-md my-custom-card rounded-md scale-90 hover:scale-100 transition-transform ">
-        <h2 className="md:text-4xl text-3xl font-bold py-4">
+      <div className="md:w-1/3 md:translate-x-[-3rem] my-custom-card rounded-md scale-90 hover:scale-100 transition-transform">
+        <h2 className="md:text-4xl text-3xl font-bold py-4 text-black">
           Technical Skills
         </h2>
         <div className="flex gap-3 flex-wrap justify-center items-center z-0 rounded-md">

@@ -1,12 +1,19 @@
-// "use client";
 import React from "react";
+import Download from "@mui/icons-material/Download";
 
-// const defaultLayoutPluginInstance = defaultLayoutPlugin();
-
-export default function SocialNetwork() {
+export default function Resume() {
   return (
-    <section className="flex flex-col gap-5 container p-3 font-['Inter'] bg-white text-black mx-auto px-3 md:mt-0 mt-6">
-      <h1 className="text-4xl font-bold text-center my-4">Mahesh Muttinti</h1>
+    <section className="flex flex-col gap-5 container p-3 font-['Inter'] bg-white text-black mx-auto px-3 md:mt-0 mt-12">
+      <div className="flex gap-10 text-center justify-center items-center">
+        <h1 className="text-4xl font-bold text-center my-4">Mahesh Muttinti</h1>
+        <a
+          href="https://drive.google.com/uc?id=1OXFsOMK9Fxi6E8F83STds6sgQnWhYBWC&export=download"
+          className="hover:text-blue-600"
+          title="Download Mahesh Muttinti Resume"
+        >
+          <Download />
+        </a>
+      </div>
       <h2 className="text-2xl font-semibold text-center mb-8">
         Full Stack Web & Mobile App Developer
       </h2>
@@ -211,7 +218,9 @@ export default function SocialNetwork() {
       </section>
 
       <section className="mb-8">
-        <h3 className="text-2xl font-semibold mb-2">Developer & Social Links</h3>
+        <h3 className="text-2xl font-semibold mb-2">
+          Developer & Social Links
+        </h3>
         <ul className="list-disc ml-5">
           <li>
             GitHub:{" "}

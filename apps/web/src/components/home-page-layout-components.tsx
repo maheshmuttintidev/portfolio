@@ -7,8 +7,10 @@ export function HomePageLayoutComponents() {
   return (
     <>
       <HeroSection />
-      <AboutMeDescription />
-      <WebsitesShowcase />
+      <div className="container mx-auto text-center">
+        <AboutMeDescription />
+        <WebsitesShowcase />
+      </div>
     </>
   );
 }

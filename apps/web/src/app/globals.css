@@ -9,10 +9,13 @@
     @apply text-red-500 bg-gradient-to-bl from-yellow-200 to-yellow-400;
   }
   .link {
-    @apply font-['Inter'] dark:text-red-500 text-red-500 md:text-5xl text-3xl py-2 px-4 rounded dark:hover:bg-white hover:text-black shadow-sm shadow-neutral-400 h-max w-max;
+    @apply font-['Inter'] dark:text-red-500 text-red-500 md:text-5xl text-3xl py-2 px-4 rounded hover:text-white shadow-sm shadow-neutral-400 h-max w-max;
+  }
+  .theme-text {
+    @apply text-yellow-900 dark:text-red-700 font-['Inter'];
   }
   .active-link {
-    @apply link bg-yellow-400 text-white;
+    @apply link bg-yellow-400 theme-text;
   }
   .theme-bg {
     @apply bg-red-300 dark:bg-yellow-400;
@@ -20,10 +23,14 @@
   .nav-theme-bg {
     @apply dark:bg-yellow-300 bg-white;
   }
-  .theme-text {
-    @apply text-slate-600 dark:text-red-500 font-['Inter'];
-  }
+  
   .nav-theme-menu-bg {
-    @apply bg-yellow-400;
+    @apply bg-black;
+  }
+  .shadow-animate {
+    @apply border-4 border-red-600 shadow-xl shadow-red-400
+  }
+  .to-top-translate-y {
+    @apply hover:translate-y-[-10px] transition-all
   }
 }
